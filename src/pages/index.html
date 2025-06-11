@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Báo Đại Đoàn Kết</title>
+    <link
+      rel="shortcut icon"
+      href="https://ddk.1cdn.vn/assets/images/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <div class="c-header w-full">
+      <div
+        class="c-header-inner flex items-center justify-between px-0 py-2 border-b"
+      >
+        <div class="c-container flex items-center justify-between w-full">
+          <div class="c-header-left w-1/3 flex flex-col">
+            <div class="flex items-center gap-2">
+              <button class="p-1 mr-1 border">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+
+              <button
+                class="w-[34px] h-[34px] border flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 font-bold"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+                  />
+                </svg>
+              </button>
+
+              <span class="ml-2 text-sm">
+                <span class="font-semibold" id="day-name"></span>,
+                <span id="date-text"></span>
+              </span>
+            </div>
+            <a
+              href="#"
+              class="flex items-center gap-1 text-sm pt-4 text-secondary hover:text-sub"
+            >
+              <i class="fas fa-newspaper text-gray-600 text-sm"></i>
+              TIN MỚI NHẤT
+            </a>
+          </div>
+
+          <div class="c-header-center w-1/3 text-center">
+            <img
+              src="/dist/icons/logo.svg"
+              alt="logo"
+              class="h-[100px] w-[330px] mx-auto"
+            />
+          </div>
+
+          <div class="c-header-right w-1/3 text-sm text-right">
+            <span class="font-bold">Hà Nội</span> 26°C / 23 - 32°C
+            <img
+              src="/dist/icons/cloud.svg"
+              alt="temperature icon"
+              class="inline w-[15px] h-[15px] ml-1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="c-container ">
+        <div
+          class="menu-outer flex items-center border-b border-border_primary"
+        >
+          <div class="c-menu">
+            <ul class="flex">
+              <li class="home active">
+                <a href="#"
+                  ><img
+                    src="/dist/icons/house-blank.svg"
+                    alt="Home icon"
+                    class="h-[24px] w-[24px] mx-auto"
+                /></a>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Chính trị</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/lanh-dao-dang"
+                        >Lãnh đạo Đảng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/chu-tich-nuoc"
+                        >Chủ tịch nước</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+                        >Quốc hội</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/chinh-phu"
+                        >Chính phủ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Mặt trận</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/cac-cuoc-van-dong"
+                        >Các cuộc vận động</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/tieng-noi-co-so"
+                        >Tiếng nói cơ sở</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/nguoi-mat-tran"
+                        >Người Mặt trận</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                        >Giám sát - Phản biện</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/kieu-bao"
+                        >Kiều bào</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/dan-toc"
+                        >Dân tộc</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/ton-giao"
+                        >Tôn giáo</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/mat-tran/tu-van">Tư vấn</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Tiếng dân</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/tieng-dan/dieu-tra"
+                        >Điều tra</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://daidoanket.vn/tieng-dan/chung-toi-len-tieng"
+                        >Chúng tôi lên tiếng</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Xã hội</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/xa-hoi/an-sinh-xa-hoi"
+                        >An sinh xã hội</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/xa-hoi/moi-truong"
+                        >Môi trường</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/xa-hoi/chuyen-tu-te"
+                        >Chuyện tử tế</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Kinh tế</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/kinh-te/tai-chinh"
+                        >Tài chính</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/kinh-te/thi-truong"
+                        >Thị trường</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Pháp luật</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/phap-luat/quy-dinh-moi"
+                        >Quy định mới</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Giáo dục</a>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Đô thị</a>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Giao thông</a>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Văn hóa</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/van-hoa/giai-tri"
+                        >Giải trí</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Sức khỏe</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/suc-khoe/cac-benh-dich"
+                        >Các bệnh dịch</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Thể thao</a>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Bất động sản</a>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">Công nghệ</a>
+                <div
+                  class="c-dropdown-menu absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/cong-nghe/san-pham-so"
+                        >Sản phẩm số</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="group relative">
+                <a href="" class="c-menu-child">
+                  <img
+                    src="/dist/icons/ellipsis.svg"
+                    alt="more"
+                    class="h-[24px] w-[24px] mx-auto"
+                  />
+                </a>
+                <div
+                  class="c-dropdown-menu is-right absolute border hidden group-hover:block text-sm"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                        >Góc nhìn Đại Đoàn Kết</a
+                      >
+                    </li>
+                    <li><a href="https://daidoanket.vn/quoc-te">Quốc tế</a></li>
+                    <li>
+                      <a href="https://daidoanket.vn/tinh-hoa-viet"
+                        >Tinh hoa Việt</a
+                      >
+                    </li>
+                    <li><a href="https://daidoanket.vn/du-lich">Du lịch</a></li>
+                    <li>
+                      <a href="https://daidoanket.vn/thong-tin-doanh-nghiep"
+                        >Thông tin doanh nghiệp</a
+                      >
+                    </li>
+                    <li><a href="/multimedia">Multimedia</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-container-wrapper">
+      <div class="c-container">
+        <div class="c-head flex">
+          <div class="c-head_left">
+            <div class="c-head_top flex">
+              <div class="c-head_big">
+                <div class="c-template-grid">
+                  <div class="b-grid">
+                    <div class="b-grid_img">
+                      <a
+                        href="https://daidoanket.vn/thu-tuong-tim-hieu-mo-hinh-phat-huy-di-san-va-phat-trien-cang-bien-o-estonia-10307449.html"
+                        ><img
+                          class="lazy"
+                          data-src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/06/bc1794471a9a12e4266e141c48d8e5691ca8c0f17b3b9120d687809679afc54b8bc3cc131d938-_ttxvn-thu-tuong-tham-pho-co-tallinn.jpg"
+                          alt="Thủ tướng tìm hiểu mô hình phát huy di sản và phát triển cảng biển ở Estonia"
+                          title="Thủ tướng tìm hiểu mô hình phát huy di sản và phát triển cảng biển ở Estonia"
+                          src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/06/bc1794471a9a12e4266e141c48d8e5691ca8c0f17b3b9120d687809679afc54b8bc3cc131d938-_ttxvn-thu-tuong-tham-pho-co-tallinn.jpg"
+                          style=""
+                      /></a>
+                    </div>
+                    <div class="b-grid_content">
+                      <div class="b-grid__row">
+                        <h3 class="b-grid_title_top">
+                          <a
+                            href="https://daidoanket.vn/thu-tuong-tim-hieu-mo-hinh-phat-huy-di-san-va-phat-trien-cang-bien-o-estonia-10307449.html"
+                            >Thủ tướng tìm hiểu mô hình phát huy di sản và phát
+                            triển cảng biển ở Estonia</a
+                          >
+                        </h3>
+                      </div>
+                      <div class="b-grid__row b-grid__desc">
+                        <a
+                          href="https://daidoanket.vn/thu-tuong-tim-hieu-mo-hinh-phat-huy-di-san-va-phat-trien-cang-bien-o-estonia-10307449.html"
+                          >Thủ tướng đề nghị lãnh đạo Cảng Tallinn hợp tác với
+                          Việt Nam để xây dựng cảng biển quốc tế; có các hình
+                          thức hợp tác đầu tư; chia sẻ công nghệ, khoa học quản
+                          trị, vận hành cảng cho đối tác Việt Nam.</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-head_side">
+                <div class="c-template-grid">
+                  <ul>
+                    <li pid="10307305">
+                      <div class="b-grid">
+                        <div class="b-grid_img">
+                          <a
+                            href="https://daidoanket.vn/my-tiep-tuc-xac-dinh-viet-nam-khong-thao-tung-tien-te-10307451.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/media.vietnamplus.vn-images-fa2bb207fd17be03581ee0a8982370eace4166a0c9f353ac88640b1a1a92837467499c97a73f8d62ec2e3a875b4512985d25c708576e509cee33e8750cf2aadd-_2911-lai-suat-cho-vay-6978.jpg"
+                              alt="Mỹ tiếp tục xác định Việt Nam không thao túng tiền tệ"
+                              title="Mỹ tiếp tục xác định Việt Nam không thao túng tiền tệ"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/media.vietnamplus.vn-images-fa2bb207fd17be03581ee0a8982370eace4166a0c9f353ac88640b1a1a92837467499c97a73f8d62ec2e3a875b4512985d25c708576e509cee33e8750cf2aadd-_2911-lai-suat-cho-vay-6978.jpg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid_content">
+                          <div class="b-grid_row">
+                            <div class="b-grid_title">
+                              <a
+                                href="https://daidoanket.vn/my-tiep-tuc-xac-dinh-viet-nam-khong-thao-tung-tien-te-10307451.html"
+                                >Mỹ tiếp tục xác định Việt Nam không thao túng
+                                tiền tệ</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li pid="10307293">
+                      <div class="b-grid">
+                        <div class="b-grid_img">
+                          <a
+                            href="https://daidoanket.vn/chinh-phu-chinh-thuc-trinh-de-an-sap-xep-don-vi-hanh-chinh-cap-tinh-nam-2025-10307391.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/05/z61_4357-2-bo-truong-bo-noi-vu-pham-thi-thanh-tra.jpg"
+                              alt="Chính phủ chính thức trình Đề án sắp xếp đơn vị hành chính cấp tỉnh năm 2025"
+                              title="Chính phủ chính thức trình Đề án sắp xếp đơn vị hành chính cấp tỉnh năm 2025"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/05/z61_4357-2-bo-truong-bo-noi-vu-pham-thi-thanh-tra.jpg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid_content">
+                          <div class="b-grid_row">
+                            <div class="b-grid_title">
+                              <a
+                                href="https://daidoanket.vn/chinh-phu-chinh-thuc-trinh-de-an-sap-xep-don-vi-hanh-chinh-cap-tinh-nam-2025-10307391.html"
+                                >Chính phủ chính thức trình Đề án sắp xếp đơn vị
+                                hành chính cấp tỉnh năm 2025</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="c-head_bottom">
+              <div class="c-template-grid is-col-3-pc">
+                <ul class="flex devide-x">
+                  <li pid="10307445">
+                    <div class="b-grid">
+                      <div class="b-grid_img">
+                        <a
+                          href="https://daidoanket.vn/gan-103-000-thi-sinh-ha-noi-lam-thu-tuc-du-thi-lop-10-ha-noi-10307445.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/1020240607101835(1).jpg"
+                            alt="Gần 103.000 thí sinh Hà Nội làm thủ tục dự thi lớp 10 Hà Nội"
+                            title="Gần 103.000 thí sinh Hà Nội làm thủ tục dự thi lớp 10 Hà Nội"
+                            src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/1020240607101835(1).jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid_content">
+                        <div class="b-grid_row">
+                          <h3 class="b-grid_title">
+                            <a
+                              href="https://daidoanket.vn/gan-103-000-thi-sinh-ha-noi-lam-thu-tuc-du-thi-lop-10-ha-noi-10307445.html"
+                              >Gần 103.000 thí sinh Hà Nội làm thủ tục dự thi
+                              lớp 10 Hà Nội</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li pid="10307448">
+                    <div class="b-grid">
+                      <div class="b-grid_img">
+                        <a
+                          href="https://daidoanket.vn/ban-tin-mat-tran-sang-6-6-10307448.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/17/screenshot_20250417_224023_gallery.jpg"
+                            alt="Bản tin Mặt trận sáng 6/6"
+                            title="Bản tin Mặt trận sáng 6/6"
+                            src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/17/screenshot_20250417_224023_gallery.jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid_content">
+                        <div class="b-grid_row">
+                          <h3 class="b-grid_title">
+                            <a
+                              href="https://daidoanket.vn/ban-tin-mat-tran-sang-6-6-10307448.html"
+                              >Bản tin Mặt trận sáng 6/6</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li pid="10307447">
+                    <div class="b-grid">
+                      <div class="b-grid_img">
+                        <a
+                          href="https://daidoanket.vn/ngay-6-6-nhieu-noi-co-mua-rao-va-dong-10307447.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/540x360/2024/10/22/mua_gio-le-khanh26.jpg"
+                            alt="Ngày 6/6: Nhiều nơi có mưa rào và dông"
+                            title="Ngày 6/6: Nhiều nơi có mưa rào và dông"
+                            src="https://ddk.1cdn.vn/thumbs/540x360/2024/10/22/mua_gio-le-khanh26.jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid_content">
+                        <div class="b-grid_row">
+                          <h3 class="b-grid_title">
+                            <a
+                              href="https://daidoanket.vn/ngay-6-6-nhieu-noi-co-mua-rao-va-dong-10307447.html"
+                              >Ngày 6/6: Nhiều nơi có mưa rào và dông</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li pid="10307379">
+                    <div class="b-grid">
+                      <div class="b-grid_img">
+                        <a
+                          href="https://daidoanket.vn/du-lieu-ca-nhan-sau-khi-khu-nhan-dang-se-duoc-mua-ban-theo-quy-dinh-cua-phap-luat-10307379.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/05/z61_4066-2-thu-truong-bo-cong-an-le-quoc-hung.jpg"
+                            alt="Dữ liệu cá nhân sau khi “khử nhận dạng' sẽ được mua bán theo quy định của pháp luật"
+                            title="Dữ liệu cá nhân sau khi “khử nhận dạng' sẽ được mua bán theo quy định của pháp luật"
+                            src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/05/z61_4066-2-thu-truong-bo-cong-an-le-quoc-hung.jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid_content">
+                        <div class="b-grid_row">
+                          <h3 class="b-grid_title">
+                            <a
+                              href="https://daidoanket.vn/du-lieu-ca-nhan-sau-khi-khu-nhan-dang-se-duoc-mua-ban-theo-quy-dinh-cua-phap-luat-10307379.html"
+                              >Dữ liệu cá nhân sau khi “khử nhận dạng' sẽ được
+                              mua bán theo quy định của pháp luật</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li pid="10307409">
+                    <div class="b-grid">
+                      <div class="b-grid_img">
+                        <a
+                          href="https://daidoanket.vn/vi-sao-hang-loat-truong-dai-hoc-bo-xet-tuyen-khoi-c00-10307409.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/05/17/sp6.jpg"
+                            alt="Vì sao hàng loạt trường đại học bỏ xét tuyển khối C00?"
+                            title="Vì sao hàng loạt trường đại học bỏ xét tuyển khối C00?"
+                            src="https://ddk.1cdn.vn/thumbs/540x360/2025/05/17/sp6.jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid_content">
+                        <div class="b-grid_row">
+                          <h3 class="b-grid_title">
+                            <a
+                              href="https://daidoanket.vn/vi-sao-hang-loat-truong-dai-hoc-bo-xet-tuyen-khoi-c00-10307409.html"
+                              >Vì sao hàng loạt trường đại học bỏ xét tuyển khối
+                              C00?</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li pid="10307436">
+                    <div class="b-grid">
+                      <div class="b-grid_img">
+                        <a
+                          href="https://daidoanket.vn/ha-noi-bo-tri-nhieu-chot-truc-dam-bao-an-toan-giao-thong-phuc-vu-hai-ky-thi-10307436.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/05/z6664486374320_7663e0d2d7a04b79f1cb13a64e24c23e.jpg"
+                            alt="Hà Nội bố trí nhiều chốt trực đảm bảo an toàn giao thông phục vụ hai kỳ thi"
+                            title="Hà Nội bố trí nhiều chốt trực đảm bảo an toàn giao thông phục vụ hai kỳ thi"
+                            src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/05/z6664486374320_7663e0d2d7a04b79f1cb13a64e24c23e.jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid_content">
+                        <div class="b-grid_row">
+                          <h3 class="b-grid_title">
+                            <a
+                              href="https://daidoanket.vn/ha-noi-bo-tri-nhieu-chot-truc-dam-bao-an-toan-giao-thong-phuc-vu-hai-ky-thi-10307436.html"
+                              >Hà Nội bố trí nhiều chốt trực đảm bảo an toàn
+                              giao thông phục vụ hai kỳ thi</a
+                            >
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="c-head_right">
+            <div class="c-topic-area is-margin-bottom">
+              <div class="c-box">
+                <div class="c-box_title is-decor flex">
+                  <div class="c-box_title_name">
+                    <a href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                      >Giám sát - Phản biện</a
+                    >
+                  </div>
+                  <div class="c-box_title_decor"></div>
+                </div>
+                <div class="c-box_content">
+                  <div class="c-template-list">
+                    <ul>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid_img">
+                            <a
+                              href="https://daidoanket.vn/xam-pham-quyen-rieng-tu-de-truc-loi-10307350.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/15/benh-an-dien-tu.png"
+                                alt="Xâm phạm quyền riêng tư để trục lợi"
+                                title="Xâm phạm quyền riêng tư để trục lợi"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/15/benh-an-dien-tu.png"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid_content">
+                            <div class="b-grid_row">
+                              <h3 class="b-grid_title">
+                                <a
+                                  href="https://daidoanket.vn/xam-pham-quyen-rieng-tu-de-truc-loi-10307350.html"
+                                  >Xâm phạm quyền riêng tư để trục lợi</a
+                                >
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid_img">
+                            <a
+                              href="https://daidoanket.vn/phu-yen-to-chuc-kiem-diem-rut-kinh-nghiem-va-thu-hoi-so-tien-sai-pham-10307204.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/02/anh-duoi.jpg"
+                                alt="Phú Yên: Tổ chức kiểm điểm, rút kinh nghiệm và thu hồi số tiền sai phạm"
+                                title="Phú Yên: Tổ chức kiểm điểm, rút kinh nghiệm và thu hồi số tiền sai phạm"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/02/anh-duoi.jpg"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid_content">
+                            <div class="b-grid_row">
+                              <h3 class="b-grid_title">
+                                <a
+                                  href="https://daidoanket.vn/phu-yen-to-chuc-kiem-diem-rut-kinh-nghiem-va-thu-hoi-so-tien-sai-pham-10307204.html"
+                                  >Phú Yên: Tổ chức kiểm điểm, rút kinh nghiệm
+                                  và thu hồi số tiền sai phạm</a
+                                >
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid_img">
+                            <a
+                              href="https://daidoanket.vn/bao-hiem-chay-no-bat-buoc-chinh-sach-dung-can-co-che-dong-hanh-10307149.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/01/anh-cv.jpg"
+                                alt="Bảo hiểm cháy nổ bắt buộc: Chính sách đúng, cần cơ chế đồng hành"
+                                title="Bảo hiểm cháy nổ bắt buộc: Chính sách đúng, cần cơ chế đồng hành"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/01/anh-cv.jpg"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid_content">
+                            <div class="b-grid_row">
+                              <h3 class="b-grid_title">
+                                <a
+                                  href="https://daidoanket.vn/bao-hiem-chay-no-bat-buoc-chinh-sach-dung-can-co-che-dong-hanh-10307149.html"
+                                  >Bảo hiểm cháy nổ bắt buộc: Chính sách đúng,
+                                  cần cơ chế đồng hành</a
+                                >
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box is-margin-small">
+                <div class="c-box_content">
+                  <div
+                    class="c-template-grid is-border is-column-reverse-mobile is-sapo-mobile is-hot"
+                  >
+                    <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                      ><div class="c-template-grid_label">
+                        Góc nhìn Đại Đoàn Kết
+                      </div></a
+                    >
+                    <ul>
+                      <li pid="10307450">
+                        <div class="b-grid">
+                          <div class="b-grid_img">
+                            <a
+                              href="https://daidoanket.vn/thit-benh-khong-di-mot-minh-10307450.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/04/thit-lon.png"
+                                alt="'Thịt bệnh' không đi một mình"
+                                title="'Thịt bệnh' không đi một mình"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/04/thit-lon.png"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid_content">
+                            <div class="b-grid_row">
+                              <h3 class="b-grid_title">
+                                <a
+                                  href="https://daidoanket.vn/thit-benh-khong-di-mot-minh-10307450.html"
+                                  >'Thịt bệnh' không đi một mình</a
+                                >
+                              </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/dist/scripts/main.js"></script>
+  </body>
+</html>

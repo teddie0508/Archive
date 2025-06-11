@@ -1,0 +1,3822 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Báo Đại Đoàn Kết</title>
+    <link
+      rel="shortcut icon"
+      href="https://ddk.1cdn.vn/assets/images/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <div class="c-container-wrapper">
+      <div class="l-nav">
+        <div class="c-header-banner">
+          <div class="h-show-mobile">
+            <div class="c-banner">
+              <div class="c-banner-item">
+                <div class="c-banner-item__inner">
+                  <div class="c-banner-item__box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: white" class="h-show-pc">
+            <div class="container">
+              <div class="c-banner">
+                <div class="c-banner-item">
+                  <div class="c-banner-item__inner">
+                    <div class="c-banner-item__box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-nav-inner">
+          <div class="c-nav-inner__height"></div>
+          <div class="c-header">
+            <div class="container border-b">
+              <div class="c-header-inner">
+                <div class="c-header-inner__left">
+                  <button class="c-menu-expand js-menu-expand" type="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="c-search-expand js-search-expand"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-3.5 h-3.5 font-bold icon16-search-black"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+                      />
+                    </svg>
+                  </button>
+                  <div class="c-sologan onecms__currentTime">
+                    <p><b></b></p>
+                  </div>
+                  <div class="c-search-wrapper">
+                    <div class="c-search">
+                      <div class="c-search__inner">
+                        <input
+                          class="form-control"
+                          type="text"
+                          name=""
+                          placeholder="Tìm kiếm"
+                        />
+                        <button class="c-search__btn" type="submit">
+                          <img
+                            src="/dist/icons/icon20-search.svg"
+                            class="icon20-search"
+                            alt="search button"
+                          />
+                        </button>
+                        <button
+                          class="c-search__close js-search-close"
+                          class="icon12-close"
+                          type="button"
+                        >
+                          <img
+                            src="/dist/icons/icon12-close.png"
+                            alt="close search"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-header-menu">
+                    <ul class="flex">
+                      <li>
+                        <a
+                          href="#"
+                          class="flex items-center gap-1 text-sm pt-4 text-secondary hover:text-sub"
+                        >
+                          <i class="fas fa-newspaper text-gray-600 text-sm"></i>
+                          TIN MỚI NHẤT
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="c-header-inner__center">
+                  <h1 class="c-logo">
+                    <a href="/"
+                      ><img
+                        src="/dist/icons/logo.svg"
+                        alt="logo"
+                        class="h-[100px] w-[330px] mx-auto"
+                    /></a>
+                  </h1>
+                </div>
+                <div class="c-header-inner__right flex">
+                  <div class="c-weather onecms__weather">
+                    <div id="widget-weather">
+                      <ul class="current-city">
+                        <li>
+                          <strong>Hà Nội</strong>
+                          <span><em>29°C</em> / 27 - 36°C</span>
+                          <img src="/dist/icons/cloud.svg" alt="weather icon" />
+                          <i class="ti-arrow-circle-down hidden"
+                            ><img src="/dist/icons/icon8-down.svg" alt=""
+                          /></i>
+                        </li>
+                      </ul>
+                      <div class="filter hidden">
+                        <input placeholder="Nhập tìm tỉnh thành …" />
+                        <div class="city-list">
+                          <div class="choosed-city">
+                            <p>Đang hiển thị</p>
+                            <ul>
+                              <li>
+                                Hà Nội<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="others-city">
+                            <p>Tỉnh thành khác</p>
+                            <ul>
+                              <li city="an-giang" city1="an giang">
+                                An Giang<span
+                                  >30°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li
+                                city="ba-ria-vung-tau"
+                                city1="ba ria vung tau"
+                              >
+                                Bà Rịa Vũng Tàu<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/353.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="bac-giang" city1="bac giang">
+                                Bắc Giang<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="bac-kan" city1="bac kan">
+                                Bắc Kạn<span
+                                  >26°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/143.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="bac-lieu" city1="bac lieu">
+                                Bạc Liêu<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="bac-ninh" city1="bac ninh">
+                                Bắc Ninh<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ben-tre" city1="ben tre">
+                                Bến Tre<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="binh-dinh" city1="binh dinh">
+                                Bình Định<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="binh-duong" city1="binh duong">
+                                Bình Dương<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/299.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="binh-phuoc" city1="binh phuoc">
+                                Bình Phước<span
+                                  >26°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/353.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="binh-thuan" city1="binh thuan">
+                                Bình Thuận<span
+                                  >26°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ca-mau" city1="ca mau">
+                                Cà Mau<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="can-tho" city1="can tho">
+                                Cần Thơ<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="cao-bang" city1="cao bang">
+                                Cao Bẳng<span
+                                  >26°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="da-nang" city1="da nang">
+                                Đà Nẵng<span
+                                  >31°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="dak-lak" city1="dak lak">
+                                Đắk Lắk<span
+                                  >23°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/143.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="dak-nong" city1="dak nong">
+                                Đắk Nông<span
+                                  >22°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/248.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="dien-bien" city1="dien bien">
+                                Điện Biên<span
+                                  >22°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="dong-nai" city1="dong nai">
+                                Đồng Nai<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/299.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="dong-thap" city1="dong thap">
+                                Đồng Tháp<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="gia-lai" city1="gia lai">
+                                Gia Lai<span
+                                  >23°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ha-giang" city1="ha giang">
+                                Hà Giang<span
+                                  >27°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ha-nam" city1="ha nam">
+                                Hà Nam<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ha-noi" city1="ha noi">
+                                Hà Nội<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ha-tinh" city1="ha tinh">
+                                Hà Tĩnh<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="hai-duong" city1="hai duong">
+                                Hải Dương<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="hai-phong" city1="hai phong">
+                                Hải Phòng<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="hau-giang" city1="hau giang">
+                                Hậu Giang<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ho-chi-minh" city1="ho chi minh">
+                                Hồ Chí Minh<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="hoa-binh" city1="hoa binh">
+                                Hòa Bình<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/386.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="hung-yen" city1="hung yen">
+                                Hưng Yên<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="khanh-hoa" city1="khanh hoa">
+                                Khánh Hòa<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="kien-giang" city1="kien giang">
+                                Kiên Giang<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="kon-tum" city1="kon tum">
+                                Kon Tum<span
+                                  >22°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/248.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="lai-chau" city1="lai chau">
+                                Lai Châu<span
+                                  >19°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="lam-dong" city1="lam dong">
+                                Lâm Đồng<span
+                                  >19°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/248.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="lang-son" city1="lang son">
+                                Lạng Sơn<span
+                                  >26°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="lao-cai" city1="lao cai">
+                                Lào Cai<span
+                                  >23°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="long-an" city1="long an">
+                                Long An<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/353.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="nam-dinh" city1="nam dinh">
+                                Nam Định<span
+                                  >30°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="nghe-an" city1="nghe an">
+                                Nghệ An<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ninh-binh" city1="ninh binh">
+                                Ninh Bình<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="ninh-thuan" city1="ninh thuan">
+                                Ninh Thuận<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="phu-tho" city1="phu tho">
+                                Phú Thọ<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/386.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="phu-yen" city1="phu yen">
+                                Phú Yên<span
+                                  >27°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="quang-binh" city1="quang binh">
+                                Quảng Bình<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="quang-nam" city1="quang nam">
+                                Quảng Nam<span
+                                  >31°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="quang-ngai" city1="quang ngai">
+                                Quảng Ngãi<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="quang-ninh" city1="quang ninh">
+                                Quảng Ninh<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="quang-tri" city1="quang tri">
+                                Quảng Trị<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="soc-trang" city1="soc trang">
+                                Sóc Trăng<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="son-la" city1="son la">
+                                Sơn La<span
+                                  >24°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="tay-ninh" city1="tay ninh">
+                                Tây Ninh<span
+                                  >30°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="thai-binh" city1="thai binh">
+                                Thái Bình<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="thai-nguyen" city1="thai nguyen">
+                                Thái Nguyên<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="thanh-hoa" city1="thanh hoa">
+                                Thanh Hóa<span
+                                  >30°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="thua-thien-hue" city1="thua thien hue">
+                                Thừa Thiên Huế<span
+                                  >31°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="tien-giang" city1="tien giang">
+                                Tiền Giang<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="tra-vinh" city1="tra vinh">
+                                Trà Vinh<span
+                                  >27°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="tuyen-quang" city1="tuyen quang">
+                                Tuyên Quang<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="vinh-long" city1="vinh long">
+                                Vĩnh Long<span
+                                  >28°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="vinh-phuc" city1="vinh phuc">
+                                Vĩnh Phúc<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                              <li city="yen-bai" city1="yen bai">
+                                Yên Bái<span
+                                  >29°C<img
+                                    src="https://asset.1cdn.vn/all/weather/64x64/night/386.png"
+                                    alt=""
+                                /></span>
+                              </li>
+                            </ul>
+                            <div class="no-result hide" style="display: none">
+                              <i class="ti-info-alt"></i> Không tìm thấy kết quả
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-menu-outer">
+          <div class="container">
+            <div class="c-menu">
+              <ul>
+                <li class="is-home active">
+                  <a href="/" title="Trang chủ"
+                    ><i class="icon24-home-primary"></i
+                  ></a>
+                </li>
+
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/chinh-tri">Chính trị</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/lanh-dao-dang"
+                          >Lãnh đạo Đảng</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/chu-tich-nuoc"
+                          >Chủ tịch nước</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+                          >Quốc hội</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/chinh-phu"
+                          >Chính phủ</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/mat-tran">Mặt trận</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/mat-tran/cac-cuoc-van-dong"
+                          >Các cuộc vận động</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/tieng-noi-co-so"
+                          >Tiếng nói cơ sở</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/nguoi-mat-tran"
+                          >Người Mặt trận</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                          >Giám sát - Phản biện</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/kieu-bao"
+                          >Kiều bào</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/dan-toc"
+                          >Dân tộc</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/ton-giao"
+                          >Tôn giáo</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/tu-van"
+                          >Tư vấn</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/tieng-dan">Tiếng dân</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/tieng-dan/dieu-tra"
+                          >Điều tra</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/tieng-dan/chung-toi-len-tieng"
+                          >Chúng tôi lên tiếng</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/xa-hoi">Xã hội</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/xa-hoi/an-sinh-xa-hoi"
+                          >An sinh xã hội</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/xa-hoi/moi-truong"
+                          >Môi trường</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/xa-hoi/chuyen-tu-te"
+                          >Chuyện tử tế</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/kinh-te">Kinh tế</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/kinh-te/tai-chinh"
+                          >Tài chính</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/kinh-te/thi-truong"
+                          >Thị trường</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/phap-luat">Pháp luật</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/phap-luat/quy-dinh-moi"
+                          >Quy định mới</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/giao-duc">Giáo dục</a>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/do-thi">Đô thị</a>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/giao-thong">Giao thông</a>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/van-hoa">Văn hóa</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/van-hoa/giai-tri"
+                          >Giải trí</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/suc-khoe">Sức khỏe</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/suc-khoe/cac-benh-dich"
+                          >Các bệnh dịch</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/the-thao">Thể thao</a>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/bat-dong-san">Bất động sản</a>
+                </li>
+                <li class="c-menu-child">
+                  <a href="https://daidoanket.vn/cong-nghe">Công nghệ</a>
+                  <div class="c-dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/cong-nghe/san-pham-so"
+                          >Sản phẩm số</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="h-show-mobile">
+                  <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                    >Góc nhìn Đại Đoàn Kết</a
+                  >
+                </li>
+                <li class="h-show-mobile">
+                  <a href="https://daidoanket.vn/quoc-te">Quốc tế</a>
+                </li>
+                <li class="h-show-mobile">
+                  <a href="https://daidoanket.vn/tinh-hoa-viet"
+                    >Tinh hoa Việt</a
+                  >
+                </li>
+                <li class="h-show-mobile">
+                  <a href="https://daidoanket.vn/du-lich">Du lịch</a>
+                </li>
+                <li class="h-show-mobile">
+                  <a href="https://daidoanket.vn/thong-tin-doanh-nghiep"
+                    >Thông tin doanh nghiệp</a
+                  >
+                </li>
+
+                <li class="h-show-mobile">
+                  <a href="/multimedia">Multimedia</a>
+                </li>
+
+                <li class="c-menu-more">
+                  <span class="dot dot1"></span><span class="dot dot2"></span
+                  ><span class="dot dot3"></span>
+                  <div class="c-dropdown-menu is-right">
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                          >Góc nhìn Đại Đoàn Kết</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/quoc-te">Quốc tế</a>
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/tinh-hoa-viet"
+                          >Tinh hoa Việt</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/du-lich">Du lịch</a>
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/thong-tin-doanh-nghiep"
+                          >Thông tin doanh nghiệp</a
+                        >
+                      </li>
+                      <li><a href="/multimedia">Multimedia</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="c-mega-menu">
+          <button class="c-mega-menu__close js-mega-close" type="button">
+            <span></span>
+          </button>
+          <div class="container">
+            <div class="c-category-flex">
+              <div class="c-search-wrapper">
+                <div class="c-search">
+                  <div class="c-search__inner">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name=""
+                      placeholder="Tìm kiếm"
+                    />
+                    <button class="c-search__btn" type="submit">
+                      <i class="icon20-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <nav class="c-category-menu">
+                <ul>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/chinh-tri">Chính trị</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/lanh-dao-dang"
+                          >Lãnh đạo Đảng</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/chu-tich-nuoc"
+                          >Chủ tịch nước</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+                          >Quốc hội</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/chinh-tri/chinh-phu"
+                          >Chính phủ</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/mat-tran">Mặt trận</a>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/mat-tran/cac-cuoc-van-dong"
+                          >Các cuộc vận động</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/tieng-noi-co-so"
+                          >Tiếng nói cơ sở</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/nguoi-mat-tran"
+                          >Người Mặt trận</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                          >Giám sát - Phản biện</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/kieu-bao"
+                          >Kiều bào</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/dan-toc"
+                          >Dân tộc</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/ton-giao"
+                          >Tôn giáo</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/mat-tran/tu-van"
+                          >Tư vấn</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/tieng-dan">Tiếng dân</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/tieng-dan/dieu-tra"
+                          >Điều tra</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/tieng-dan/chung-toi-len-tieng"
+                          >Chúng tôi lên tiếng</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/xa-hoi">Xã hội</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/xa-hoi/an-sinh-xa-hoi"
+                          >An sinh xã hội</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/xa-hoi/moi-truong"
+                          >Môi trường</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/xa-hoi/chuyen-tu-te"
+                          >Chuyện tử tế</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/kinh-te">Kinh tế</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/kinh-te/tai-chinh"
+                          >Tài chính</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://daidoanket.vn/kinh-te/thi-truong"
+                          >Thị trường</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/phap-luat">Pháp luật</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/phap-luat/quy-dinh-moi"
+                          >Quy định mới</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/giao-duc">Giáo dục</a>
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/do-thi">Đô thị</a>
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/giao-thong">Giao thông</a>
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/van-hoa">Văn hóa</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/van-hoa/giai-tri"
+                          >Giải trí</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/suc-khoe">Sức khỏe</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/suc-khoe/cac-benh-dich"
+                          >Các bệnh dịch</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/the-thao">Thể thao</a>
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/bat-dong-san"
+                      >Bất động sản</a
+                    >
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/cong-nghe">Công nghệ</a>
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/cong-nghe/san-pham-so"
+                          >Sản phẩm số</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                      >Góc nhìn Đại Đoàn Kết</a
+                    >
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/quoc-te">Quốc tế</a>
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/tinh-hoa-viet"
+                      >Tinh hoa Việt</a
+                    >
+                    <ul>
+                      <li>
+                        <a href="https://daidoanket.vn/tinh-hoa-viet/tro-chuyen"
+                          >Trò chuyện</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/tinh-hoa-viet/chuyen-dong"
+                          >Chuyển động</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://daidoanket.vn/tinh-hoa-viet/cuoc-song-muon-mau"
+                          >Cuộc sống muôn màu</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/du-lich">Du lịch</a>
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/thong-tin-doanh-nghiep"
+                      >Thông tin doanh nghiệp</a
+                    >
+                    <ul></ul>
+                  </li>
+                  <li class="c-mega-menu__child">
+                    <a href="/multimedia">Multimedia</a>
+                    <ul>
+                      <li><a href="/video">Video</a></li>
+                      <li><a href="/anh">Ảnh</a></li>
+                      <li><a href="/infographic">Infographic</a></li>
+                      <li><a href="/emagazine">Emagazine</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-show-pc" style="margin-top: 20px">
+      <div class="container">
+        <div class="c-banner">
+          <div class="c-banner-item">
+            <div class="c-banner-item__inner">
+              <div class="c-banner-item__box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-container-wrapper">
+      <div class="l-content is-padding-top-none-mobile">
+        <div class="c-weather-widget h-show-mobile">
+          <div class="container">
+            <div class="c-weather-widget__time onecms__currentTime">
+              <p><b>Thứ Hai,</b> 09/06/2025</p>
+            </div>
+            <a
+              href="/thoi-tiet-ha-noi"
+              class="c-weather-widget__location onecms__weather__district"
+              ><strong>Hà Nội</strong>
+              <span><em>29°C</em> / 27-36°C</span>
+              <img
+                src="https://asset.1cdn.vn/all/weather/64x64/night/176.png"
+                alt="undefined"
+            /></a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="c-head">
+            <div class="c-head__left">
+              <div class="c-head__top">
+                <div class="c-head__big">
+                  <div class="c-template-grid">
+                    <div class="b-grid">
+                      <div class="b-grid__img">
+                        <a
+                          href="https://daidoanket.vn/co-nen-cho-doanh-nghiep-tu-nhan-thue-tru-so-doi-du-10307648.html"
+                          ><img
+                            class="lazy"
+                            data-src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/08/quan-dong-da.jpg"
+                            alt="Có nên cho doanh nghiệp tư nhân thuê trụ sở dôi dư?"
+                            title="Có nên cho doanh nghiệp tư nhân thuê trụ sở dôi dư?"
+                            src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/08/quan-dong-da.jpg"
+                            style=""
+                        /></a>
+                      </div>
+                      <div class="b-grid__content">
+                        <div class="b-grid__row">
+                          <h3 class="b-grid__title">
+                            <a
+                              href="https://daidoanket.vn/co-nen-cho-doanh-nghiep-tu-nhan-thue-tru-so-doi-du-10307648.html"
+                              >Có nên cho doanh nghiệp tư nhân thuê trụ sở dôi
+                              dư?</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="b-grid__row b-grid__desc">
+                          <a
+                            href="https://daidoanket.vn/co-nen-cho-doanh-nghiep-tu-nhan-thue-tru-so-doi-du-10307648.html"
+                            >Sau sắp xếp đơn vị hành chính cấp tỉnh năm 2025,
+                            báo cáo trước Ủy ban Thường vụ Quốc hội, Chính phủ
+                            cho biết còn dôi dư 4.226 trụ sở. Để tránh lãng phí,
+                            liệu có nên dùng số trụ sở dôi dư để cho doanh
+                            nghiệp thuê?</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-head__big-->
+                <div class="c-head__side">
+                  <div
+                    class="c-template-grid is-border is-column-reverse-mobile is-sapo-mobile"
+                  >
+                    <ul>
+                      <li pid="10307649">
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/bao-chi-voi-nhung-giai-phap-trong-dau-tranh-phan-bac-viec-loi-dung-van-de-dan-toc-ton-giao-10307649.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/anh-tren-thay.jpg"
+                                alt="Báo chí với những giải pháp trong đấu tranh, phản bác việc lợi dụng vấn đề dân tộc, tôn giáo"
+                                title="Báo chí với những giải pháp trong đấu tranh, phản bác việc lợi dụng vấn đề dân tộc, tôn giáo"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/anh-tren-thay.jpg"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/bao-chi-voi-nhung-giai-phap-trong-dau-tranh-phan-bac-viec-loi-dung-van-de-dan-toc-ton-giao-10307649.html"
+                                  >Báo chí với những giải pháp trong đấu tranh,
+                                  phản bác việc lợi dụng vấn đề dân tộc, tôn
+                                  giáo</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/bao-chi-voi-nhung-giai-phap-trong-dau-tranh-phan-bac-viec-loi-dung-van-de-dan-toc-ton-giao-10307649.html"
+                                >Trong môi trường truyền thông số hiện nay, báo
+                                chí đang được coi là lực lượng chủ công trong
+                                việc nhận diện, đấu tranh, phản bác quan điểm
+                                sai trái, thù địch, những âm mưu, phương thức,
+                                thủ đoạn lợi dụng vấn đề dân tộc, tôn giáo…
+                                Nhiệm vụ của báo chí là thông tin, định hướng dư
+                                luận, bảo vệ có hiệu quả nền tảng tư tưởng của
+                                Đảng, bảo vệ chế độ, bảo vệ đất nước.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li pid="10307650">
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/ban-tin-mat-tran-sang-9-6-10307650.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/17/screenshot_20250417_224023_gallery.jpg"
+                                alt="Bản tin Mặt trận sáng 9/6"
+                                title="Bản tin Mặt trận sáng 9/6"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/17/screenshot_20250417_224023_gallery.jpg"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/ban-tin-mat-tran-sang-9-6-10307650.html"
+                                  >Bản tin Mặt trận sáng 9/6</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/ban-tin-mat-tran-sang-9-6-10307650.html"
+                                >Bản tin Mặt trận sáng 9/6 của Báo Đại Đoàn Kết
+                                gồm một số nội dung chính như sau: Báo Cứu Quốc:
+                                Binh vận lòng dân bằng ngôn từ mộc mạc; Sáng tạo
+                                trong xây dựng nông thôn mới; Mặt trận sát cánh
+                                cùng người dân xóa nhà tạm.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--end c-head__side-->
+              </div>
+              <!--end c-head__top-->
+              <div class="c-head__bottom">
+                <div
+                  class="c-template-grid is-col-3-pc is-border-mobile is-column-reverse-mobile is-sapo-mobile"
+                >
+                  <ul>
+                    <li pid="10307658">
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/sua-quy-che-to-chuc-va-hoat-dong-cua-ban-chi-dao-phong-chong-rua-tien-10307658.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/media.vietnamplus.vn-images-e0b807dc3222933b1a1cbd6f413f5349e93d288b1af3eadd7598ef9924b216963b826e3d0b7c1c20fecc7394fcf9379b-_rua-tien-0806.jpg"
+                              alt="Sửa Quy chế tổ chức và hoạt động của Ban Chỉ đạo phòng, chống rửa tiền"
+                              title="Sửa Quy chế tổ chức và hoạt động của Ban Chỉ đạo phòng, chống rửa tiền"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/media.vietnamplus.vn-images-e0b807dc3222933b1a1cbd6f413f5349e93d288b1af3eadd7598ef9924b216963b826e3d0b7c1c20fecc7394fcf9379b-_rua-tien-0806.jpg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/sua-quy-che-to-chuc-va-hoat-dong-cua-ban-chi-dao-phong-chong-rua-tien-10307658.html"
+                                >Sửa Quy chế tổ chức và hoạt động của Ban Chỉ
+                                đạo phòng, chống rửa tiền</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="b-grid__row b-grid__desc">
+                            <a
+                              href="https://daidoanket.vn/sua-quy-che-to-chuc-va-hoat-dong-cua-ban-chi-dao-phong-chong-rua-tien-10307658.html"
+                              >Phó Thủ tướng Hồ Đức Phớc vừa ký quyết định sửa
+                              đổi, bổ sung một số điều trong quy chế hoạt động
+                              của Ban chỉ đạo phòng, chống rửa tiền, làm rõ hơn
+                              nhiệm vụ tham mưu của các bộ ngành.</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li pid="10307654">
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/ngay-9-6-mien-bac-co-mua-dong-mien-trung-nang-nong-10307654.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2024/10/22/mua_gio-le-khanh26.jpg"
+                              alt="Ngày 9/6: Miền Bắc có mưa dông, miền Trung nắng nóng"
+                              title="Ngày 9/6: Miền Bắc có mưa dông, miền Trung nắng nóng"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2024/10/22/mua_gio-le-khanh26.jpg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/ngay-9-6-mien-bac-co-mua-dong-mien-trung-nang-nong-10307654.html"
+                                >Ngày 9/6: Miền Bắc có mưa dông, miền Trung nắng
+                                nóng</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="b-grid__row b-grid__desc">
+                            <a
+                              href="https://daidoanket.vn/ngay-9-6-mien-bac-co-mua-dong-mien-trung-nang-nong-10307654.html"
+                              >Theo Trung tâm Dự báo Khí tượng thủy văn quốc
+                              gia, ngày 9/6, vùng núi và trung du Bắc Bộ có mưa
+                              vừa, mưa to và dông, cục bộ mưa rất to; Đồng bằng
+                              Bắc Bộ và Thanh Hóa có mưa rào và dông rải rác.
+                              Trung Bộ có nắng nóng.</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li pid="10307661">
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/thach-thuc-trong-hien-thuc-hoa-muc-tieu-tang-truong-2-con-so-10307661.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/tren.jpeg"
+                              alt="Thách thức trong hiện thực hóa mục tiêu tăng trưởng 2 con số"
+                              title="Thách thức trong hiện thực hóa mục tiêu tăng trưởng 2 con số"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/tren.jpeg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/thach-thuc-trong-hien-thuc-hoa-muc-tieu-tang-truong-2-con-so-10307661.html"
+                                >Thách thức trong hiện thực hóa mục tiêu tăng
+                                trưởng 2 con số</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="b-grid__row b-grid__desc">
+                            <a
+                              href="https://daidoanket.vn/thach-thuc-trong-hien-thuc-hoa-muc-tieu-tang-truong-2-con-so-10307661.html"
+                              >Tăng trưởng kinh tế năm 2025 đặt mục tiêu 8% trở
+                              lên, góp phần tạo nền tảng vững chắc để đạt tốc độ
+                              tăng trưởng 2 con số bắt đầu từ năm 2026. Muốn
+                              tăng trưởng cao và bền vững, giới chuyên gia
+                              khuyến nghị, cần xác định các ngành kinh tế mũi
+                              nhọn, xây dựng kế hoạch phát triển dài hạn và tạo
+                              ra các chính sách hỗ trợ cụ thể về thuế, tín dụng,
+                              và môi trường kinh doanh thuận lợi.</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li pid="10307655">
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/tphcm-bao-dong-cham-giai-ngan-dau-tu-cong-10307655.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/nut-giao-an-phu.jpg"
+                              alt="TPHCM: Báo động chậm giải ngân đầu tư công"
+                              title="TPHCM: Báo động chậm giải ngân đầu tư công"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/nut-giao-an-phu.jpg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/tphcm-bao-dong-cham-giai-ngan-dau-tu-cong-10307655.html"
+                                >TPHCM: Báo động chậm giải ngân đầu tư công</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="b-grid__row b-grid__desc">
+                            <a
+                              href="https://daidoanket.vn/tphcm-bao-dong-cham-giai-ngan-dau-tu-cong-10307655.html"
+                              >Dù đã bước sang tháng 6, nhưng tỷ lệ giải ngân
+                              vốn đầu tư công của TPHCM mới chỉ đạt hơn 10% trên
+                              tổng số hơn 85.000 tỉ đồng được giao trong năm
+                              2025. Đây là con số đáng báo động trong bối cảnh
+                              nhiều dự án trọng điểm vẫn “án binh bất động” vì
+                              vướng mặt bằng, thủ tục.</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li pid="10307656">
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/thi-lop-10-thpt-tai-ha-noi-doi-moi-khong-gay-soc-10307656.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/bai-chinh.jpg"
+                              alt="Thi lớp 10 THPT tại Hà Nội: Đổi mới không gây sốc"
+                              title="Thi lớp 10 THPT tại Hà Nội: Đổi mới không gây sốc"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/bai-chinh.jpg"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/thi-lop-10-thpt-tai-ha-noi-doi-moi-khong-gay-soc-10307656.html"
+                                >Thi lớp 10 THPT tại Hà Nội: Đổi mới không gây
+                                sốc</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="b-grid__row b-grid__desc">
+                            <a
+                              href="https://daidoanket.vn/thi-lop-10-thpt-tai-ha-noi-doi-moi-khong-gay-soc-10307656.html"
+                              >Sau 2 ngày căng thẳng, kỳ thi vào lớp 10 THPT
+                              công lập không chuyên năm học 2025 - 2026 của Hà
+                              Nội - cũng là năm đầu tiên thi theo Chương trình
+                              GDPT 2018 đã hoàn thành. Không lọt lộ đề thi, chỉ
+                              có 1 thí sinh vi phạm quy chế thi do mang điện
+                              thoại vào phòng thi môn Ngoại ngữ chiều 7/6.</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li pid="10307652">
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/qua-trinh-gia-hoa-dan-so-gia-tang-nhu-cau-nha-o-cho-nguoi-cao-tuoi-10307652.html"
+                            ><img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/sk-dan-so-gia-hoa.png"
+                              alt="Quá trình già hóa dân số: Gia tăng nhu cầu nhà ở cho người cao tuổi"
+                              title="Quá trình già hóa dân số: Gia tăng nhu cầu nhà ở cho người cao tuổi"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/sk-dan-so-gia-hoa.png"
+                              style=""
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/qua-trinh-gia-hoa-dan-so-gia-tang-nhu-cau-nha-o-cho-nguoi-cao-tuoi-10307652.html"
+                                >Quá trình già hóa dân số: Gia tăng nhu cầu nhà
+                                ở cho người cao tuổi</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="b-grid__row b-grid__desc">
+                            <a
+                              href="https://daidoanket.vn/qua-trinh-gia-hoa-dan-so-gia-tang-nhu-cau-nha-o-cho-nguoi-cao-tuoi-10307652.html"
+                              >Việt Nam đang bước vào giai đoạn già hóa dân số
+                              nhanh chóng. Điều này mở ra nhu cầu lớn về nhà ở
+                              chuyên biệt dành cho người cao tuổi, tuy nhiên,
+                              hầu như phân khúc này chưa được các chủ đầu tư
+                              quan tâm khai thác...</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="c-head__right">
+              <div class="c-topic-area is-margin-bottom">
+                <div class="c-box">
+                  <div class="c-box__title is-decor">
+                    <h2 class="c-box__title__name">
+                      <a
+                        href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                        >Giám sát - Phản biện</a
+                      >
+                    </h2>
+                    <div class="c-box__title__decor"></div>
+                  </div>
+                  <div class="c-box__content">
+                    <div class="c-template-list">
+                      <ul>
+                        <li>
+                          <div class="b-grid">
+                            <div class="b-grid__img">
+                              <a
+                                href="https://daidoanket.vn/lang-son-nguy-co-khai-tu-du-an-tram-ty-10307651.html"
+                                ><img
+                                  class="lazy"
+                                  data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/tren(1).jpg"
+                                  alt="Lạng Sơn: Nguy cơ “khai tử” dự án trăm tỷ"
+                                  title="Lạng Sơn: Nguy cơ “khai tử” dự án trăm tỷ"
+                                  src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/tren(1).jpg"
+                                  style=""
+                              /></a>
+                            </div>
+                            <div class="b-grid__content">
+                              <div class="b-grid__row">
+                                <h3 class="b-grid__title">
+                                  <a
+                                    href="https://daidoanket.vn/lang-son-nguy-co-khai-tu-du-an-tram-ty-10307651.html"
+                                    >Lạng Sơn: Nguy cơ “khai tử” dự án trăm
+                                    tỷ</a
+                                  >
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="b-grid">
+                            <div class="b-grid__img">
+                              <a
+                                href="https://daidoanket.vn/sai-pham-tai-kcn-thot-not-luat-su-cho-rang-can-truy-trach-nhiem-ca-co-quan-quan-ly-lan-doanh-nghiep-10307544.html"
+                                ><img
+                                  class="lazy"
+                                  data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/1-5-.jpg"
+                                  alt="Sai phạm tại KCN Thốt Nốt: Luật sư cho rằng cần truy trách nhiệm cả cơ quan quản lý lẫn doanh nghiệp"
+                                  title="Sai phạm tại KCN Thốt Nốt: Luật sư cho rằng cần truy trách nhiệm cả cơ quan quản lý lẫn doanh nghiệp"
+                                  src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/1-5-.jpg"
+                                  style=""
+                              /></a>
+                            </div>
+                            <div class="b-grid__content">
+                              <div class="b-grid__row">
+                                <h3 class="b-grid__title">
+                                  <a
+                                    href="https://daidoanket.vn/sai-pham-tai-kcn-thot-not-luat-su-cho-rang-can-truy-trach-nhiem-ca-co-quan-quan-ly-lan-doanh-nghiep-10307544.html"
+                                    >Sai phạm tại KCN Thốt Nốt: Luật sư cho rằng
+                                    cần truy trách nhiệm cả cơ quan quản lý lẫn
+                                    doanh nghiệp</a
+                                  >
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="b-grid">
+                            <div class="b-grid__img">
+                              <a
+                                href="https://daidoanket.vn/5-nam-lam-khong-xong-gan-4km-duong-10307455.html"
+                                ><img
+                                  class="lazy"
+                                  data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/anh-bai-duoi.jpg"
+                                  alt="5 năm làm không xong gần 4km đường"
+                                  title="5 năm làm không xong gần 4km đường"
+                                  src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/anh-bai-duoi.jpg"
+                                  style=""
+                              /></a>
+                            </div>
+                            <div class="b-grid__content">
+                              <div class="b-grid__row">
+                                <h3 class="b-grid__title">
+                                  <a
+                                    href="https://daidoanket.vn/5-nam-lam-khong-xong-gan-4km-duong-10307455.html"
+                                    >5 năm làm không xong gần 4km đường</a
+                                  >
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-box is-margin-small">
+                <div class="c-box__content">
+                  <div
+                    class="c-template-grid is-border is-column-reverse-mobile is-sapo-mobile is-hot"
+                  >
+                    <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                      ><div class="c-template-grid__label">
+                        Góc nhìn Đại Đoàn Kết
+                      </div></a
+                    >
+                    <ul>
+                      <li pid="10307663">
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/buoc-ngoat-dang-mong-cho-10307663.html"
+                              ><img
+                                class="lazy"
+                                data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/kt-thu-tuc-giay-phep1.jpg"
+                                alt="Bước ngoặt đáng mong chờ"
+                                title="Bước ngoặt đáng mong chờ"
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/kt-thu-tuc-giay-phep1.jpg"
+                                style=""
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/buoc-ngoat-dang-mong-cho-10307663.html"
+                                  >Bước ngoặt đáng mong chờ</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/buoc-ngoat-dang-mong-cho-10307663.html"
+                                >Từ ngày 9/6, người dân Hà Nội có thể nộp hồ sơ
+                                xin cấp giấy phép xây dựng hoàn toàn trực tuyến.
+                                Một thay đổi tưởng nhỏ, nhưng với người từng vật
+                                lộn xin giấy phép, thì đó là bước ngoặt đáng
+                                mong chờ.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-box is-margin-small h-show-pc">
+                <div class="c-box__content">
+                  <div class="c-banner-item is-custom-size">
+                    <div class="c-banner-item__inner">
+                      <div class="c-banner-item__box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box is-margin-small h-show-mobile">
+                <div class="c-box__content">
+                  <div class="c-banner-item is-custom-size">
+                    <div class="c-banner-item__inner">
+                      <div class="c-banner-item__box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box is-margin-small h-show-pc">
+                <div class="c-box__content">
+                  <div class="c-banner-item is-custom-size">
+                    <div class="c-banner-item__inner">
+                      <div class="c-banner-item__box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box is-margin-small h-show-pc">
+                <div class="c-box__content">
+                  <div class="c-banner-item is-custom-size">
+                    <div class="c-banner-item__inner">
+                      <div class="c-banner-item__box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-topevent">
+            <label for="">
+              <i class="icon24-topevent-white"></i>
+              <span>Dòng sự kiện</span>
+            </label>
+            <div class="c-topevent__content">
+              <div
+                class="scroll-wrapper c-topevent__scroll scrollbar-macosx"
+                style="position: relative"
+              >
+                <div
+                  class="c-topevent__scroll scrollbar-macosx scroll-content scroll-scrollx_visible"
+                  style="
+                    height: auto;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    max-height: 29px;
+                  "
+                >
+                  <a
+                    href="https://daidoanket.vn/100-nam-bao-chi-cach-mang-viet-nam-event352.html"
+                    >100 năm Báo chí cách mạng Việt Nam</a
+                  >
+                  <a
+                    href="https://daidoanket.vn/ky-vong-dien-mao-moi-cho-ho-guom-event349.html"
+                    >Kỳ vọng diện mạo mới cho Hồ Gươm</a
+                  >
+                  <a
+                    href="https://daidoanket.vn/xoa-nha-tam-nha-dot-nat-event348.html"
+                    >Xóa nhà tạm, nhà dột nát</a
+                  >
+                  <a
+                    href="https://daidoanket.vn/ky-nguyen-vuon-minh-cua-dan-toc-event345.html"
+                    >Kỷ nguyên vươn mình của dân tộc</a
+                  >
+                  <a
+                    href="https://daidoanket.vn/tinh-gon-to-chuc-bo-may-event344.html"
+                    >Tinh gọn tổ chức bộ máy</a
+                  >
+                  <a
+                    href="https://daidoanket.vn/ngay-hoi-dai-doan-ket-event325.html"
+                    >Ngày hội Đại đoàn kết</a
+                  >
+                </div>
+                <div class="scroll-element scroll-x scroll-scrollx_visible">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div
+                      class="scroll-bar"
+                      style="width: 754px; left: 0px"
+                    ></div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y scroll-scrollx_visible">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="height: 0px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-container-wrapper">
+      <div class="h-show-pc" style="margin-bottom: 15px">
+        <div class="container">
+          <div class="c-banner">
+            <div class="c-banner-item">
+              <div class="c-banner-item__inner">
+                <div class="c-banner-item__box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-box bg-pink-medium is-full c-multimedia-block">
+      <div class="container">
+        <div class="c-box">
+          <div class="c-box__title is-decor is-inline-pc">
+            <h2 class="c-box__title__name text-uppercase">
+              <a href="/multimedia">Multimedia</a>
+            </h2>
+
+            <div
+              class="c-box__title__cat scrollbar-macosx"
+              style="position: relative"
+            >
+              <div
+                class="c-box__title__cat scrollbar-macosx scroll-content"
+                style="
+                  height: auto;
+                  margin-bottom: 0px;
+                  margin-right: 0px;
+                  max-height: 30.5px;
+                "
+              >
+                <ul>
+                  <li>
+                    <a class="text-uppercase" href="/anh"
+                      ><i class="icon16-image-black"></i>Ảnh</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-uppercase" href="/video"
+                      ><i class="icon16-video-o-black"></i>Video</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-uppercase" href="/infographic"
+                      ><i class="icon20-infographic-black"></i>Infographic</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-uppercase" href="/emagazine"
+                      ><i class="icon16-longform-black"></i>Emagazine</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--<div class="scroll-element scroll-x">
+                <div class="scroll-element_outer">
+                  <div class="scroll-element_size"></div>
+                  <div class="scroll-element_track"></div>
+                  <div class="scroll-bar" style="width: 0px"></div>
+                </div>
+              </div>-->
+              <!--<div class="scroll-element scroll-y">
+                <div class="scroll-element_outer">
+                  <div class="scroll-element_size"></div>
+                  <div class="scroll-element_track"></div>
+                  <div class="scroll-bar" style="height: 0px"></div>
+                </div>
+              </div>-->
+            </div>
+
+            <div class="c-box__title__decor"></div>
+          </div>
+
+          <div class="c-box__content">
+            <div class="c-media-box">
+              <div class="c-media-box__left">
+                <div class="c-template-grid is-sapo-mobile">
+                  <div class="b-grid">
+                    <div class="b-grid__img">
+                      <a
+                        href="https://daidoanket.vn/le-don-thu-tuong-va-phu-nhan-tham-du-hoi-nghi-dai-duong-cua-lien-hop-quoc-10307641.html"
+                      >
+                        <img
+                          class="lazy"
+                          data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/tt1(1).png"
+                          alt="Lễ đón Thủ tướng và Phu nhân tham dự Hội nghị Đại dương của Liên hợp quốc"
+                          src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/tt1(1).png"
+                          title="Lễ đón Thủ tướng và Phu nhân tham dự Hội nghị Đại dương của Liên hợp quốc"
+                          style=""
+                        />
+                        <span class="b-grid__icon"
+                          ><i class="icon20-image-white"></i
+                        ></span>
+                      </a>
+                    </div>
+                    <div class="b-grid__content">
+                      <div class="b-grid__row">
+                        <h3 class="b-grid__title">
+                          <a
+                            href="https://daidoanket.vn/le-don-thu-tuong-va-phu-nhan-tham-du-hoi-nghi-dai-duong-cua-lien-hop-quoc-10307641.html"
+                            style="font-size: 24px"
+                            >Lễ đón Thủ tướng và Phu nhân tham dự Hội nghị Đại
+                            dương của Liên hợp quốc</a
+                          >
+                        </h3>
+                      </div>
+                      <div class="b-grid__row b-grid__desc">
+                        <a
+                          href="https://daidoanket.vn/le-don-thu-tuong-va-phu-nhan-tham-du-hoi-nghi-dai-duong-cua-lien-hop-quoc-10307641.html"
+                          >Sáng 8/6/2025 (giờ địa phương), tại Monaco, Hoàng
+                          thân Monaco Albert II chủ trì Lễ đón Thủ tướng Phạm
+                          Minh Chính và Phu nhân cùng các Trưởng đoàn tham dự
+                          Hội nghị Đại dương của LHQ lần 3.</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-media-box__right">
+                <div
+                  class="c-template-grid is-col-2-pc is-border-mobile h-show-pc"
+                >
+                  <ul>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/thi-vao-10-o-ha-noi-de-toan-vua-suc-thi-sinh-tu-tin-dat-tren-7-diem-10307621.html"
+                          >
+                            <img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/thiiii3.jpg"
+                              alt="Thi vào 10 ở Hà Nội: Đề Toán vừa sức, thí sinh tự tin đạt trên 7 điểm"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/thiiii3.jpg"
+                              title="Thi vào 10 ở Hà Nội: Đề Toán vừa sức, thí sinh tự tin đạt trên 7 điểm"
+                              style=""
+                            />
+                            <span class="b-grid__icon"
+                              ><i class="icon20-image-white"></i
+                            ></span>
+                          </a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/thi-vao-10-o-ha-noi-de-toan-vua-suc-thi-sinh-tu-tin-dat-tren-7-diem-10307621.html"
+                                >Thi vào 10 ở Hà Nội: Đề Toán vừa sức, thí sinh
+                                tự tin đạt trên 7 điểm</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/hien-trang-khu-dat-vang-duong-nguyen-trai-sap-tro-thanh-khu-do-thi-11ha-10307585.html"
+                          >
+                            <img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/20250606_141257.jpg"
+                              alt="Hiện trạng khu 'đất vàng' đường Nguyễn Trãi sắp trở thành khu đô thị 11ha"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/20250606_141257.jpg"
+                              title="Hiện trạng khu 'đất vàng' đường Nguyễn Trãi sắp trở thành khu đô thị 11ha"
+                              style=""
+                            />
+                            <span class="b-grid__icon"
+                              ><i class="icon20-image-white"></i
+                            ></span>
+                          </a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/hien-trang-khu-dat-vang-duong-nguyen-trai-sap-tro-thanh-khu-do-thi-11ha-10307585.html"
+                                >Hiện trạng khu 'đất vàng' đường Nguyễn Trãi sắp
+                                trở thành khu đô thị 11ha</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/pho-co-ha-noi-cua-dong-then-cai-10307599.html"
+                          >
+                            <img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/2(1).jpg"
+                              alt="Phố cổ Hà Nội cửa đóng then cài’"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/2(1).jpg"
+                              title="Phố cổ Hà Nội cửa đóng then cài’"
+                              style=""
+                            />
+                            <span class="b-grid__icon"
+                              ><i class="icon20-image-white"></i
+                            ></span>
+                          </a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/pho-co-ha-noi-cua-dong-then-cai-10307599.html"
+                                >Phố cổ Hà Nội cửa đóng then cài’</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/dai-hoi-dang-bo-kiem-toan-nha-nuoc-lan-thu-viii-nhiem-ky-2025-2030-ky-cuong-liem-chinh-chuyen-nghiep-chat-luong-hoi-nhap-10307610.html"
+                          >
+                            <img
+                              class="lazy"
+                              data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/444-202506071749394.jpg"
+                              alt="Đại hội Đảng bộ Kiểm toán nhà nước lần thứ VIII, nhiệm kỳ 2025-2030: Kỷ cương, liêm chính, chuyên nghiệp, chất lượng, hội nhập"
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/444-202506071749394.jpg"
+                              title="Đại hội Đảng bộ Kiểm toán nhà nước lần thứ VIII, nhiệm kỳ 2025-2030: Kỷ cương, liêm chính, chuyên nghiệp, chất lượng, hội nhập"
+                              style=""
+                            />
+                            <span class="b-grid__icon"
+                              ><i class="icon20-video-white"></i
+                            ></span>
+                          </a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/dai-hoi-dang-bo-kiem-toan-nha-nuoc-lan-thu-viii-nhiem-ky-2025-2030-ky-cuong-liem-chinh-chuyen-nghiep-chat-luong-hoi-nhap-10307610.html"
+                                >Đại hội Đảng bộ Kiểm toán nhà nước lần thứ
+                                VIII, nhiệm kỳ 2025-2030: Kỷ cương, liêm chính,
+                                chuyên nghiệp, chất lượng, hội nhập</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c-slider-over-mobile h-show-mobile">
+                  <div class="c-template-slider c-template-grid">
+                    <div
+                      class="owl-carousel js-slider-over-4 owl-loaded owl-drag"
+                    >
+                      <div class="owl-stage-outer">
+                        <div
+                          class="owl-stage"
+                          style="
+                            transform: translate3d(0px, 0px, 0px);
+                            transition: all;
+                          "
+                        >
+                          <div class="owl-item">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a
+                                  href="https://daidoanket.vn/thi-vao-10-o-ha-noi-de-toan-vua-suc-thi-sinh-tu-tin-dat-tren-7-diem-10307621.html"
+                                >
+                                  <img
+                                    class="owl-lazy"
+                                    data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/thiiii3.jpg"
+                                    alt="Thi vào 10 ở Hà Nội: Đề Toán vừa sức, thí sinh tự tin đạt trên 7 điểm"
+                                    src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/thiiii3.jpg"
+                                    title="Thi vào 10 ở Hà Nội: Đề Toán vừa sức, thí sinh tự tin đạt trên 7 điểm"
+                                    style="opacity: 1"
+                                  />
+                                  <span class="b-grid__icon"
+                                    ><i class="icon20-image-white"></i
+                                  ></span>
+                                </a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a
+                                      href="https://daidoanket.vn/thi-vao-10-o-ha-noi-de-toan-vua-suc-thi-sinh-tu-tin-dat-tren-7-diem-10307621.html"
+                                      >Thi vào 10 ở Hà Nội: Đề Toán vừa sức, thí
+                                      sinh tự tin đạt trên 7 điểm</a
+                                    >
+                                  </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a
+                                  href="https://daidoanket.vn/hien-trang-khu-dat-vang-duong-nguyen-trai-sap-tro-thanh-khu-do-thi-11ha-10307585.html"
+                                >
+                                  <img
+                                    class="owl-lazy"
+                                    data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/20250606_141257.jpg"
+                                    alt="Hiện trạng khu 'đất vàng' đường Nguyễn Trãi sắp trở thành khu đô thị 11ha"
+                                    src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/20250606_141257.jpg"
+                                    title="Hiện trạng khu 'đất vàng' đường Nguyễn Trãi sắp trở thành khu đô thị 11ha"
+                                    style="opacity: 1"
+                                  />
+                                  <span class="b-grid__icon"
+                                    ><i class="icon20-image-white"></i
+                                  ></span>
+                                </a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a
+                                      href="https://daidoanket.vn/hien-trang-khu-dat-vang-duong-nguyen-trai-sap-tro-thanh-khu-do-thi-11ha-10307585.html"
+                                      >Hiện trạng khu 'đất vàng' đường Nguyễn
+                                      Trãi sắp trở thành khu đô thị 11ha</a
+                                    >
+                                  </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a
+                                  href="https://daidoanket.vn/pho-co-ha-noi-cua-dong-then-cai-10307599.html"
+                                >
+                                  <img
+                                    class="owl-lazy"
+                                    data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/2(1).jpg"
+                                    alt="Phố cổ Hà Nội cửa đóng then cài’"
+                                    src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/2(1).jpg"
+                                    title="Phố cổ Hà Nội cửa đóng then cài’"
+                                    style="opacity: 1"
+                                  />
+                                  <span class="b-grid__icon"
+                                    ><i class="icon20-image-white"></i
+                                  ></span>
+                                </a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a
+                                      href="https://daidoanket.vn/pho-co-ha-noi-cua-dong-then-cai-10307599.html"
+                                      >Phố cổ Hà Nội cửa đóng then cài’</a
+                                    >
+                                  </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-item">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a
+                                  href="https://daidoanket.vn/dai-hoi-dang-bo-kiem-toan-nha-nuoc-lan-thu-viii-nhiem-ky-2025-2030-ky-cuong-liem-chinh-chuyen-nghiep-chat-luong-hoi-nhap-10307610.html"
+                                >
+                                  <img
+                                    class="owl-lazy"
+                                    data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/444-202506071749394.jpg"
+                                    alt="Đại hội Đảng bộ Kiểm toán nhà nước lần thứ VIII, nhiệm kỳ 2025-2030: Kỷ cương, liêm chính, chuyên nghiệp, chất lượng, hội nhập"
+                                    src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/444-202506071749394.jpg"
+                                    title="Đại hội Đảng bộ Kiểm toán nhà nước lần thứ VIII, nhiệm kỳ 2025-2030: Kỷ cương, liêm chính, chuyên nghiệp, chất lượng, hội nhập"
+                                    style="opacity: 1"
+                                  />
+                                  <span class="b-grid__icon"
+                                    ><i class="icon20-video-white"></i
+                                  ></span>
+                                </a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a
+                                      href="https://daidoanket.vn/dai-hoi-dang-bo-kiem-toan-nha-nuoc-lan-thu-viii-nhiem-ky-2025-2030-ky-cuong-liem-chinh-chuyen-nghiep-chat-luong-hoi-nhap-10307610.html"
+                                      >Đại hội Đảng bộ Kiểm toán nhà nước lần
+                                      thứ VIII, nhiệm kỳ 2025-2030: Kỷ cương,
+                                      liêm chính, chuyên nghiệp, chất lượng, hội
+                                      nhập</a
+                                    >
+                                  </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="owl-nav disabled">
+                        <button
+                          type="button"
+                          role="presentation"
+                          class="owl-prev"
+                        ></button
+                        ><button
+                          type="button"
+                          role="presentation"
+                          class="owl-next"
+                        ></button>
+                      </div>
+                      <div class="owl-dots disabled"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-container-wrapper">
+      <div class="l-content">
+        <div class="container">
+          <!--Chính trị-->
+          <div class="c-box onecms_load_view loaded" data-action="channel/292">
+            <div class="c-box__title is-decor is-inline-pc">
+              <h2 class="c-box__title__name">
+                <a href="https://daidoanket.vn/chinh-tri">Chính trị</a>
+              </h2>
+              <div
+                class=" c-box__title__cat scrollbar-macosx"
+                style="position: relative"
+              >
+                <div
+                  class="c-box__title__cat scrollbar-macosx scroll-content"
+                  style="
+                    height: auto;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    max-height: 30.5px;
+                  "
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/lanh-dao-dang"
+                        >Lãnh đạo Đảng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/chu-tich-nuoc"
+                        >Chủ tịch nước</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+                        >Quốc hội</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/chinh-tri/chinh-phu"
+                        >Chính phủ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll-element scroll-x">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="width: 0px"></div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="height: 0px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box__title__more">
+                <a href="https://daidoanket.vn/chinh-tri"
+                  >Xem tất cả<i class="icon8-arrow-right"></i
+                ></a>
+              </div>
+              <div class="c-box__title__decor"></div>
+            </div>
+            <div class="c-box__content">
+              <div class="c-categgory-featured is-full">
+                <div class="c-categgory-featured__big">
+                  <div class="c-template-grid is-sapo-mobile">
+                    <div class="b-grid">
+                      <div class="b-grid__img">
+                        <a
+                          href="https://daidoanket.vn/thu-tuong-pham-minh-chinh-hoi-kien-tong-thong-phap-emmanuel-macron-10307730.html"
+                          ><img
+                            src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/10/media.vietnamplus.vn-images-59c1012b1f834a8e40f50607e41a1dc84933c7160c0e02647ceb67e9acd4fd31e0e81f1eae90e8d78938367d734bc7f3-_vietnam-phap(1).jpg"
+                            alt="Thủ tướng Phạm Minh Chính hội kiến Tổng thống Pháp Emmanuel Macron"
+                            title="Thủ tướng Phạm Minh Chính hội kiến Tổng thống Pháp Emmanuel Macron"
+                        /></a>
+                      </div>
+                      <div class="b-grid__content">
+                        <div class="b-grid__row">
+                          <h3 class="b-grid__title">
+                            <a
+                              href="https://daidoanket.vn/thu-tuong-pham-minh-chinh-hoi-kien-tong-thong-phap-emmanuel-macron-10307730.html"
+                              style="font-size: 24px"
+                              >Thủ tướng Phạm Minh Chính hội kiến Tổng thống
+                              Pháp Emmanuel Macron</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="b-grid__row b-grid__desc">
+                          <a
+                            href="https://daidoanket.vn/thu-tuong-pham-minh-chinh-hoi-kien-tong-thong-phap-emmanuel-macron-10307730.html"
+                            >Hai bên nhất trí tăng cường trao đổi đoàn các cấp,
+                            đặc biệt là cấp cao, nhằm không ngừng củng cố tin
+                            cậy chính trị, rà soát và thúc đẩy các thỏa thuận
+                            hợp tác.</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__big-->
+                <div class="c-categgory-featured__small">
+                  <div
+                    class="c-template-grid is-title-first-mobile is-border-mobile is-col-2-pc"
+                  >
+                    <ul>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/tong-bi-thu-tinh-lam-dong-moi-khan-truong-xay-dung-lai-quy-hoach-phat-trien-10307695.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/media.vietnamplus.vn-images-59c1012b1f834a8e40f50607e41a1dc8d581af711c1bd0dfe64d5d702dbb6f8c55dd1e75ceb52001437174f7088040668344dadf622c0c70cc1321a0a6d62b4a-_ttxvn-tong-bi-thu-to-lam-5(1).jpg"
+                                alt="Tổng Bí thư: Tỉnh Lâm Đồng mới khẩn trương xây dựng lại quy hoạch phát triển"
+                                title="Tổng Bí thư: Tỉnh Lâm Đồng mới khẩn trương xây dựng lại quy hoạch phát triển"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/tong-bi-thu-tinh-lam-dong-moi-khan-truong-xay-dung-lai-quy-hoach-phat-trien-10307695.html"
+                                  >Tổng Bí thư: Tỉnh Lâm Đồng mới khẩn trương
+                                  xây dựng lại quy hoạch phát triển</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/tong-bi-thu-tinh-lam-dong-moi-khan-truong-xay-dung-lai-quy-hoach-phat-trien-10307695.html"
+                                >Sau khi hợp nhất, Tổng Bí thư đề nghị tỉnh Lâm
+                                Đồng mới khẩn trương xây dựng lại quy hoạch tổng
+                                thể phát triển kinh tế-xã hội giai đoạn mới, kết
+                                nối ba vùng sinh thái: cao nguyên-trung du-duyên
+                                hải...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/thu-tuong-van-hoa-la-soi-day-day-am-thanh-sac-mau-cho-tinh-huu-nghi-viet-phap-10307605.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/d98bc3914f5dc6cbea960-_ttxvn-thu-tuong-bat-dau-chuyen-tham-du-hoi-nghi-dai-duong-lien-hop-quoc-lan-thu-3-tai-phap-8079288-5(1).jpg"
+                                alt="Thủ tướng: Văn hóa là sợi dây đầy âm thanh, sắc màu cho tình hữu nghị Việt-Pháp"
+                                title="Thủ tướng: Văn hóa là sợi dây đầy âm thanh, sắc màu cho tình hữu nghị Việt-Pháp"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/thu-tuong-van-hoa-la-soi-day-day-am-thanh-sac-mau-cho-tinh-huu-nghi-viet-phap-10307605.html"
+                                  >Thủ tướng: Văn hóa là sợi dây đầy âm thanh,
+                                  sắc màu cho tình hữu nghị Việt-Pháp</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/thu-tuong-van-hoa-la-soi-day-day-am-thanh-sac-mau-cho-tinh-huu-nghi-viet-phap-10307605.html"
+                                >Thăm thành phố Nice, Thủ tướng Phạm Minh Chính
+                                chỉ rõ, văn hóa là sợi dây đầy sắc màu và âm
+                                thanh vang dội và hào hùng cho tình hữu nghị
+                                giữa hai dân tộc, hai đất nước Việt Nam-Cộng hoà
+                                Pháp.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/phat-huy-vai-tro-cua-bao-chi-trong-tuyen-truyen-nghi-quyet-68-cua-bo-chinh-tri-10307677.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/z6685897417106_19b85bf928444dc98934efd11199b9c2.jpg"
+                                alt="Phát huy vai trò của báo chí trong tuyên truyền Nghị quyết 68 của Bộ Chính trị"
+                                title="Phát huy vai trò của báo chí trong tuyên truyền Nghị quyết 68 của Bộ Chính trị"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/phat-huy-vai-tro-cua-bao-chi-trong-tuyen-truyen-nghi-quyet-68-cua-bo-chinh-tri-10307677.html"
+                                  >Phát huy vai trò của báo chí trong tuyên
+                                  truyền Nghị quyết 68 của Bộ Chính trị</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/phat-huy-vai-tro-cua-bao-chi-trong-tuyen-truyen-nghi-quyet-68-cua-bo-chinh-tri-10307677.html"
+                                >Sáng 9/6, tại TP Hồ Chí Minh, Vụ Địa phương 3 -
+                                Ban Tuyên giáo và Dân vận Trung ương phối hợp
+                                với Hội Nhà báo Việt Nam tổ chức tọa đàm "Vai
+                                trò của báo chí góp phần trong việc tuyên truyền
+                                Nghị quyết 68-NQ/TW của Bộ Chính trị về phát
+                                triển kinh tế tư nhân".</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/thu-tuong-pham-minh-chinh-tang-cuong-cho-3-linh-vuc-de-bao-ve-dai-duong-10307646.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/b30e2a514304d8680952bb930a95c15-_ttxvn-thu-tuong-phat-bieu-tai-dien-dan-tai-chinh-va-kinh-te-xanh-cua-hoi-nghi-unoc-3-08-1(1).jpg"
+                                alt="Thủ tướng Phạm Minh Chính: Tăng cường cho 3 lĩnh vực để bảo vệ đại dương"
+                                title="Thủ tướng Phạm Minh Chính: Tăng cường cho 3 lĩnh vực để bảo vệ đại dương"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/thu-tuong-pham-minh-chinh-tang-cuong-cho-3-linh-vuc-de-bao-ve-dai-duong-10307646.html"
+                                  >Thủ tướng Phạm Minh Chính: Tăng cường cho 3
+                                  lĩnh vực để bảo vệ đại dương</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/thu-tuong-pham-minh-chinh-tang-cuong-cho-3-linh-vuc-de-bao-ve-dai-duong-10307646.html"
+                                >Thủ tướng Phạm Minh Chính cho rằng biển không
+                                chỉ là nguồn tài nguyên, là nơi khởi nguồn của
+                                sự sống, mà còn là không gian sinh tồn kết nối
+                                con người với thiên nhiên của mọi quốc gia.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__small-->
+              </div>
+              <!--end c-categgory-featured-->
+            </div>
+            <!--end c-box__content-->
+          </div>
+
+          <!--Mặt trận-->
+          <div
+            class="bg-box bg-lemon-old-medium is-margin-bottom is-minus is-border-radius-pc onecms_load_view loaded"
+            data-action="channel/297"
+          >
+            <div class="c-matrix-box">
+              <div class="c-matrix-box__left">
+                <div class="c-matrix-head">
+                  <div class="c-matrix-head__img">
+                    <a href="https://daidoanket.vn/mat-tran"
+                      ><img
+                        src="https://ddk.1cdn.vn/assets/images/mat-tran-to-quoc.png"
+                        alt="Mặt trận tổ quốc"
+                    /></a>
+                  </div>
+                  <div class="c-box">
+                    <div class="c-box__title">
+                      <h2 class="c-box__title__name">
+                        <a href="https://daidoanket.vn/mat-tran">Mặt trận</a>
+                      </h2>
+                      <div
+                        class="c-box__title__cat"
+                        style="position: relative"
+                      >
+                        <div
+                          class="c-box__title__cat"
+                          style="
+                            height: auto;
+                            margin-bottom: 0px;
+                            margin-right: 0px;
+                            max-height: 281px;
+                          "
+                        >
+                          <ul>
+                            <li>
+                              <a
+                                href="https://daidoanket.vn/mat-tran/cac-cuoc-van-dong"
+                                >Các cuộc vận động</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://daidoanket.vn/mat-tran/tieng-noi-co-so"
+                                >Tiếng nói cơ sở</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://daidoanket.vn/mat-tran/nguoi-mat-tran"
+                                >Người Mặt trận</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                                >Giám sát - Phản biện</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://daidoanket.vn/mat-tran/kieu-bao"
+                                >Kiều bào</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://daidoanket.vn/mat-tran/dan-toc"
+                                >Dân tộc</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://daidoanket.vn/mat-tran/ton-giao"
+                                >Tôn giáo</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://daidoanket.vn/mat-tran/tu-van"
+                                >Tư vấn</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="scroll-element scroll-x">
+                          <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div
+                              class="scroll-bar"
+                              style="width: 0px; left: 0px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="scroll-element scroll-y">
+                          <div class="scroll-element_outer">
+                            <div class="scroll-element_size"></div>
+                            <div class="scroll-element_track"></div>
+                            <div class="scroll-bar" style="height: 0px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-box__title__more">
+                        <a href="https://daidoanket.vn/mat-tran"
+                          >Xem tất cả<i class="icon8-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-matrix-box__center">
+                <div class="c-template-grid is-sapo-mobile is-col-2-pc">
+                  <ul>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/chu-tich-do-van-chien-du-hoi-nghi-ban-chap-hanh-tong-lien-doan-lao-dong-viet-nam-lan-thu-vii-10307673.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/09/1.jpg"
+                              alt="Chủ tịch Đỗ Văn Chiến dự hội nghị Ban chấp hành Tổng Liên đoàn Lao động Việt Nam lần thứ VII"
+                              title="Chủ tịch Đỗ Văn Chiến dự hội nghị Ban chấp hành Tổng Liên đoàn Lao động Việt Nam lần thứ VII"
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/chu-tich-do-van-chien-du-hoi-nghi-ban-chap-hanh-tong-lien-doan-lao-dong-viet-nam-lan-thu-vii-10307673.html"
+                                >Chủ tịch Đỗ Văn Chiến dự hội nghị Ban chấp hành
+                                Tổng Liên đoàn Lao động Việt Nam lần thứ VII</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/vi-the-cua-to-chuc-cong-doan-ngay-cang-nang-cao-10307708.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/09/12.jpg"
+                              alt="Vị thế của tổ chức Công đoàn ngày càng nâng cao"
+                              title="Vị thế của tổ chức Công đoàn ngày càng nâng cao"
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/vi-the-cua-to-chuc-cong-doan-ngay-cang-nang-cao-10307708.html"
+                                >Vị thế của tổ chức Công đoàn ngày càng nâng
+                                cao</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="b-grid">
+                        <div class="b-grid__img">
+                          <a
+                            href="https://daidoanket.vn/bao-chi-tiep-tuc-dong-hanh-cung-mat-tran-10307685.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/09/img_3680.jpg"
+                              alt="Báo chí tiếp tục đồng hành cùng Mặt trận"
+                              title="Báo chí tiếp tục đồng hành cùng Mặt trận"
+                          /></a>
+                        </div>
+                        <div class="b-grid__content">
+                          <div class="b-grid__row">
+                            <h3 class="b-grid__title">
+                              <a
+                                href="https://daidoanket.vn/bao-chi-tiep-tuc-dong-hanh-cung-mat-tran-10307685.html"
+                                >Báo chí tiếp tục đồng hành cùng Mặt trận</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-matrix-box__right">
+                <div class="c-leader">
+                  <div class="c-leader__title">
+                    HOẠT ĐỘNG CỦA BAN THƯỜNG TRỰC<br />ỦY BAN TRUNG ƯƠNG MẶT
+                    TRẬN<br />TỔ QUỐC VIỆT NAM
+                  </div>
+                  <div class="c-leader__content">
+                    <div class="c-leader-list">
+                      <ul>
+                        <li>
+                          <div class="c-leader-item is-primary">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a href="/do-van-chien-event320.html"
+                                  ><img
+                                    src="https://ddk.1cdn.vn/assets/upload/do-van-chien-thumb-x3-20241019.jpg"
+                                    alt="Đỗ Văn Chiến"
+                                    title="Đỗ Văn Chiến"
+                                /></a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a href="/do-van-chien-event320.html">
+                                      Ông
+                                      <span class="text-primary"
+                                        >Đỗ Văn Chiến</span
+                                      >
+                                    </a>
+                                  </h3>
+                                </div>
+                                <div class="b-grid__row b-grid__desc">
+                                  Ủy viên Bộ Chính trị, Bí thư Trung ương Đảng,
+                                  Chủ tịch Ủy ban Trung ương MTTQ Việt Nam
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a
+                                  href="https://daidoanket.vn/phat-huy-hao-khi-dien-hong-trong-su-nghiep-xay-dung-va-bao-ve-to-quoc-10307482.html"
+                                  ><img
+                                    src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/06/z6676963696315_1818f5569248c904ecc3a7df773554ab.jpg"
+                                    alt="Phát huy hào khí Diên Hồng trong sự nghiệp xây dựng và bảo vệ Tổ quốc"
+                                    title="Phát huy hào khí Diên Hồng trong sự nghiệp xây dựng và bảo vệ Tổ quốc"
+                                /></a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a
+                                      href="https://daidoanket.vn/phat-huy-hao-khi-dien-hong-trong-su-nghiep-xay-dung-va-bao-ve-to-quoc-10307482.html"
+                                      >Phát huy hào khí Diên Hồng trong sự
+                                      nghiệp xây dựng và bảo vệ Tổ quốc</a
+                                    >
+                                  </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="c-leader-item">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a href="/nguyen-thi-thu-ha-event321.html"
+                                  ><img
+                                    class="lazy"
+                                    data-src="https://ddk.1cdn.vn/assets/upload/leader_2_x3.png"
+                                    alt="Nguyễn Thị Thu Hà"
+                                    title="Nguyễn Thị Thu Hà"
+                                    src="https://ddk.1cdn.vn/assets/upload/leader_2_x3.png"
+                                    style=""
+                                /></a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a href="/nguyen-thi-thu-ha-event321.html">
+                                      Bà
+                                      <span class="text-primary"
+                                        >Nguyễn Thị Thu Hà</span
+                                      >
+                                    </a>
+                                  </h3>
+                                </div>
+                                <div class="b-grid__row b-grid__desc">
+                                  Ủy viên Trung ương Đảng, Phó Chủ tịch - Tổng
+                                  Thư ký Ủy ban Trung ương MTTQ Việt Nam
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="c-leader-item">
+                            <div class="b-grid">
+                              <div class="b-grid__img">
+                                <a href="/hoang-cong-thuy-event324.html"
+                                  ><img
+                                    class="lazy"
+                                    data-src="https://ddk.1cdn.vn/assets/upload/leader_5_x3.png"
+                                    alt="Hoàng Công Thuỷ"
+                                    title="Hoàng Công Thuỷ"
+                                    src="https://ddk.1cdn.vn/assets/upload/leader_5_x3.png"
+                                    style=""
+                                /></a>
+                              </div>
+                              <div class="b-grid__content">
+                                <div class="b-grid__row">
+                                  <h3 class="b-grid__title">
+                                    <a href="/hoang-cong-thuy-event324.html">
+                                      Ông
+                                      <span class="text-primary"
+                                        >Hoàng Công Thuỷ</span
+                                      >
+                                    </a>
+                                  </h3>
+                                </div>
+                                <div class="b-grid__row b-grid__desc">
+                                  Phó Chủ tịch Ủy ban Trung ương MTTQ Việt Nam
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Tiếng dân-->
+          <div class="c-box onecms_load_view loaded" data-action="channel/344">
+            <div class="c-box__title is-decor is-inline-pc">
+              <h2 class="c-box__title__name">
+                <a href="https://daidoanket.vn/tieng-dan">Tiếng dân</a>
+              </h2>
+              <div
+                class="scroll-wrapper c-box__title__cat scrollbar-macosx"
+                style="position: relative"
+              >
+                <div
+                  class="c-box__title__cat "
+                  style="
+                    height: auto;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    max-height: 30.5px;
+                  "
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/tieng-dan/dieu-tra"
+                        >Điều tra</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://daidoanket.vn/tieng-dan/chung-toi-len-tieng"
+                        >Chúng tôi lên tiếng</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll-element scroll-x">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="width: 0px"></div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="height: 0px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box__title__more">
+                <a href="https://daidoanket.vn/tieng-dan"
+                  >Xem tất cả<i class="icon8-arrow-right"></i
+                ></a>
+              </div>
+              <div class="c-box__title__decor"></div>
+            </div>
+            <div class="c-box__content">
+              <div class="c-categgory-featured is-full">
+                <div class="c-categgory-featured__big">
+                  <div class="c-template-grid is-sapo-mobile">
+                    <div class="b-grid">
+                      <div class="b-grid__img">
+                        <a
+                          href="https://daidoanket.vn/song-bat-an-ben-mieng-ha-ba-10307731.html"
+                          ><img
+                            src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/09/tren(2).jpg"
+                            alt="Sống bất an bên miệng “hà bá”"
+                            title="Sống bất an bên miệng “hà bá”"
+                        /></a>
+                      </div>
+                      <div class="b-grid__content">
+                        <div class="b-grid__row">
+                          <h3 class="b-grid__title">
+                            <a
+                              href="https://daidoanket.vn/song-bat-an-ben-mieng-ha-ba-10307731.html"
+                              >Sống bất an bên miệng “hà bá”</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="b-grid__row b-grid__desc">
+                          <a
+                            href="https://daidoanket.vn/song-bat-an-ben-mieng-ha-ba-10307731.html"
+                            >Sau mỗi đợt mưa lớn, nhiều hộ dân sống gần sông Cửa
+                            Lớn (thị trấn Năm Căn, huyện Năm Căn, tỉnh Cà Mau) -
+                            nơi con sông duy nhất của nước ta chảy từ biển Đông
+                            sang biển Tây lại chung nỗi lo mất đất, mất nhà khi
+                            bờ sông có thể sạt lở bất cứ lúc nào.</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__big-->
+                <div class="c-categgory-featured__small">
+                  <div
+                    class="c-template-grid is-title-first-mobile is-border-mobile is-col-2-pc"
+                  >
+                    <ul>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/tinh-lo-518-xuong-cap-nghiem-trong-10307532.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/06/anh-bai-tinh-lo-518.jpg"
+                                alt="Tỉnh lộ 518 xuống cấp nghiêm trọng"
+                                title="Tỉnh lộ 518 xuống cấp nghiêm trọng"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/tinh-lo-518-xuong-cap-nghiem-trong-10307532.html"
+                                  >Tỉnh lộ 518 xuống cấp nghiêm trọng</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/tinh-lo-518-xuong-cap-nghiem-trong-10307532.html"
+                                >Sau một thời gian dài phải oằn mình gồng gánh
+                                các xe tải chở đá, tỉnh lộ 518, đoạn qua huyện
+                                Yên Định (tỉnh Thanh Hóa) đã xuống cấp trầm
+                                trọng, cần sớm được sửa chữa.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/du-an-gan-800-ty-dong-cham-tien-do-10307351.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/04/anh-bai-tren.jpg"
+                                alt="Dự án gần 800 tỷ đồng chậm tiến độ"
+                                title="Dự án gần 800 tỷ đồng chậm tiến độ"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/du-an-gan-800-ty-dong-cham-tien-do-10307351.html"
+                                  >Dự án gần 800 tỷ đồng chậm tiến độ</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/du-an-gan-800-ty-dong-cham-tien-do-10307351.html"
+                                >Những tưởng dự án cải thiện cơ sở hạ tầng đô
+                                thị Hương Khê (tỉnh Hà Tĩnh) sẽ sớm cải thiện
+                                đời sống của người dân, tuy nhiên sau hơn 1 năm
+                                triển khai xây dựng, dự án này vẫn còn dang dở,
+                                chậm tiến độ khiến người dân bức xúc.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/tuyen-duong-77-ty-dong-chua-ban-giao-da-hu-hong-chap-va-10307422.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/04/6-e00e604f13ac538efcdccaf4310b928d.jpg"
+                                alt="Tuyến đường 77 tỷ đồng chưa bàn giao đã hư hỏng, chắp vá"
+                                title="Tuyến đường 77 tỷ đồng chưa bàn giao đã hư hỏng, chắp vá"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/tuyen-duong-77-ty-dong-chua-ban-giao-da-hu-hong-chap-va-10307422.html"
+                                  ><i class="icon16-image-gray"></i>Tuyến đường
+                                  77 tỷ đồng chưa bàn giao đã hư hỏng, chắp
+                                  vá</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/tuyen-duong-77-ty-dong-chua-ban-giao-da-hu-hong-chap-va-10307422.html"
+                                >Tuyến đường nối từ QL7C đến QL7 tại (Nghệ An),
+                                mới đưa vào sử dụng đã sụt lún, hư hỏng. Ở 2 đầu
+                                tuyến, đơn vị thi công dựng rào chắn để sửa
+                                chữa, trong đó có nhiều vị trí được “vá” bằng
+                                bùn đất.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/quang-nam-kenh-thuy-loi-chat-day-rac-thai-10307315.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/01/rac-4-36f5829e6b13db051f7fb99ae344b4f3.jpg"
+                                alt="Quảng Nam: Kênh thủy lợi chất đầy rác thải"
+                                title="Quảng Nam: Kênh thủy lợi chất đầy rác thải"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/quang-nam-kenh-thuy-loi-chat-day-rac-thai-10307315.html"
+                                  >Quảng Nam: Kênh thủy lợi chất đầy rác thải</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/quang-nam-kenh-thuy-loi-chat-day-rac-thai-10307315.html"
+                                >Tuyến kênh thủy lợi N24 Bắc Phú Ninh chảy qua
+                                thôn Hương Trà Đông, phường Hòa Hương, TP Tam
+                                Kỳ, tỉnh Quảng Nam bị ô nhiễm nặng do rác thải
+                                vứt bừa bãi tràn ngập xuống kênh.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__small-->
+              </div>
+              <!--end c-categgory-featured-->
+            </div>
+            <!--end c-box__content-->
+          </div>
+
+          <!--Xã hội-->
+          <div class="c-box onecms_load_view loaded" data-action="channel/306">
+            <div class="c-box__title is-decor is-inline-pc">
+              <h2 class="c-box__title__name">
+                <a href="https://daidoanket.vn/xa-hoi">Xã hội</a>
+              </h2>
+              <div
+                class="scroll-wrapper c-box__title__cat scrollbar-macosx"
+                style="position: relative"
+              >
+                <div
+                  class="c-box__title__cat"
+                  style="
+                    height: auto;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    max-height: 30.5px;
+                  "
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/xa-hoi/an-sinh-xa-hoi"
+                        >An sinh xã hội</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/xa-hoi/moi-truong"
+                        >Môi trường</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/xa-hoi/chuyen-tu-te"
+                        >Chuyện tử tế</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll-element scroll-x">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="width: 0px"></div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="height: 0px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box__title__more">
+                <a href="https://daidoanket.vn/xa-hoi"
+                  >Xem tất cả<i class="icon8-arrow-right"></i
+                ></a>
+              </div>
+              <div class="c-box__title__decor"></div>
+            </div>
+            <div class="c-box__content">
+              <div class="c-categgory-featured is-full">
+                <div class="c-categgory-featured__big">
+                  <div class="c-template-grid is-sapo-mobile">
+                    <div class="b-grid">
+                      <div class="b-grid__img">
+                        <a
+                          href="https://daidoanket.vn/kham-pha-den-trinh-noi-tho-4-khai-quoc-cong-than-nha-dinh-10307736.html"
+                          ><img
+                            src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/06/20250605_103753.jpg"
+                            alt="Khám phá đền Trình, nơi thờ 4 khai quốc công thần nhà Đinh"
+                            title="Khám phá đền Trình, nơi thờ 4 khai quốc công thần nhà Đinh"
+                        /></a>
+                      </div>
+                      <div class="b-grid__content">
+                        <div class="b-grid__row">
+                          <h3 class="b-grid__title">
+                            <a
+                              href="https://daidoanket.vn/kham-pha-den-trinh-noi-tho-4-khai-quoc-cong-than-nha-dinh-10307736.html"
+                              >Khám phá đền Trình, nơi thờ 4 khai quốc công thần
+                              nhà Đinh</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="b-grid__row b-grid__desc">
+                          <a
+                            href="https://daidoanket.vn/kham-pha-den-trinh-noi-tho-4-khai-quoc-cong-than-nha-dinh-10307736.html"
+                            >Đền Trình tọa lạc tại cửa ngõ di sản Tràng An, là
+                            nơi tưởng nhớ và tri ân bốn vị khai quốc công thần
+                            triều Đinh, những người có đóng góp to lớn để tạo
+                            nên nhà nước Đại Cồ Việt.</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__big-->
+                <div class="c-categgory-featured__small">
+                  <div
+                    class="c-template-grid is-title-first-mobile is-border-mobile is-col-2-pc"
+                  >
+                    <ul>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/hoa-binh-de-xuat-som-xu-ly-mo-da-bi-sat-lo-10307724.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/gen-h-z6688336305708_3ae4dfecb90f7fe4d4743bedaa9dfade.jpg"
+                                alt="Hòa Bình: Đề xuất sớm xử lý mỏ đá bị sạt lở"
+                                title="Hòa Bình: Đề xuất sớm xử lý mỏ đá bị sạt lở"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/hoa-binh-de-xuat-som-xu-ly-mo-da-bi-sat-lo-10307724.html"
+                                  >Hòa Bình: Đề xuất sớm xử lý mỏ đá bị sạt
+                                  lở</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/hoa-binh-de-xuat-som-xu-ly-mo-da-bi-sat-lo-10307724.html"
+                                >Ngày 9/6, UBND huyện Cao Phong (tỉnh Hòa Bình)
+                                đã có báo cáo và đề nghị UBND tỉnh Hòa Bình sớm
+                                chỉ đạo khắc phục trước tình trạng mỏ đá bị sạt
+                                lở nghiêm trọng.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/lam-giau-tu-nuoi-luon-khong-bun-tren-can-10307714.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/07/z6678275104450_ad3bdf1a76ab0eef37a96f7620558808.jpg"
+                                alt="Làm giàu từ nuôi lươn không bùn trên cạn"
+                                title="Làm giàu từ nuôi lươn không bùn trên cạn"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/lam-giau-tu-nuoi-luon-khong-bun-tren-can-10307714.html"
+                                  >Làm giàu từ nuôi lươn không bùn trên cạn</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/lam-giau-tu-nuoi-luon-khong-bun-tren-can-10307714.html"
+                                >Với ưu điểm dễ quản lý, ít dịch bệnh, cho hiệu
+                                quả kinh tế cao, mô hình nuôi lươn không bùn ở
+                                Bạc Liêu đang được nhân rộng, góp phần thúc đẩy
+                                kinh tế nông hộ và đa dạng hóa thủy sản của
+                                tỉnh.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/quang-ninh-cuu-nan-kip-tau-ca-gap-nan-tren-bien-10307712.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/z6687368563975_f900d4c220699d9f94c2bad4b118614e.jpg"
+                                alt="Quảng Ninh: Cứu nạn kịp tàu cá gặp nạn trên biển"
+                                title="Quảng Ninh: Cứu nạn kịp tàu cá gặp nạn trên biển"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/quang-ninh-cuu-nan-kip-tau-ca-gap-nan-tren-bien-10307712.html"
+                                  >Quảng Ninh: Cứu nạn kịp tàu cá gặp nạn trên
+                                  biển</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/quang-ninh-cuu-nan-kip-tau-ca-gap-nan-tren-bien-10307712.html"
+                                >Ngày 9/6, lực lượng Biên phòng Quảng Ninh đã
+                                kịp thời giải cứu 4 ngư dân gặp nạn trên biển do
+                                tàu bị va vào đá ngầm.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/chu-dong-ung-pho-voi-ap-thap-nhiet-doi-tren-khu-vuc-bac-bien-dong-10307706.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/thoi-tiet-ap-thap.jpeg"
+                                alt="Chủ động ứng phó với áp thấp nhiệt đới trên khu vực Bắc Biển Đông"
+                                title="Chủ động ứng phó với áp thấp nhiệt đới trên khu vực Bắc Biển Đông"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/chu-dong-ung-pho-voi-ap-thap-nhiet-doi-tren-khu-vuc-bac-bien-dong-10307706.html"
+                                  >Chủ động ứng phó với áp thấp nhiệt đới trên
+                                  khu vực Bắc Biển Đông</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/chu-dong-ung-pho-voi-ap-thap-nhiet-doi-tren-khu-vuc-bac-bien-dong-10307706.html"
+                                >Chiều 9/6, Bộ Nông nghiệp và Môi trường có văn
+                                bản gửi Ủy ban nhân dân các tỉnh, thành phố ven
+                                biển từ Quảng Ninh đến Kiên Giang về việc chủ
+                                động ứng phó với vùng áp thấp trên khu vực Bắc
+                                Biển Đông có khả năng mạnh lên thành áp thấp
+                                nhiệt đới.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__small-->
+              </div>
+              <!--end c-categgory-featured-->
+            </div>
+            <!--end c-box__content-->
+          </div>
+
+          <!--Kinh tế-->
+          <div class="c-box onecms_load_view loaded" data-action="channel/313">
+            <div class="c-box__title is-decor is-inline-pc">
+              <h2 class="c-box__title__name">
+                <a href="https://daidoanket.vn/kinh-te">Kinh tế</a>
+              </h2>
+              <div
+                class="scroll-wrapper c-box__title__cat scrollbar-macosx"
+                style="position: relative"
+              >
+                <div
+                  class="c-box__title__cat"
+                  style="
+                    height: auto;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    max-height: 30.5px;
+                  "
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/kinh-te/tai-chinh"
+                        >Tài chính</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://daidoanket.vn/kinh-te/thi-truong"
+                        >Thị trường</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll-element scroll-x">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="width: 0px"></div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="height: 0px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box__title__more">
+                <a href="https://daidoanket.vn/kinh-te"
+                  >Xem tất cả<i class="icon8-arrow-right"></i
+                ></a>
+              </div>
+              <div class="c-box__title__decor"></div>
+            </div>
+            <div class="c-box__content">
+              <div class="c-categgory-featured is-full">
+                <div class="c-categgory-featured__big">
+                  <div class="c-template-grid is-sapo-mobile">
+                    <div class="b-grid">
+                      <div class="b-grid__img">
+                        <a
+                          href="https://daidoanket.vn/xa-vung-bien-thoat-ngheo-nho-cay-dao-10307738.html"
+                          ><img
+                            src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/09/cay-dao1.jpg"
+                            alt="Xã vùng biên thoát nghèo nhờ cây đào"
+                            title="Xã vùng biên thoát nghèo nhờ cây đào"
+                        /></a>
+                      </div>
+                      <div class="b-grid__content">
+                        <div class="b-grid__row">
+                          <h3 class="b-grid__title">
+                            <a
+                              href="https://daidoanket.vn/xa-vung-bien-thoat-ngheo-nho-cay-dao-10307738.html"
+                              >Xã vùng biên thoát nghèo nhờ cây đào</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="b-grid__row b-grid__desc">
+                          <a
+                            href="https://daidoanket.vn/xa-vung-bien-thoat-ngheo-nho-cay-dao-10307738.html"
+                            >Vài năm trở lại đây, nhờ trồng đào, nhiều hộ đồng
+                            bào Mông ở huyện vùng cao Mường Lát (tỉnh Thanh Hóa)
+                            đã vươn lên thoát nghèo. Cây đào không chỉ mang lại
+                            nguồn thu nhập ổn định mà còn tạo việc làm mùa vụ
+                            cho hàng chục lao động địa phương trong mùa thu
+                            hoạch quả đào chín.</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__big-->
+                <div class="c-categgory-featured__small">
+                  <div
+                    class="c-template-grid is-title-first-mobile is-border-mobile is-col-2-pc"
+                  >
+                    <ul>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/bi-ap-thue-cao-dot-bien-nganh-tom-lap-tuc-phan-ung-10307743.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/tren.jpg"
+                                alt="Bị áp thuế cao đột biến: Ngành tôm lập tức phản ứng"
+                                title="Bị áp thuế cao đột biến: Ngành tôm lập tức phản ứng"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/bi-ap-thue-cao-dot-bien-nganh-tom-lap-tuc-phan-ung-10307743.html"
+                                  >Bị áp thuế cao đột biến: Ngành tôm lập tức
+                                  phản ứng</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/bi-ap-thue-cao-dot-bien-nganh-tom-lap-tuc-phan-ung-10307743.html"
+                                >Doanh nghiệp (DN) tôm Việt Nam bị áp thuế chống
+                                bán phá giá sơ bộ lên đến 35,29%, mức cao chưa
+                                từng có trong 19 năm qua. Mức thuế cao đột biến
+                                này khiến các DN xuất khẩu tôm bất ngờ và ngay
+                                lập tức có sự phản ứng .</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/chuyen-doi-sang-hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-nhieu-ban-khoan-tu-phia-ho-kinh-doanh-10307744.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/10/img_20250420_093817.jpg"
+                                alt="Chuyển đổi sang hoá đơn điện tử khởi tạo từ máy tính tiền: Nhiều băn khoăn từ phía hộ kinh doanh"
+                                title="Chuyển đổi sang hoá đơn điện tử khởi tạo từ máy tính tiền: Nhiều băn khoăn từ phía hộ kinh doanh"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/chuyen-doi-sang-hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-nhieu-ban-khoan-tu-phia-ho-kinh-doanh-10307744.html"
+                                  >Chuyển đổi sang hoá đơn điện tử khởi tạo từ
+                                  máy tính tiền: Nhiều băn khoăn từ phía hộ kinh
+                                  doanh</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/chuyen-doi-sang-hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-nhieu-ban-khoan-tu-phia-ho-kinh-doanh-10307744.html"
+                                >Một số hộ kinh doanh phản ánh gặp khó khăn khi
+                                chuyển đổi sang sử dụng hóa đơn điện tử khởi tạo
+                                từ máy tính tiền.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/cong-cu-triet-tieu-hang-gia-hang-nhai-10307672.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/08/kt-dien-thoai.png"
+                                alt="Công cụ triệt tiêu hàng giả, hàng nhái"
+                                title="Công cụ triệt tiêu hàng giả, hàng nhái"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/cong-cu-triet-tieu-hang-gia-hang-nhai-10307672.html"
+                                  >Công cụ triệt tiêu hàng giả, hàng nhái</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/cong-cu-triet-tieu-hang-gia-hang-nhai-10307672.html"
+                                >Vấn nạn hàng giả, hàng nhái ngày càng diễn biến
+                                phức tạp. Trước thực trạng đó, nhiều ý kiến cho
+                                rằng, việc truy xuất nguồn gốc sẽ là công cụ hữu
+                                hiệu giúp ngăn chặn và xử lý tận gốc hành vi
+                                gian lận thương mại, từ đó bảo vệ người tiêu
+                                dùng, lành mạnh hóa môi trường kinh doanh.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/gia-vang-di-ngang-phien-dau-tuan-10307674.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/03/15/anh-man-hinh-2025-03-15-luc-11.24.03.png"
+                                alt="Giá vàng 'đi ngang' phiên đầu tuần"
+                                title="Giá vàng 'đi ngang' phiên đầu tuần"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/gia-vang-di-ngang-phien-dau-tuan-10307674.html"
+                                  >Giá vàng 'đi ngang' phiên đầu tuần</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/gia-vang-di-ngang-phien-dau-tuan-10307674.html"
+                                >Giá vàng miếng và vàng nhẫn tại một số thương
+                                hiệu lớn trong nước duy trì bằng với mức giá
+                                phiên trước đó.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__small-->
+              </div>
+              <!--end c-categgory-featured-->
+            </div>
+            <!--end c-box__content-->
+          </div>
+
+          <div class="c-box is-margin-small h-show-pc">
+            <div class="c-box__content">
+              <div class="c-banner-item is-custom-size">
+                <div class="c-banner-item__inner">
+                  <div class="c-banner-item__box"></div>
+                </div>
+              </div>
+            </div>
+            <!--end c-box__content-->
+          </div>
+          <!--end c-box-->
+          <!--Văn hóa-->
+          <div class="c-box onecms_load_view loaded" data-action="channel/333">
+            <div class="c-box__title is-decor is-inline-pc">
+              <h2 class="c-box__title__name">
+                <a href="https://daidoanket.vn/van-hoa">Văn hóa</a>
+              </h2>
+              <div
+                class="scroll-wrapper c-box__title__cat scrollbar-macosx"
+                style="position: relative"
+              >
+                <div
+                  class="c-box__title__cat"
+                  style="
+                    height: auto;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    max-height: 30.5px;
+                  "
+                >
+                  <ul>
+                    <li>
+                      <a href="https://daidoanket.vn/van-hoa/giai-tri"
+                        >Giải trí</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll-element scroll-x">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="width: 0px"></div>
+                  </div>
+                </div>
+                <div class="scroll-element scroll-y">
+                  <div class="scroll-element_outer">
+                    <div class="scroll-element_size"></div>
+                    <div class="scroll-element_track"></div>
+                    <div class="scroll-bar" style="height: 0px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-box__title__more">
+                <a href="https://daidoanket.vn/van-hoa"
+                  >Xem tất cả<i class="icon8-arrow-right"></i
+                ></a>
+              </div>
+              <div class="c-box__title__decor"></div>
+            </div>
+            <div class="c-box__content">
+              <div class="c-categgory-featured is-full">
+                <div class="c-categgory-featured__big">
+                  <div class="c-template-grid is-sapo-mobile">
+                    <div class="b-grid">
+                      <div class="b-grid__img">
+                        <a
+                          href="https://daidoanket.vn/ly-giai-suc-hut-cua-drama-10307746.html"
+                          ><img
+                            src="https://ddk.1cdn.vn/thumbs/900x600/2025/06/09/duoi.jpeg"
+                            alt="Lý giải sức hút của drama"
+                            title="Lý giải sức hút của drama"
+                        /></a>
+                      </div>
+                      <div class="b-grid__content">
+                        <div class="b-grid__row">
+                          <h3 class="b-grid__title">
+                            <a
+                              href="https://daidoanket.vn/ly-giai-suc-hut-cua-drama-10307746.html"
+                              >Lý giải sức hút của drama</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="b-grid__row b-grid__desc">
+                          <a
+                            href="https://daidoanket.vn/ly-giai-suc-hut-cua-drama-10307746.html"
+                            >Hàng trăm ngàn người sẵn sàng thức đêm, sẵn sàng bỏ
+                            công việc để theo dõi buổi livestream mà nội dung
+                            chỉ liên quan đến tình cảm cá nhân, drama tình ái,
+                            ồn ào từ thiện, sao kê... Có thể nói, người trẻ đang
+                            tiêu thụ drama mạng xã hội một cách khó kiểm soát.
+                            Vậy làm thế nào để người trẻ đứng vững trước những
+                            “cơn bão drama”?</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__big-->
+                <div class="c-categgory-featured__small">
+                  <div
+                    class="c-template-grid is-title-first-mobile is-border-mobile is-col-2-pc"
+                  >
+                    <ul>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/huynh-thuc-khang-voi-bao-tieng-dan-10307747.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/h1_bao_tieng_dan.jpg"
+                                alt="Huỳnh Thúc Kháng với báo Tiếng Dân"
+                                title="Huỳnh Thúc Kháng với báo Tiếng Dân"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/huynh-thuc-khang-voi-bao-tieng-dan-10307747.html"
+                                  >Huỳnh Thúc Kháng với báo Tiếng Dân</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/huynh-thuc-khang-voi-bao-tieng-dan-10307747.html"
+                                >Trong 16 năm tồn tại, báo Tiếng Dân thực sự trở
+                                thành tiếng nói của dân, bênh vực cho quyền lợi
+                                của kẻ yếu, đồng thời mạnh dạn tố cáo sự xảo trá
+                                của chính quyền thực dân phong kiến.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/tham-my-nghe-thuat-dang-bi-bao-mon-10307745.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/anh-bai-chinh-ngay-9-6.jpg"
+                                alt="Thẩm mỹ nghệ thuật đang bị bào mòn"
+                                title="Thẩm mỹ nghệ thuật đang bị bào mòn"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/tham-my-nghe-thuat-dang-bi-bao-mon-10307745.html"
+                                  >Thẩm mỹ nghệ thuật đang bị bào mòn</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/tham-my-nghe-thuat-dang-bi-bao-mon-10307745.html"
+                                >Sự phát triển của công nghệ số và mạng xã hội
+                                đã giúp các tác phẩm văn học nghệ thuật lan tỏa
+                                rộng rãi hơn bao giờ hết. Tuy nhiên, mặt trái
+                                của nó lại khiến không ít tác phẩm kém chất
+                                lượng dễ dàng tiếp cận công chúng, tạo nên hệ
+                                lụy trong việc hình thành và phát triển thị hiếu
+                                thẩm mỹ.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/bao-chi-doi-moi-de-dua-nghi-quyet-68-vao-cuoc-song-10307739.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/bai-tren.jpg"
+                                alt="Báo chí đổi mới để đưa Nghị quyết 68 vào cuộc sống"
+                                title="Báo chí đổi mới để đưa Nghị quyết 68 vào cuộc sống"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/bao-chi-doi-moi-de-dua-nghi-quyet-68-vao-cuoc-song-10307739.html"
+                                  >Báo chí đổi mới để đưa Nghị quyết 68 vào cuộc
+                                  sống</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/bao-chi-doi-moi-de-dua-nghi-quyet-68-vao-cuoc-song-10307739.html"
+                                >Ngày 9/6, Ban Tuyên giáo và Dân vận Trung ương,
+                                Hội Nhà báo Việt Nam, Trường Đại học Khoa học Xã
+                                hội và Nhân văn (Đại học Quốc gia TPHCM) tổ chức
+                                tọa đàm “Vai trò của báo chí trong việc tuyên
+                                truyền Nghị quyết số 68 của Bộ Chính trị về phát
+                                triển kinh tế tư nhân”.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="b-grid">
+                          <div class="b-grid__img">
+                            <a
+                              href="https://daidoanket.vn/hai-phong-ra-mat-vo-mua-roi-danh-cho-thieu-nhi-dip-he-10307697.html"
+                              ><img
+                                src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/09/21.jpg"
+                                alt="Hải Phòng: Ra mắt vở múa rối dành cho thiếu nhi dịp hè"
+                                title="Hải Phòng: Ra mắt vở múa rối dành cho thiếu nhi dịp hè"
+                            /></a>
+                          </div>
+                          <div class="b-grid__content">
+                            <div class="b-grid__row">
+                              <h3 class="b-grid__title">
+                                <a
+                                  href="https://daidoanket.vn/hai-phong-ra-mat-vo-mua-roi-danh-cho-thieu-nhi-dip-he-10307697.html"
+                                  >Hải Phòng: Ra mắt vở múa rối dành cho thiếu
+                                  nhi dịp hè</a
+                                >
+                              </h3>
+                            </div>
+                            <div class="b-grid__row b-grid__desc">
+                              <a
+                                href="https://daidoanket.vn/hai-phong-ra-mat-vo-mua-roi-danh-cho-thieu-nhi-dip-he-10307697.html"
+                                >Ngày 09/6/2025, Sở Văn hóa, Thể thao và Du lịch
+                                TP Hải Phòng tổ chức họp báo ra mắt vở múa rối
+                                "Bầy chim Thiên Nga" – một tác phẩm nghệ thuật
+                                đặc biệt dành cho thiếu nhi dịp hè.</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--end c-template-grid-->
+                </div>
+                <!--end c-categgory-featured__small-->
+              </div>
+              <!--end c-categgory-featured-->
+            </div>
+            <!--end c-box__content-->
+          </div>
+        </div>
+        <!--end container-->
+      </div>
+      <!--end l-content-->
+    </div>
+    <script src="/dist/scripts/main.js"></script>
+  </body>
+</html>
