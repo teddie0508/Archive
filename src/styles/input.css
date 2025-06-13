@@ -42,6 +42,19 @@
     display: inline-block;
     margin-bottom: 0.5rem;
   }
+
+  figure {
+    margin: 0 0 1rem;
+  }
+
+  figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+  }
 }
 
 @layer components {
@@ -1442,7 +1455,7 @@
   h2 {
     display: block;
     font-size: 1.5em;
-    margin-block-start: 0.83em;
+    margin-block-start: 0em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -2126,6 +2139,270 @@
     width: 7px;
   }
 
+  .bg-pink-partern:has(.c-elite-box) {
+    background-color: rgba(238, 31, 35, 0.7);
+  }
+
+  .bg-pink-partern.is-blur {
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .bg-pink-partern {
+    background-color: #FECBCB;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  .c-story-backgrounds {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .c-story-backgrounds:before {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 60%);
+  }
+
+  .bg-pink-partern:has(.c-elite-box) .c-story-backgrounds .c-story-backgrounds__clockwise-reverse {
+    display: none;
+  }
+
+  .c-story-backgrounds figure {
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .c-story-backgrounds figure.c-story-backgrounds__clockwise-reverse img {
+    animation-name: clockwiseReverse;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .c-story-backgrounds figure img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -50%;
+  }
+
+  .bg-pink-partern:has(.c-elite-box) .c-story-backgrounds:after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/trong-dong-c-2k.png");
+  }
+
+  .bg-pink-partern .container {
+    position: relative;
+    z-index: 5;
+  }
+
+  .c-elite-box__title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .c-elite-box__name {
+    position: relative;
+    z-index: 3;
+    height: 42px;
+    line-height: 38px;
+    background-color: #EE1F23;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 22px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "UTM Dai Co Viet";
+  }
+
+  .c-elite-box__name:before {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-image: url("../../dist/images/elite-title.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  .c-elite-box__name:after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-image: url("../../dist/images/elite-title.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  .scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+  }
+
+  .scroll-wrapper>.scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+  }
+
+  .c-elite-box__cat ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .c-elite-box__cat ul li {
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    padding-right: 10px;
+  }
+
+  .c-elite-box__cat ul li a {
+    transition: all 0.2s ease;
+  }
+
+  .c-elite-box__cat ul li a:hover {
+    color: #ee1f23;
+  }
+
+  .c-elite-box__cat ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+  }
+
+  .c-elite-box__cat ul li:nth-child(1):after,
+  .c-elite-box__cat ul li:nth-child(2):after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    bottom: 3px;
+    right: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .c-elite-box__decor {
+    height: 1px;
+    background-color: #EE1F23;
+    position: absolute;
+    z-index: 2;
+    top: 22px;
+    left: 0;
+    right: 0;
+  }
+
+  .c-elite-box__decor:before {
+    background-image: url("../../dist/images/elite-left.png");
+    left: -3px;
+  }
+
+  .c-elite-box__decor:after {
+    background-image: url("../../dist/images/elite-right.png");
+    right: -3px;
+  }
+
+  .c-elite-box__decor:before,
+  .c-elite-box__decor:after {
+    content: "";
+    width: 8px;
+    height: 9px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    bottom: -5px;
+  }
+
+  .bg-pink-partern .c-template-grid .b-grid .b-grid__img {
+    margin-bottom: 0;
+  }
+
+  .bg-pink-partern .c-template-grid .b-grid {
+    background-color: #fff;
+  }
+
+  .bg-pink-partern .c-template-grid .b-grid .b-grid__content {
+    padding: 12px 15px;
+  }
+
+  .c-template-grid .b-grid .b-grid__content {
+    margin-left: 0;
+  }
+
+  .c-topic-area>ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .c-topic-area .c-template-list>ul>li:first-child .b-grid .b-grid__title {
+    font-weight: 700;
+  }
 
 
 
@@ -2361,6 +2638,98 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .container {
+    max-width: 1170px;
+    width: 1170px;
+  }
+
+  .c-template-grid.is-col-4-pc>ul {
+    margin: 0 -15px;
+  }
+
+  .c-template-grid.is-col-4-pc>ul>li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .l-content-flex.is-col-line-pc:before {
+    right: 315px;
+  }
+
+  .l-content-flex .l-main {
+    width: 840px;
+  }
+
+  .c-topic-area>ul {
+    margin: 0 -15px;
+  }
+
+  .c-topic-area>ul>li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3008,6 +3377,120 @@
     padding-bottom: 0;
   }
 
+  .c-elite-box__title {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .c-elite-box__name {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .c-elite-box__cat {
+    margin-right: 15px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .c-elite-box__decor {
+    position: relative;
+    flex-grow: 1;
+    top: auto;
+  }
+
+  .c-template-grid.is-col-4-pc>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .c-template-grid.is-col-4-pc>ul>li {
+    width: 25%;
+  }
+
+  .c-template-grid.is-border-tablet.is-col-4-pc.is-max-8>ul>li:nth-child(5),
+  .c-template-grid.is-border-tablet.is-col-4-pc.is-max-8>ul>li:nth-child(6),
+  .c-template-grid.is-border-tablet.is-col-4-pc.is-max-8>ul>li:nth-child(7),
+  .c-template-grid.is-border-tablet.is-col-4-pc.is-max-8>ul>li:nth-child(8) {
+    padding-bottom: 0;
+  }
+
+  .l-content-flex.is-margin-bottom {
+    margin-bottom: 35px;
+  }
+
+  .l-content-flex.is-col-line-pc {
+    position: relative;
+    z-index: 1;
+  }
+
+  .l-content-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .l-content-flex.is-col-line-pc:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #E9E9E9;
+  }
+
+  .l-content-flex .l-main {
+    margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3107,10 +3590,125 @@
     padding-top: 10px;
   }
 
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .bg-pink-partern .c-template-grid.is-border-tablet.is-col-2-tablet>ul>li {
+    border-right-color: #FFBBBB;
+  }
+
+  .c-template-grid.is-border-tablet.is-col-2-tablet>ul>li {
+    border-right: 1px solid #E9E9E9;
+  }
+
+  .c-template-grid.is-border-tablet>ul>li {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .bg-pink-partern .c-template-grid.is-border-tablet .b-grid {
+    border-bottom-color: #FFBBBB;
+    padding-bottom: 0;
+  }
+
+  .c-template-grid.is-border-tablet .b-grid {
+    height: 100%;
+    border-bottom: 1px solid #E9E9E9;
+  }
+
+  .c-topic-area>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .c-topic-area>ul>li:nth-last-of-type(1),
+  .c-topic-area>ul>li:nth-last-of-type(2),
+  .c-topic-area>ul>li:nth-last-of-type(3) {
+    padding-bottom: 0;
+  }
+
+  .c-topic-area>ul>li {
+    width: 33.3333333333%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) {
   .c-box .c-box__title {
     padding-bottom: 10px;
   }
@@ -3128,4 +3726,25 @@
     padding-bottom: 0;
     text-align: center;
   }
+
+  .c-topic-area .c-box .c-box__title .c-box__title__name {
+    font-size: 20px;
+  }
+}
+
+@keyframes clockwiseReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@font-face {
+  font-family: 'UTM Dai Co Viet';
+  src: url('../../dist/fonts/UTM-Dai-Co-Viet.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
