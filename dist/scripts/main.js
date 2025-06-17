@@ -1,23 +1,23 @@
 const dayNames = [
-    "Chủ Nhật",
-    "Thứ Hai",
-    "Thứ Ba",
-    "Thứ Tư",
-    "Thứ Năm",
-    "Thứ Sáu",
-    "Thứ Bảy"
+  "Chủ Nhật",
+  "Thứ Hai",
+  "Thứ Ba",
+  "Thứ Tư",
+  "Thứ Năm",
+  "Thứ Sáu",
+  "Thứ Bảy"
 ];
 
 //Cap nhat ngay thang nam
 function updateDate() {
-    const days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
-    const now = new Date();
-    const dayName = days[now.getDay()];
-    const day = String(now.getDate()).padStart(2, '0');
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const year = now.getFullYear();
-    document.querySelector('.c-sologan.onecms__currentTime').innerHTML =
-        `<p><b>${dayName},</b> ${day}/${month}/${year}</p>`;
+  const days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
+  const now = new Date();
+  const dayName = days[now.getDay()];
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const year = now.getFullYear();
+  document.querySelector('.c-sologan.onecms__currentTime').innerHTML =
+    `<p><b>${dayName},</b> ${day}/${month}/${year}</p>`;
 }
 updateDate();
 setInterval(updateDate, 60 * 1000);
@@ -53,17 +53,31 @@ async function updateWeather() {
 updateWeather();
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.querySelector('.c-menu-expand');
-    const megaMenu = document.querySelector('.c-mega-menu');
-    const closeBtn = document.querySelector('.c-mega-menu__close');
+  const menuBtn = document.querySelector('.c-menu-expand');
+  const megaMenu = document.querySelector('.c-mega-menu');
+  const closeBtn = document.querySelector('.c-mega-menu__close');
 
-    menuBtn.addEventListener('click', function () {
-        menuBtn.classList.toggle('is-open');
-        megaMenu.classList.toggle('active');
-    });
+  menuBtn.addEventListener('click', function () {
+    menuBtn.classList.toggle('is-open');
+    megaMenu.classList.toggle('active');
+  });
 
-    closeBtn.addEventListener('click', function () {
-        menuBtn.classList.remove('is-open');
-        megaMenu.classList.remove('active');
-    });
+  closeBtn.addEventListener('click', function () {
+    menuBtn.classList.remove('is-open');
+    megaMenu.classList.remove('active');
+  });
+});
+
+//angle-top
+window.addEventListener('scroll', function () {
+  var gotop = document.querySelector('.c-gotop');
+  if (window.scrollY > 200) {
+    gotop.style.display = 'block';
+  } else {
+    gotop.style.display = 'none';
+  }
+});
+
+document.querySelector('.c-gotop').addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
