@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header class="container mx-auto flex md:justify-between bg-gray-200 p-4">
+        <div>
+            h left
+        </div>
+        <div class="flex-1 text-center -ml-4">
+            h center
+        </div>
+        <div class="hidden md:block">
+            h right
+        </div>
+    </header>
+    
+
+    <main class="container border mx-auto">
+        <section class="bg-gray-300 md:bg-green-300 lg:bg-red-300 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="border border-black p-4">
+                col left
+            </div>
+            <div class="grid grid-cols1 md:grid-cols-2 border">
+                <div>col 1</div>
+                <div>col 2</div>
+                <div>col 3</div>
+                <div>col 4</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
