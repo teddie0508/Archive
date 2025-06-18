@@ -4,6 +4,16 @@ import type { Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{html,js,ts}"],
   theme: {
+    container: {
+      center: true,
+      screens: {  
+        DEFAULT: "100%",
+        sm: "576px",
+        md: "736px",
+        lg: "970px",
+        xl: "1170px",
+      }
+    },
     extend: {
       colors: {
         primary: "#333333",

@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "css": "postcss src/styles/input.css -o dist/css/main.css --watch"
+    "css": "postcss src/styles/input.css -o dist/css/main.css --watch",
+    "css2": "postcss src/styles/input1.css -o dist/css/main1.css --watch"
   },
   "keywords": [],
   "author": "",
