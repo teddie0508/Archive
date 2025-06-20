@@ -1,3 +1,23 @@
+// toggle active menuExpand
+document.addEventListener('DOMContentLoaded', function () {
+    const menuExpand = document.querySelector('.header__menuExpand');
+    const megaMenu = document.querySelector('.header__megaMenu');
+    const menuClose = document.querySelector('.header__megaMenu__close');
+    if (menuExpand && megaMenu) {
+        menuExpand.addEventListener('click', function () {
+            megaMenu.classList.toggle('active');
+            menuExpand.classList.toggle('active');
+        });
+    }
+
+    if (menuClose && megaMenu && menuExpand) {
+        menuClose.addEventListener('click', function () {
+            megaMenu.classList.toggle('active');
+            menuExpand.classList.toggle('active');
+        });
+    }
+});
+// Ngay thang cap nhat
 function updateDate() {
     const days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
     const now = new Date();
@@ -42,3 +62,4 @@ async function updateWeather() {
 }
 
 document.addEventListener('DOMContentLoaded', updateWeather);
+
