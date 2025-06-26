@@ -1,5 +1,5 @@
-// toggle active menuExpand
 document.addEventListener('DOMContentLoaded', function () {
+    // toggle active menuExpand
     const menuExpand = document.querySelector('.header__menuExpand');
     const megaMenu = document.querySelector('.header__megaMenu');
     const menuClose = document.querySelector('.header__megaMenu__close');
@@ -16,7 +16,57 @@ document.addEventListener('DOMContentLoaded', function () {
             menuExpand.classList.toggle('active');
         });
     }
+
+
+    // Search Wrapper
+    const searchBtn = document.querySelector('.header__search.header--button');
+    const searchWrapper = document.querySelector('.header__searchWrapper');
+    const currentTime = document.querySelector('.header__currentTime');
+
+    if (searchBtn && searchWrapper) {
+        searchBtn.addEventListener('click', function () {
+            searchBtn.style.display = 'none';
+            if (currentTime) currentTime.style.display = 'none';
+            searchWrapper.style.display = 'block';
+        });
+    }
+
+    // close searchWrapper
+    const closeBtn = document.querySelector('.close-btn');
+    if (closeBtn && searchBtn && searchWrapper && currentTime) {
+        closeBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            searchWrapper.style.display = 'none';
+            searchBtn.style.display = '';
+            currentTime.style.display = '';
+        });
+    }
+
+    // toggle city list
+    const headerRightDiv = document.querySelector('.header__right > div');
+    const cityList = document.querySelector('.header__right .city-list');
+    const moreCityIcon = document.querySelector('.header__right .more-city');
+
+    if (headerRightDiv && cityList && moreCityIcon) {
+        headerRightDiv.addEventListener('click', function () {
+            if (cityList.classList.contains('hidden')) {
+                cityList.classList.remove('hidden');
+            }
+        });
+        moreCityIcon.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (cityList.classList.contains('hidden')) {
+                cityList.classList.remove('hidden');
+            } else {
+                cityList.classList.add('hidden');
+            }
+        });
+    }
 });
+
+
+
+
 // Ngay thang cap nhat
 function updateDate() {
     const days = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
@@ -49,11 +99,18 @@ async function updateWeather() {
 
             const weatherBox = document.querySelector('.header__right');
             if (weatherBox) {
-                weatherBox.innerHTML = `
-          <strong>${data.name}</strong>
-          <span><em>${temp}°C</em> / ${tempMin} - ${tempMax}°C</span>
-          <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" class="max-w-6 max-h-6" />
-        `;
+                const cityElem = weatherBox.querySelector('strong');
+                const tempElem = weatherBox.querySelector('em');
+                const tempRangeElem = weatherBox.querySelector('span');
+                const iconElem = weatherBox.querySelector('img');
+
+                if (cityElem) cityElem.textContent = data.name;
+                if (tempElem) tempElem.textContent = `${temp}°C`;
+                if (tempRangeElem) tempRangeElem.innerHTML = `<em>${temp}°C</em> / ${tempMin} - ${tempMax}°C`;
+                if (iconElem) {
+                    iconElem.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+                    iconElem.alt = desc;
+                }
             }
         }
     } catch (e) {
