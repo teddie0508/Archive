@@ -74,22 +74,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const headerBottom = headerRect.bottom + window.scrollY;
 
         if (isDesktop) {
-            // Desktop/tablet: fixed topMenu
             if (window.scrollY >= headerBottom) {
                 topMenu.classList.add('is-fixed');
             } else {
                 topMenu.classList.remove('is-fixed');
             }
-            // Đảm bảo main-header không fixed
             mainHeader.classList.remove('is-fixed');
         } else {
-            // Mobile: fixed main-header
             if (window.scrollY >= headerBottom) {
                 mainHeader.classList.add('is-fixed');
             } else {
                 mainHeader.classList.remove('is-fixed');
             }
-            // Đảm bảo topMenu không fixed
             topMenu.classList.remove('is-fixed');
         }
     }
@@ -98,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', toggleFixedMenu);
     toggleFixedMenu();
 
-    // backToTop
     const backToTopBtn = document.getElementById('backToTop');
 
 
@@ -118,6 +113,57 @@ document.addEventListener('DOMContentLoaded', function () {
     backToTopBtn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+});
+
+// Font-settings
+document.addEventListener("DOMContentLoaded", function () {
+    const articleContent = document.querySelector('.article-content');
+    if (!articleContent) return;
+
+    const plusBtn = document.querySelector('.font-settings .plus');
+    const minusBtn = document.querySelector('.font-settings .minus');
+    const fontBtn = document.querySelector('.font-settings .font');
+
+    const defaultFontSize = 18;
+    const minFontSize = 14;
+    const maxFontSize = 24;
+    let currentFontSize = defaultFontSize;
+
+    function updateFontSize(size) {
+        currentFontSize = size;
+        articleContent.querySelectorAll('*').forEach(el => {
+            //Không tăng font tiêu đề h1 và tác giả
+            if (
+                el.tagName.toLowerCase() === 'h1' ||
+                el.classList.contains('abt-author-date') ||
+                el.closest('.abt-author-date')
+            ) {
+                return;
+            }
+            el.style.fontSize = size + 'px';
+        });
+    }
+
+    // Tăng font chữ
+    plusBtn.addEventListener('click', function () {
+        if (currentFontSize < maxFontSize) {
+            updateFontSize(currentFontSize + 1);
+        }
+    });
+
+    // Giảm font chữ
+    minusBtn.addEventListener('click', function () {
+        if (currentFontSize > minFontSize) {
+            updateFontSize(currentFontSize - 1);
+        }
+    });
+
+    // Vè default
+    fontBtn.addEventListener('click', function () {
+        updateFontSize(defaultFontSize);
+    });
+
+    updateFontSize(defaultFontSize);
 });
 
 

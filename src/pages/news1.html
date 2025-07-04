@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bãi bỏ thuế khoán với hộ kinh doanh từ 1/1/2026</title>
+    <link rel="icon" href="https://ddk.1cdn.vn/assets/images/favicon.ico" />
+    <!-- https://daidoanket.vn/bai-bo-thue-khoan-voi-ho-kinh-doanh-tu-1-1-2026-10308426.html -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../dist/css/main1.css" />
+  </head>
+  <body>
+    <header
+      class="w-full md:h-[169px] top-0 left-0 z-50 bg-white border-b-[#ee1f23] md:border-b-0 relative"
+    >
+      <div class="header__banner hidden"></div>
+      <div
+        class="main-header container mx-auto flex flex-row items-center justify-between h-[48px] md:h-[120px]"
+      >
+        <div
+          class="header__left md:flex md:flex-col md:justify-center md:w-1/3"
+        >
+          <div class="flex flex-row gap-4">
+            <button class="header__menuExpand header--button" type="button">
+              <span></span>
+            </button>
+
+            <button class="header__search header--button" type="button">
+              <i class="icon16-search-black"></i>
+            </button>
+
+            <div
+              class="header__currentTime hidden md:flex md:items-center md:text-[#333] md:text-sm"
+            >
+              <p><strong></strong></p>
+            </div>
+
+            <div class="header__searchWrapper hidden">
+              <form class="">
+                <input type="text" name placeholder="Tìm kiếm" />
+                <button class="search-btn" type="submit">
+                  <i class="icon20-search"></i>
+                </button>
+                <button class="close-btn" type="button">
+                  <i class="icon12-close"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="header__menu hidden mt-1 md:block md:mt-2">
+            <a href="#" class="hidden md:block md:mt-3 text-[#666] uppercase">
+              <i class="icon16-new-gray mr-2 mt-[-1px]"></i>
+              Tin mới nhất
+            </a>
+          </div>
+        </div>
+        <div class="header__center">
+          <h1 class="logo">
+            <a href="../../src/pages/main.html">
+              <img
+                src="../../dist/icons/logo.svg"
+                class="md:h-20 h-[38px] w-auto max-w-full"
+                alt=""
+              />
+            </a>
+          </h1>
+        </div>
+        <div
+          class="header__right hidden md:flex md:justify-end md:items-end md:w-1/3 gap-1"
+        >
+          <div class="block">
+            <div class="md:flex gap-1">
+              <strong>Hà Nội</strong>
+              <span>
+                <em></em>
+              </span>
+              <img
+                src="../../dist/icons/cloud.svg"
+                class="max-w-6 max-h-6"
+                alt="weather status icon"
+              />
+              <i class="more-city"></i>
+            </div>
+            <div class="city-list hidden">
+              <input type="text" name placeholder="Nhập tìm tỉnh thành ..." />
+              <div>
+                <div class="choosed-city">
+                  <p>Đang hiển thị</p>
+                  <div>
+                    Hà Nội
+                    <span>
+                      33°C
+                      <img
+                        src="../../dist/icons/cloud.svg"
+                        class="h-5 w-5"
+                        alt="weather status icon"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div class="others-city">
+                  <p>Tỉnh thành khác</p>
+                  <ul>
+                    <li>
+                      <p>An Giang</p>
+                      <span
+                        >28°C<img
+                          src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                          class="h-6 w-6"
+                          alt=""
+                      /></span>
+                    </li>
+                    <li>
+                      <p>Bà Rịa Vũng Tàu</p>
+                      <span
+                        >29°C<img
+                          src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                          class="h-6 w-6"
+                          alt=""
+                      /></span>
+                    </li>
+                    <li>
+                      <p>Bắc Giang</p>
+                      <span
+                        >33°C<img
+                          src="https://asset.1cdn.vn/all/weather/64x64/night/293.png"
+                          class="h-6 w-6"
+                          alt=""
+                      /></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="header__topMenu block border-b border-[#ee1f23] bg-white border-t-[#e9e9e9] md:border-t-0"
+      >
+        <nav
+          class="container border-t h-12 flex items-center justify-between border-[#e9e9e9]"
+        >
+          <ul class="flex flex-row items-center justify-between w-full">
+            <li class="active">
+              <a href="../../src/pages/main.html">
+                <i class="icon24-home-primary"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">Chính trị</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Lãnh đạo Đảng</a></li>
+                  <li><a href="#">Chủ tịch nước</a></li>
+                  <li><a href="#">Quốc hội</a></li>
+                  <li><a href="#">Chính phủ</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Mặt trận</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Các cuộc vận động</a></li>
+                  <li><a href="#">Tiếng nói cơ sở</a></li>
+                  <li><a href="#">Người Mặt trận</a></li>
+                  <li><a href="#">Giám sát - Phản biện</a></li>
+                  <li><a href="#">Kiều bào</a></li>
+                  <li><a href="#">Dân tộc</a></li>
+                  <li><a href="#">Tôn giáo</a></li>
+                  <li><a href="#">Tư vấn</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Tiếng dân</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Điều tra</a></li>
+                  <li><a href="#">Chúng tôi lên tiếng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Xã hội</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">An sinh xã hội</a></li>
+                  <li><a href="#">Môi trường</a></li>
+                  <li><a href="#">Chuyện tử tế</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Kinh tế</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Tài chính</a></li>
+                  <li><a href="#">Thị trường</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Pháp luật</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Quy định mới</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Giáo dục</a>
+            </li>
+            <li>
+              <a href="#">Đô thị</a>
+            </li>
+            <li>
+              <a href="#">Giao thông</a>
+            </li>
+            <li>
+              <a href="#">Văn hóa</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Giải trí</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Sức khỏe</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>
+                    <a href="#">Các bệnh dịch</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Thể thao</a>
+            </li>
+            <li>
+              <a href="#">Bất động sản</a>
+            </li>
+            <li>
+              <a href="#">Công nghệ</a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Sản phẩm số</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="more">
+              <a href="#">
+                <span class="dot"></span>
+                <div class="dropdown-menu right">
+                  <ul>
+                    <li><a href="#">Góc nhìn Đại Đoàn Kết</a></li>
+                    <li><a href="#">Quốc tế</a></li>
+                    <li><a href="#">Tinh hoa Việt</a></li>
+                    <li><a href="#">Du lịch</a></li>
+                    <li><a href="#">Thông tin doanh nghiệp</a></li>
+                    <li><a href="#">Multimedia</a></li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="header__megaMenu mx-auto py-5 fixed md:relative md:top-[-49px]"
+      >
+        <button class="header__megaMenu__close md:hidden block" type="button">
+          <span></span>
+        </button>
+        <div class="header__megaMenu__category container">
+          <div class="header__megaMenu__category-search md:hidden block">
+            <div class="header__megaMenu__category-search-wrapper">
+              <input class="" type="text" name placeholder="Tìm kiếm" />
+              <button
+                class="header__megaMenu__category-search-btn"
+                type="submit"
+              >
+                <i class="icon20__search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="header__menu md:hidden block">
+            <a href="#" class="text-[#666] uppercase">
+              <i class="icon16-new-gray mr-2 mt-[-1px]"></i>
+              Tin mới nhất
+            </a>
+          </div>
+          <nav class="header__megaMenu__category-menu">
+            <ul class="flex">
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/chinh-tri">Chính trị</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/chinh-tri/lanh-dao-dang"
+                      >Lãnh đạo Đảng</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/chinh-tri/chu-tich-nuoc"
+                      >Chủ tịch nước</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+                      >Quốc hội</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/chinh-tri/chinh-phu"
+                      >Chính phủ</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/mat-tran">Mặt trận</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/cac-cuoc-van-dong"
+                      >Các cuộc vận động</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/tieng-noi-co-so"
+                      >Tiếng nói cơ sở</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/nguoi-mat-tran"
+                      >Người Mặt trận</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien"
+                      >Giám sát - Phản biện</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/kieu-bao"
+                      >Kiều bào</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/dan-toc">Dân tộc</a>
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/ton-giao"
+                      >Tôn giáo</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/mat-tran/tu-van">Tư vấn</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/tieng-dan">Tiếng dân</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/tieng-dan/dieu-tra"
+                      >Điều tra</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://daidoanket.vn/tieng-dan/chung-toi-len-tieng"
+                      >Chúng tôi lên tiếng</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/xa-hoi">Xã hội</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/xa-hoi/an-sinh-xa-hoi"
+                      >An sinh xã hội</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/xa-hoi/moi-truong"
+                      >Môi trường</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/xa-hoi/chuyen-tu-te"
+                      >Chuyện tử tế</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/kinh-te">Kinh tế</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/kinh-te/tai-chinh"
+                      >Tài chính</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/kinh-te/thi-truong"
+                      >Thị trường</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/phap-luat">Pháp luật</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/phap-luat/quy-dinh-moi"
+                      >Quy định mới</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/giao-duc">Giáo dục</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/do-thi">Đô thị</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/giao-thong">Giao thông</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/van-hoa">Văn hóa</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/van-hoa/giai-tri"
+                      >Giải trí</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/suc-khoe">Sức khỏe</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/suc-khoe/cac-benh-dich"
+                      >Các bệnh dịch</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/the-thao">Thể thao</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/bat-dong-san">Bất động sản</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/cong-nghe">Công nghệ</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/cong-nghe/san-pham-so"
+                      >Sản phẩm số</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket"
+                  >Góc nhìn Đại Đoàn Kết</a
+                >
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/quoc-te">Quốc tế</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/tinh-hoa-viet">Tinh hoa Việt</a>
+                <ul>
+                  <li>
+                    <a href="https://daidoanket.vn/tinh-hoa-viet/tro-chuyen"
+                      >Trò chuyện</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/tinh-hoa-viet/chuyen-dong"
+                      >Chuyển động</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://daidoanket.vn/tinh-hoa-viet/cuoc-song-muon-mau"
+                      >Cuộc sống muôn màu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/du-lich">Du lịch</a>
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="https://daidoanket.vn/thong-tin-doanh-nghiep"
+                  >Thông tin doanh nghiệp</a
+                >
+                <ul></ul>
+              </li>
+              <li class="c-mega-menu__child">
+                <a href="/multimedia">Multimedia</a>
+                <ul>
+                  <li><a href="/video">Video</a></li>
+                  <li><a href="/anh">Ảnh</a></li>
+                  <li><a href="/infographic">Infographic</a></li>
+                  <li><a href="/emagazine">Emagazine</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div
+      id="main"
+      class="min-h-screen flex flex-col py-10 mx-[10px] md:mx-0"
+      style="background-color: #fcfaf6"
+    >
+      <div>
+        <div class="container">
+          <main
+            class="news flex flex-col md:flex-row items-stretch flex-nowrap md:ml-[60px] p-0"
+          >
+            <div class="share-utility hidden md:flex flex-row">
+              <ul
+                style="
+                  margin-block-start: 0;
+                  margin-block-end: 0;
+                  padding-inline-start: 0;
+                "
+              >
+                <li>
+                  <div class="font-settings">
+                    <span class="plus" title="Tăng cỡ chữ">
+                      <i class="icon24-plus-circle-gray"></i>
+                    </span>
+                    <span class="font" title="Về phông chữ mặc định">
+                      <i class="icon24-font-gray"></i>
+                    </span>
+                    <span class="minus" title="Giảm cỡ chữ">
+                      <i class="icon24-minus-circle-gray"></i>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" title="Chia sẻ Zalo">
+                    <i class="icon16-zalo-gray"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Chia sẻ Facebook">
+                    <i class="icon24-facebook-circle-gray"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Bình luận">
+                    <i class="icon24-comment-gray"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="In bài viết">
+                    <i class="icon24-print-gray"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-news md:w-[600px] flex flex-col">
+              <div class="news-path mb-[15px]">
+                <ul
+                  class="flex"
+                  style="
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    padding-inline-start: 0;
+                  "
+                >
+                  <li>
+                    <a href="/">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="https://daidoanket.vn/chinh-tri">Chính trị</a>
+                  </li>
+                  <li class="active">
+                    <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+                      >Quốc hội</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <article class="article-content flex flex-col">
+                <h1>Bãi bỏ thuế khoán với hộ kinh doanh từ 1/1/2026</h1>
+                <div class="abt-author-date my-[15px] flex flex-row">
+                  <b class="author">Việt Thắng</b>
+                  <span class="px-[5px]">|</span>
+                  <span class="date">19/06/2025 19:07</span>
+                </div>
+                <p class="news-sapo">
+                  Ngày 19/6, trả lời chất vấn, Bộ trưởng Bộ Tài chính Nguyễn Văn
+                  Thắng cho biết, Bộ sẽ tham mưu sớm hoàn thiện khung pháp lý về
+                  nâng cấp hạ tầng kỹ thuật để triển khai bãi bỏ thuế khoán với
+                  hộ kinh doanh từ 1/1/2026.
+                </p>
+                <figure>
+                  <img
+                    src="https://ddk.1cdn.vn/2025/06/19/toancanh19-6.jpg"
+                    data-src="https://ddk.1cdn.vn/2025/06/19/toancanh19-6.jpg"
+                    data-original="https://ddk.1cdn.vn/2025/06/19/toancanh19-6.jpg"
+                    alt="toancanh19-6.jpg"
+                    data-src-mobile=""
+                    data-file-id="169923"
+                  />
+                  <figcaption>
+                    Các đại biểu Quốc hội tham dự phiên chất vấn và trả lời chất
+                    vấn (Ảnh: Quang Vinh)
+                  </figcaption>
+                </figure>
+                <p>
+                  Đại biểu Quốc hội (ĐB) Đào Chí Nghĩa (Đoàn Cần Thơ) cho hay,
+                  hiện nay Đảng, Nhà nước có chủ trương tạo điều kiện thúc đẩy
+                  kinh tế tư nhân, đặc biệt là khuyến khích các thành phần kinh
+                  tế tham gia vào các dự án lớn của đất nước. “Bộ Tài chính sẽ
+                  có giải pháp gì để tham mưu Chính phủ khuyến khích kinh tế tư
+                  nhân tham gia vào phát triển hạ tầng và dịch vụ công thời gian
+                  tới?, ông Nghĩa chất vấn.
+                </p>
+                <figure>
+                  <img
+                    src="https://ddk.1cdn.vn/2025/06/19/thang129.jpg"
+                    data-src="https://ddk.1cdn.vn/2025/06/19/thang129.jpg"
+                    data-original="https://ddk.1cdn.vn/2025/06/19/thang129.jpg"
+                    alt="thang129.jpg"
+                    data-src-mobile=""
+                    data-file-id="169924"
+                  />
+                  <figcaption>
+                    Bộ trưởng Bộ Tài chính Nguyễn Văn Thắng trả lời chất vấn
+                    (Ảnh: Quang Vinh)
+                  </figcaption>
+                </figure>
+                <p>
+                  Về vấn đề này, Bộ trưởng Nguyễn Văn Thắng cho biết, Bộ Tài
+                  chính đã tham mưu cho Chính phủ tiếp tục trình Quốc hội đổi
+                  mới các quy định của Luật Đầu tư theo phương thức đối tác công
+                  tư PPP, trong đó có việc 1 luật sửa 8 luật vừa được Bộ tham
+                  mưu để trình. Trong đó có điểm lưu ý là rút ngắn tối đa thời
+                  gian lập, thẩm định dự án PPP; cắt giảm thủ tục phê duyệt chủ
+                  trương đầu tư với một số nhóm dự án; trao quyền chủ động cho
+                  cơ quan có thẩm quyền để quyết định thành lập hoặc không thành
+                  lập hội đồng thẩm định. Đây là những chính sách này sẽ giúp
+                  giảm thời gian triển khai các dự án PPP.
+                </p>
+                <p>
+                  Ông Thắng cho biết, sẽ mở rộng các trường hợp cho phép chỉ
+                  định thầu, đáp ứng yêu cầu đặc thù đối với dự án mới, dự án
+                  trọng điểm cấp bách. Vừa qua có dự án Quốc hội đã duyệt nhưng
+                  vẫn phải làm thủ tục đấu thầu trong khi đã xác định được nhà
+                  đầu tư, gây mất rất nhiều thời gian, thậm chí lên đến hàng năm
+                  thì lần này sẽ cho sửa các trường hợp này để cho chỉ định thầu
+                </p>
+                <p>
+                  Bộ cũng giản lược yêu cầu, tiêu chí đánh giá với nhà đầu tư,
+                  giúp họ được tham gia, đa dạng hóa các hình thức hợp tác đầu
+                  tư công để doanh nghiệp có nhiều sự lựa chọn, phát huy các mô
+                  hình như: đầu tư tư - sử dụng công; đầu tư công - quản trị tư;
+                  rồi lãnh đạo công - quản trị tư. Vừa rồi chúng ta mở hết trên
+                  tất cả các lĩnh vực. Sẽ ưu tiên sử dụng ngân sách Nhà nước cho
+                  giải phóng mặt bằng; chia sẻ rủi ro và cân đối nguồn lực tham
+                  gia vào các dự án PPP trọng điểm như cao tốc Bắc - Nam, sân
+                  bay Long Thành. “Lần này có cách làm rất mới đó là trước đây
+                  khi doanh nghiệp muốn làm các dự án PPP doanh nghiệp phải tự
+                  bỏ 100% tiền ra để làm, còn hiện nay nhiều dự án Nhà nước tham
+                  gia, thậm chí tham gia 50-60%”, ông Thắng chia sẻ
+                </p>
+                <p>
+                  Ông Thắng cho hay, riêng trong lĩnh vực khoa học công nghệ, Bộ
+                  Tài chính cũng đang xây dựng Nghị định về PPP trong khoa học
+                  công nghệ để đổi mới sáng tạo và chuyển đổi số, dự kiến sẽ
+                  trình Chính phủ ban hành trong tháng 6. Chính sách này sẽ gồm
+                  nhiều điều kiện cởi mở để thu hút doanh nghiệp.
+                </p>
+                <figure>
+                  <img
+                    src="https://ddk.1cdn.vn/2025/06/19/tan19-6.jpg"
+                    data-src="https://ddk.1cdn.vn/2025/06/19/tan19-6.jpg"
+                    data-original="https://ddk.1cdn.vn/2025/06/19/tan19-6.jpg"
+                    alt="tan19-6.jpg"
+                    data-src-mobile=""
+                    data-file-id="169921"
+                  />
+                  <figcaption>
+                    Đại biểu Quốc hội Lã Thanh Tân chất vấn (Ảnh: Quang Vinh)
+                  </figcaption>
+                </figure>
+                <p>
+                  Liên quan đến việc ĐB Lã Thanh Tân (Đoàn Hải Phòng) nêu ra về
+                  việc hơn 5 triệu hộ kinh doanh hiện nay, nhiều hộ có quy mô
+                  hoạt động rất lớn nhưng vẫn chưa chính thức gia nhập khu vực
+                  doanh nghiệp do còn e ngại về chi phí, thủ tục và nghĩa vụ tài
+                  chính. Vậy Bộ trưởng có giải pháp đột phá nào để thúc đẩy hộ
+                  kinh doanh chuyển thành doanh nghiệp? ông Thắng cho hay, các
+                  hộ kinh doanh có doanh thu rất lớn nhưng chưa chuyển đổi sang
+                  doanh nghiệp là tiềm năng rất lớn để Việt Nam hiện thực hóa
+                  mục tiêu 2 triệu doanh nghiệp năm 2030.
+                </p>
+                <p>
+                  Theo ông Thắng, Luật Hỗ trợ doanh nghiệp vừa và nhỏ đã quy
+                  định chính sách hỗ trợ hộ kinh doanh chuyển đổi sang doanh
+                  nghiệp. Tuy nhiên, sau hơn 7 năm triển khai luật, có thể nói
+                  số lượng hộ kinh doanh chuyển đổi sang doanh nghiệp không
+                  nhiều.
+                </p>
+                <p>
+                  Do đó, để khuyến khích hộ kinh doanh chuyển đổi thành doanh
+                  nghiệp, ông Thắng cho biết sẽ rà soát, hoàn thiện khung pháp
+                  lý về hộ kinh doanh để thu hẹp tối đa khoảng cách về tổ chức
+                  quản trị và sổ sách kế toán, tài chính giữa hộ kinh doanh và
+                  doanh nghiệp.
+                </p>
+                <p>
+                  Đồng thời, Bộ sẽ tham mưu sớm hoàn thiện khung pháp lý về nâng
+                  cấp hạ tầng kỹ thuật để triển khai bãi bỏ thuế khoán với hộ
+                  kinh doanh từ 1/1/2026. Đây là giải pháp căn cơ để minh bạch
+                  hóa hoạt động của các hộ kinh doanh, thúc đẩy chuyển đổi sang
+                  mô hình doanh nghiệp.
+                </p>
+                <p>
+                  Cùng với đó, nhiều chính sách hỗ trợ hộ kinh doanh chuyển đổi
+                  sang doanh nghiệp được đưa ra như miễn thuế thu nhập doanh
+                  nghiệp 3 năm đầu thành lập, bãi bỏ lệ phí môn bài, cung cấp
+                  miễn phí nền tảng số, hệ thống kế toán dùng chung. Khi chuyển
+                  đổi sang doanh nghiệp, hộ kinh doanh sẽ được hưởng nhiều chính
+                  sách hỗ trợ hơn.
+                </p>
+                <figure>
+                  <img
+                    src="https://ddk.1cdn.vn/2025/06/19/cuong19-6.jpg"
+                    data-src="https://ddk.1cdn.vn/2025/06/19/cuong19-6.jpg"
+                    data-original="https://ddk.1cdn.vn/2025/06/19/cuong19-6.jpg"
+                    alt="cuong19-6.jpg"
+                    data-src-mobile=""
+                    data-file-id="169922"
+                  />
+                  <figcaption>
+                    Đại biểu Quốc hội Hoàng Văn Cường chất vấn (Ảnh: Quang Vinh)
+                  </figcaption>
+                </figure>
+                <p>
+                  Dẫn Nghị quyết 68 về kinh tế tư nhân đã đề cập đến việc phát
+                  triển hộ kinh doanh thông qua bỏ thuế khoán. Chính sách này
+                  tác động đến hàng triệu hộ kinh doanh, mang đến cho họ tâm lý
+                  e ngại, ĐB Hoàng Văn Cường (Đoàn Hà Nội) phản ánh các hộ không
+                  ngại việc nộp thuế, nhưng e ngại về thủ tục hoặc cách tính
+                  toán làm thế nào cho đúng. “Chính phủ có kế hoạch và giải pháp
+                  gì để chuẩn bị cho các hộ kinh doanh sau khi bỏ thuế khoán, để
+                  các hộ cảm thấy thuận lợi, chuyên nghiệp và hứng khởi trong
+                  việc nộp thuế”, ông Cường chất vấn.
+                </p>
+                <p>
+                  Ông Thắng cho rằng, hệ thống thuế đã được cơ quan quốc tế đánh
+                  giá tiệm cận với thông lệ quốc tế, song tính minh bạch trong
+                  một số loại thuế đang thu thủ công đang là rào cản lớn tạo sự
+                  không minh bạch. Vừa qua, Nghị quyết của Quốc hội đã yêu cầu
+                  bỏ thuế khoán trong năm 2026. Việc bãi bỏ thuế khoán từ năm
+                  2026 là chủ trương rất đúng; là bước đi căn cơ và cần thiết để
+                  minh bạch hóa hoạt động của các hộ kinh doanh; thúc đẩy chuyển
+                  đổi sang mô hình doanh nghiệp và khu vực chính thức.
+                </p>
+                <p>
+                  Ông Thắng thông tin, Bộ Tài chính đang chuẩn bị đồng bộ về
+                  pháp lý, công cụ để thực hiện đảm bảo thuận lợi, giảm gánh
+                  nặng về thủ tục, chi phí cho người dân. Bộ đang rà soát, sửa
+                  luật quản lý thuế, thu nhập cá nhân, hướng đến mô hình quản lý
+                  thuế mới đơn giản, minh bạch, dễ thực hiện; đơn giản hóa sổ
+                  sách, hóa đơn chứng từ. Đảm bảo hộ kinh doanh không bị áp lực
+                  khi chuyển đổi sang mô hình doanh nghiệp.
+                </p>
+              </article>
+
+              <div class="share-box mb-[35px]">
+                <ul
+                  style="
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    padding-inline-start: 0;
+                  "
+                >
+                  <li>
+                    <a class="btn-facebook" href="#" title="Chia sẻ Facebook">
+                      <i class="icon12-facebook-f-white"></i>
+                      Chia sẻ Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-zalo" href="#" title="Chia sẻ Zalo"
+                      ><i class="icon16-zalo-white"></i>Chia sẻ Zalo</a
+                    >
+                  </li>
+                  <li>
+                    <a class="is-flex" href="#" title="Mở trên Google News">
+                      <i class="icon16-google-news-square"></i>
+                      <span class="is-text-flex"
+                        ><i class="icon-google-news-wide"></i
+                      ></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon16-print"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tags mb-[35px]">
+                <div class="widgets">
+                  <ul
+                    style="
+                      margin-block-end: 0;
+                      padding-inline-start: 0;
+                      margin-block-start: 0;
+                    "
+                  >
+                    <li>
+                      <h4>
+                        <a href="/chat-van-ptag.html" title="Chất vấn"
+                          >Chất vấn</a
+                        >
+                      </h4>
+                    </li>
+                    <li>
+                      <h4>
+                        <a href="/bo-thue-khoan-ptag.html" title="Bỏ thuế khoán"
+                          >Bỏ thuế khoán</a
+                        >
+                      </h4>
+                    </li>
+                    <li>
+                      <h4>
+                        <a href="/quoc-hoi-ptag.html" title="Quốc hội"
+                          >Quốc hội</a
+                        >
+                      </h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="related-news mb-[25px] md:mb-[35px]">
+                <div
+                  class="title flex flex-row justify-center items-center mb-7"
+                >
+                  <h4 style="font-size: 20px">Bài liên quan</h4>
+                  <div class="title__decor"></div>
+                </div>
+                <div class="flex flex-row">
+                  <div
+                    class="md:w-[240px]"
+                    style="width: 44.8275862069%; height: auto; float: none"
+                  >
+                    <a
+                      href="https://daidoanket.vn/bo-thue-khoan-ho-kinh-doanh-hang-ton-kho-phai-xuat-hoa-don-the-nao-10308043.html"
+                      ><img
+                        class="lazy"
+                        data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/28/tren.jpg"
+                        alt="Bỏ thuế khoán hộ kinh doanh: Hàng tồn kho phải xuất hóa đơn thế nào?"
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/04/28/tren.jpg"
+                        title="Bỏ thuế khoán hộ kinh doanh: Hàng tồn kho phải xuất hóa đơn thế nào?"
+                        style=""
+                    /></a>
+                  </div>
+                  <div class="content pl-[15px]">
+                    <h3 class="title text-lg md:text-xl">
+                      <a
+                        href="https://daidoanket.vn/bo-thue-khoan-ho-kinh-doanh-hang-ton-kho-phai-xuat-hoa-don-the-nao-10308043.html"
+                        >Bỏ thuế khoán hộ kinh doanh: Hàng tồn kho phải xuất hóa
+                        đơn thế nào?</a
+                      >
+                    </h3>
+                    <a
+                      class="description"
+                      style="
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-break: break-word;
+                      "
+                      href="https://daidoanket.vn/bo-thue-khoan-ho-kinh-doanh-hang-ton-kho-phai-xuat-hoa-don-the-nao-10308043.html"
+                      >Theo giới chuyên gia, để khuyến khích hộ kinh doanh tự
+                      giác kê khai đầy đủ doanh thu thực tế, cần tránh việc truy
+                      thu thuế các năm trước hoặc xử lý hàng tồn kho thiếu hóa
+                      đơn, chứng từ, trừ khi phát hiện có hành vi trốn thuế,
+                      gian lận nghiêm trọng.</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="comments">
+                <div class="comments-input">
+                  <div class="form mb-4">
+                    <textarea
+                      class="form-control"
+                      name=""
+                      placeholder="Vui lòng nhập tiếng Việt có dấu"
+                    ></textarea>
+                  </div>
+                  <button class="btnSend">Gửi bình luận</button>
+                </div>
+                <div class="comments-bar">
+                  <div class="comments-bar__count">(0) Bình luận</div>
+                  <div class="comments-bar__sort">
+                    <label>Xếp theo:</label>
+                    <ul>
+                      <li class="">
+                        <a href="#">Thời gian</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">Số người thích</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <aside class="sidebar">
+              <div
+                class="title flex flex-row justify-center items-center md:mt-[35px] mb-3"
+              >
+                <h2 class="text-xl md:text-2xl">Đọc tiếp</h2>
+                <div class="title__decor"></div>
+              </div>
+              <article class="flex flex-row">
+                <a
+                  class="mr-[10px] w-[100px] h-auto"
+                  href="https://daidoanket.vn/xoa-bo-thue-khoan-la-mot-buoc-ngoat-10306848.html"
+                  ><img
+                    class="lazy"
+                    data-src="https://ddk.1cdn.vn/thumbs/540x360/2025/05/28/quy-trinh-thanh-lap-ho-kinh-doanh-16939830304851417588789.jpeg"
+                    alt="Xóa bỏ thuế khoán là một bước ngoặt"
+                    src="https://ddk.1cdn.vn/thumbs/540x360/2025/05/28/quy-trinh-thanh-lap-ho-kinh-doanh-16939830304851417588789.jpeg"
+                    title="Xóa bỏ thuế khoán là một bước ngoặt"
+                    style=""
+                /></a>
+                <div class="content">
+                  <h4 class="title">
+                    <a
+                      href="https://daidoanket.vn/xoa-bo-thue-khoan-la-mot-buoc-ngoat-10306848.html"
+                      >Xóa bỏ thuế khoán là một bước ngoặt</a
+                    >
+                  </h4>
+                </div>
+              </article>
+            </aside>
+          </main>
+        </div>
+      </div>
+
+      <div class="news-readmore" style="padding: 25px 0px 15px">
+        <div class="container">
+          <div
+            class="title flex flex-row justify-center items-center pb-[15px]"
+          >
+            <a href="https://daidoanket.vn/chinh-tri/quoc-hoi"
+              ><h3 class="text-xl pt-[2px]">Đọc thêm Quốc hội</h3></a
+            >
+            <div class="title__decor"></div>
+          </div>
+          <div
+            class="readmore-content is-col-2-tablet is-col-4-pc is-border-mobile is-border-tablet"
+          >
+            <ul>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/chu-tich-quoc-hoi-tinh-than-cua-hoi-nghi-dien-hong-nam-xua-da-the-hien-tai-hoi-truong-dien-hong-hom-nay-10308962.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/bnd_1204.jpg"
+                        alt="Chủ tịch Quốc hội: 'Tinh thần của hội nghị Diên Hồng năm xưa đã thể hiện tại hội trường Diên Hồng hôm nay'"
+                        title="Chủ tịch Quốc hội: 'Tinh thần của hội nghị Diên Hồng năm xưa đã thể hiện tại hội trường Diên Hồng hôm nay'"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/chu-tich-quoc-hoi-tinh-than-cua-hoi-nghi-dien-hong-nam-xua-da-the-hien-tai-hoi-truong-dien-hong-hom-nay-10308962.html"
+                        >Chủ tịch Quốc hội: 'Tinh thần của hội nghị Diên Hồng
+                        năm xưa đã thể hiện tại hội trường Diên Hồng hôm nay'</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/ba-truong-my-lan-duoc-chuyen-xuong-hinh-phat-tu-chung-than-neu-dap-ung-du-cac-dieu-kien-10308958.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/hopbao27-6.jpg"
+                        alt="Bà Trương Mỹ Lan được chuyển xuống hình phạt tù chung thân nếu đáp ứng đủ các điều kiện"
+                        title="Bà Trương Mỹ Lan được chuyển xuống hình phạt tù chung thân nếu đáp ứng đủ các điều kiện"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/ba-truong-my-lan-duoc-chuyen-xuong-hinh-phat-tu-chung-than-neu-dap-ung-du-cac-dieu-kien-10308958.html"
+                        >Bà Trương Mỹ Lan được chuyển xuống hình phạt tù chung
+                        thân nếu đáp ứng đủ các điều kiện</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/chap-thuan-bo-sung-hinh-thuc-dau-tu-theo-phuong-thuc-doi-tac-cong-tu-cho-du-an-duong-sat-toc-do-cao-tren-truc-bac-nam-10308957.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/bemac276.jpg"
+                        alt="Chấp thuận bổ sung hình thức đầu tư theo phương thức đối tác công tư cho dự án đường sắt tốc độ cao trên trục Bắc - Nam"
+                        title="Chấp thuận bổ sung hình thức đầu tư theo phương thức đối tác công tư cho dự án đường sắt tốc độ cao trên trục Bắc - Nam"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/chap-thuan-bo-sung-hinh-thuc-dau-tu-theo-phuong-thuc-doi-tac-cong-tu-cho-du-an-duong-sat-toc-do-cao-tren-truc-bac-nam-10308957.html"
+                        >Chấp thuận bổ sung hình thức đầu tư theo phương thức
+                        đối tác công tư cho dự án đường sắt tốc độ cao trên trục
+                        Bắc - Nam</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/quoc-hoi-thong-qua-nghi-quyet-ve-chat-van-tai-ky-hop-thu-9-10308956.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/z61_4814-toan-canh-phien-be-mac.jpg"
+                        alt="Quốc hội thông qua Nghị quyết về chất vấn tại Kỳ họp thứ 9"
+                        title="Quốc hội thông qua Nghị quyết về chất vấn tại Kỳ họp thứ 9"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/quoc-hoi-thong-qua-nghi-quyet-ve-chat-van-tai-ky-hop-thu-9-10308956.html"
+                        >Quốc hội thông qua Nghị quyết về chất vấn tại Kỳ họp
+                        thứ 9</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/quoc-hoi-quyet-dinh-thanh-lap-trung-tam-tai-chinh-quoc-te-tai-tp-ho-chi-minh-va-da-nang-10308940.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/z72_0173-bo-truong-bo-tai-chinh-nguyen-van-thang.jpg"
+                        alt="Quốc hội quyết định thành lập trung tâm tài chính quốc tế tại TP Hồ Chí Minh và Đà Nẵng"
+                        title="Quốc hội quyết định thành lập trung tâm tài chính quốc tế tại TP Hồ Chí Minh và Đà Nẵng"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/quoc-hoi-quyet-dinh-thanh-lap-trung-tam-tai-chinh-quoc-te-tai-tp-ho-chi-minh-va-da-nang-10308940.html"
+                        >Quốc hội quyết định thành lập trung tâm tài chính quốc
+                        tế tại TP Hồ Chí Minh và Đà Nẵng</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/truong-pho-truong-cong-an-xa-duoc-thuc-hien-mot-so-quyen-han-cua-thu-truong-co-quan-dieu-tra-10308939.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/z61_4320-bieu-quyet-thong-qua-luat-nang-luong-nguyen-tu-sua-doi-.jpg"
+                        alt="Trưởng, phó trưởng Công an xã được thực hiện một số quyền hạn của thủ trưởng cơ quan điều tra"
+                        title="Trưởng, phó trưởng Công an xã được thực hiện một số quyền hạn của thủ trưởng cơ quan điều tra"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/truong-pho-truong-cong-an-xa-duoc-thuc-hien-mot-so-quyen-han-cua-thu-truong-co-quan-dieu-tra-10308939.html"
+                        >Trưởng, phó trưởng Công an xã được thực hiện một số
+                        quyền hạn của thủ trưởng cơ quan điều tra</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/quoc-hoi-chot-duong-vanh-dai-4-tp-ho-chi-minh-duoc-ap-dung-7-co-che-chinh-sach-dac-thu-10308938.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/z72_0131-cn-ub-kinh-te-va-tai-chinh-phan-van-mai.jpg"
+                        alt="Quốc hội 'chốt' đường Vành đai 4 TP Hồ Chí Minh được áp dụng 7 cơ chế, chính sách đặc thù"
+                        title="Quốc hội 'chốt' đường Vành đai 4 TP Hồ Chí Minh được áp dụng 7 cơ chế, chính sách đặc thù"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/quoc-hoi-chot-duong-vanh-dai-4-tp-ho-chi-minh-duoc-ap-dung-7-co-che-chinh-sach-dac-thu-10308938.html"
+                        >Quốc hội 'chốt' đường Vành đai 4 TP Hồ Chí Minh được áp
+                        dụng 7 cơ chế, chính sách đặc thù</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div class="content-img">
+                    <a
+                      href="https://daidoanket.vn/cac-to-chuc-chinh-tri-xa-hoi-va-cac-hoi-quan-chung-do-dang-nha-nuoc-giao-nhiem-vu-truc-thuoc-mat-tran-to-quoc-viet-nam-10308930.html"
+                      ><img
+                        src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/27/z72_0234-chu-tich-uy-ban-trung-uong-mat-tran-to-quoc-viet-nam-do-van-chien.jpg"
+                        alt="Các tổ chức chính trị - xã hội và các hội quần chúng do Đảng, Nhà nước giao nhiệm vụ trực thuộc Mặt trận Tổ quốc Việt Nam"
+                        title="Các tổ chức chính trị - xã hội và các hội quần chúng do Đảng, Nhà nước giao nhiệm vụ trực thuộc Mặt trận Tổ quốc Việt Nam"
+                    /></a>
+                  </div>
+                  <div class="content-title">
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/cac-to-chuc-chinh-tri-xa-hoi-va-cac-hoi-quan-chung-do-dang-nha-nuoc-giao-nhiem-vu-truc-thuoc-mat-tran-to-quoc-viet-nam-10308930.html"
+                        >Các tổ chức chính trị - xã hội và các hội quần chúng do
+                        Đảng, Nhà nước giao nhiệm vụ trực thuộc Mặt trận Tổ quốc
+                        Việt Nam</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="news-outstanding">
+        <div class="container">
+          <div class="flex flex-row items-stretch justify-between flex-wrap">
+            <section class="news-outstanding__left">
+              <div>
+                <div
+                  class="title flex flex-row items-center flex-wrap pb-[10px] md:pb-[15px]"
+                >
+                  <div class="title-name text-primary">Nổi bật</div>
+                  <div class="title__decor"></div>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/tong-bi-thu-to-lam-uu-tien-cac-nhiem-vu-khoa-hoc-cong-nghe-doi-moi-sang-tao-10309395.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/media.vietnamplus.vn-images-7ebc70d7e557d7e31996b6c102f99827a3a1a7881684968f9c006440b41bd0fc0b92a06741d8613a6ae4700c334bc68b-_ttxvn-tbt-3-resize(1).jpg"
+                              alt="Tổng Bí thư Tô Lâm: Ưu tiên các nhiệm vụ khoa học, công nghệ, đổi mới sáng tạo"
+                              title="Tổng Bí thư Tô Lâm: Ưu tiên các nhiệm vụ khoa học, công nghệ, đổi mới sáng tạo"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/tong-bi-thu-to-lam-uu-tien-cac-nhiem-vu-khoa-hoc-cong-nghe-doi-moi-sang-tao-10309395.html"
+                              >Tổng Bí thư Tô Lâm: Ưu tiên các nhiệm vụ khoa
+                              học, công nghệ, đổi mới sáng tạo</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/tong-bi-thu-to-lam-uu-tien-cac-nhiem-vu-khoa-hoc-cong-nghe-doi-moi-sang-tao-10309395.html"
+                            >Sáng 2/7, Ban Chỉ đạo Trung ương về phát triển khoa
+                            học, công nghệ, đổi mới sáng tạo và chuyển đổi số tổ
+                            chức hội nghị sơ kết 6 tháng đầu năm và triển khai
+                            nhiệm vụ trọng tâm 6 tháng cuối năm 2025.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/tu-15-8-ho-tro-them-5-trieu-dong-thang-cho-hai-nhom-can-bo-cong-chuc-10309402.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/15/tren(1).jpg"
+                              alt="Từ 15/8, hỗ trợ thêm 5 triệu đồng/tháng cho hai nhóm cán bộ, công chức"
+                              title="Từ 15/8, hỗ trợ thêm 5 triệu đồng/tháng cho hai nhóm cán bộ, công chức"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/tu-15-8-ho-tro-them-5-trieu-dong-thang-cho-hai-nhom-can-bo-cong-chuc-10309402.html"
+                              >Từ 15/8, hỗ trợ thêm 5 triệu đồng/tháng cho hai
+                              nhóm cán bộ, công chức</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/tu-15-8-ho-tro-them-5-trieu-dong-thang-cho-hai-nhom-can-bo-cong-chuc-10309402.html"
+                            >Ngoài tiền lương, người làm công tác chuyên trách
+                            về chuyển đổi số, an ninh thông tin mạng, an ninh
+                            mạng được nhận hỗ trợ thêm 5 triệu đồng/tháng từ
+                            ngày 15/8/2025.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/phan-cong-nhiem-vu-chu-tich-va-cac-pho-chu-tich-ubnd-tp-da-nang-10309406.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/anh-1(3).jpg"
+                              alt="Phân công nhiệm vụ Chủ tịch và các Phó Chủ tịch UBND TP Đà Nẵng"
+                              title="Phân công nhiệm vụ Chủ tịch và các Phó Chủ tịch UBND TP Đà Nẵng"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/phan-cong-nhiem-vu-chu-tich-va-cac-pho-chu-tich-ubnd-tp-da-nang-10309406.html"
+                              >Phân công nhiệm vụ Chủ tịch và các Phó Chủ tịch
+                              UBND TP Đà Nẵng</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/phan-cong-nhiem-vu-chu-tich-va-cac-pho-chu-tich-ubnd-tp-da-nang-10309406.html"
+                            >Chiều 2/7, Văn phòng UBND TP Đà Nẵng cho biết, ông
+                            Lương Nguyễn Minh Triết, Chủ tịch UBND TP Đà Nẵng đã
+                            ký quyết định về việc phân công công tác của Chủ
+                            tịch, các Phó Chủ tịch và các Ủy viên UBND TP Đà
+                            Nẵng, nhiệm kỳ 2021-2026.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/triet-de-xu-ly-cac-van-de-ve-quan-ly-benh-vien-10309386.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/bcp.cdnchinhphu.vn-334894974524682240-2025-7-2-_ndt0620-17514363097441336202716-0-0-1250-2000-crop-1751436579745760090775(1).jpg"
+                              alt="Triệt để xử lý các vấn đề về quản lý bệnh viện"
+                              title="Triệt để xử lý các vấn đề về quản lý bệnh viện"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/triet-de-xu-ly-cac-van-de-ve-quan-ly-benh-vien-10309386.html"
+                              >Triệt để xử lý các vấn đề về quản lý bệnh viện</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/triet-de-xu-ly-cac-van-de-ve-quan-ly-benh-vien-10309386.html"
+                            >Phó Thủ tướng Lê Thành Long cho rằng, Bộ Y tế cần
+                            triệt để xử lý các vấn đề về quản lý bệnh viện,
+                            chuẩn hóa các quy trình cơ bản về khám chữa bệnh,
+                            quản lý dược, vệ sinh an toàn thực phẩm…</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/chau-au-oan-minh-truoc-nang-nong-thieu-dot-10309397.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/nong.jpg"
+                              alt="Châu Âu oằn mình trước nắng nóng thiêu đốt"
+                              title="Châu Âu oằn mình trước nắng nóng thiêu đốt"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/triet-de-xu-ly-cac-van-de-ve-quan-ly-benh-vien-10309386.html"
+                              >Triệt để xử lý các vấn đề về quản lý bệnh viện</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/triet-de-xu-ly-cac-van-de-ve-quan-ly-benh-vien-10309386.html"
+                            >Phó Thủ tướng Lê Thành Long cho rằng, Bộ Y tế cần
+                            triệt để xử lý các vấn đề về quản lý bệnh viện,
+                            chuẩn hóa các quy trình cơ bản về khám chữa bệnh,
+                            quản lý dược, vệ sinh an toàn thực phẩm…</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/chau-au-oan-minh-truoc-nang-nong-thieu-dot-10309397.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/nong.jpg"
+                              alt="Châu Âu oằn mình trước nắng nóng thiêu đốt"
+                              title="Châu Âu oằn mình trước nắng nóng thiêu đốt"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/chau-au-oan-minh-truoc-nang-nong-thieu-dot-10309397.html"
+                              >Châu Âu oằn mình trước nắng nóng thiêu đốt</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/chau-au-oan-minh-truoc-nang-nong-thieu-dot-10309397.html"
+                            >Một đợt nắng nóng trên biển Địa Trung Hải kết hợp
+                            với một mái vòm nhiệt mạnh khiến châu Âu phải chịu
+                            đựng một đợt nắng nóng đầu mùa hè khắc nghiệt.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/dan-do-chon-nguyen-vong-dai-hoc-sau-thi-tot-nghiep-thpt-10309396.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/06/25/thi1888.jpg"
+                              alt="Đắn đo chọn nguyện vọng đại học sau thi tốt nghiệp THPT"
+                              title="Đắn đo chọn nguyện vọng đại học sau thi tốt nghiệp THPT"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/dan-do-chon-nguyen-vong-dai-hoc-sau-thi-tot-nghiep-thpt-10309396.html"
+                              >Đắn đo chọn nguyện vọng đại học sau thi tốt
+                              nghiệp THPT</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/dan-do-chon-nguyen-vong-dai-hoc-sau-thi-tot-nghiep-thpt-10309396.html"
+                            >Chỉ còn ít ngày nữa là đến thời gian thí sinh đăng
+                            ký nguyện vọng xét tuyển đại học. Hiện nhiều thí
+                            sinh đang đắn đo, cân nhắc không biết chọn nguyện
+                            vọng thế nào sau khi thi tốt nghiệp THPT năm
+                            2025.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/quy-dinh-moi-ve-xu-ly-ky-luat-can-bo-cong-chuc-vien-chuc-10309385.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/nhom-can-bo-cong-chuc-vien-duoc-tang-luong-them-2409232949-16953762241521590824766-0-77-716-1223-crop-1695376228191309832902.jpg"
+                              alt="Quy định mới về xử lý kỷ luật cán bộ, công chức, viên chức"
+                              title="Quy định mới về xử lý kỷ luật cán bộ, công chức, viên chức"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/quy-dinh-moi-ve-xu-ly-ky-luat-can-bo-cong-chuc-vien-chuc-10309385.html"
+                              >Quy định mới về xử lý kỷ luật cán bộ, công chức,
+                              viên chức</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/quy-dinh-moi-ve-xu-ly-ky-luat-can-bo-cong-chuc-vien-chuc-10309385.html"
+                            >Chính phủ ban hành Nghị định số 172/2025/NĐ-CP ngày
+                            30/6/2025 quy định về xử lý kỷ luật cán bộ, công
+                            chức.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/cong-an-tinh-gia-lai-bat-chu-tich-cong-ty-ca-phe-ia-cham-10309387.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/co-quan-canh-sat-dieu-tra-thuc-hien-lenh-khoi-to-va-bat-tam-giam-ong-le-anh-tuan-anh-d.h-.jpg"
+                              alt="Công an tỉnh Gia Lai bắt Chủ tịch Công ty cà phê Ia Châm"
+                              title="Công an tỉnh Gia Lai bắt Chủ tịch Công ty cà phê Ia Châm"
+                          /></a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/cong-an-tinh-gia-lai-bat-chu-tich-cong-ty-ca-phe-ia-cham-10309387.html"
+                              >Công an tỉnh Gia Lai bắt Chủ tịch Công ty cà phê
+                              Ia Châm</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/cong-an-tinh-gia-lai-bat-chu-tich-cong-ty-ca-phe-ia-cham-10309387.html"
+                            >Công an tỉnh Gia Lai đã bắt tạm giam ông Lê Anh
+                            Tuấn, Chủ tịch kiêm Giám đốc Công ty TNHH MTV Cà phê
+                            Ia Châm (Gia Lai) để điều tra về hành vi lợi dụng
+                            chức vụ, quyền hạn trong khi thi hành công vụ.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="newest-news">
+                <div
+                  class="title flex flex-row items-center flex-wrap pb-[10px] md:pb-[15px]"
+                >
+                  <div class="title-name text-primary">Tin mới nhất</div>
+                  <div class="title__decor"></div>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/du-kien-chi-phi-giao-duc-y-te-duoc-tinh-de-giam-tru-gia-canh-khi-tinh-thue-thu-nhap-ca-nhan-10309412.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/dai-dien-cuc-cst.jpeg"
+                              alt="Dự kiến chi phí giáo dục, y tế được tính để giảm trừ gia cảnh khi tính thuế thu nhập cá nhân"
+                              title="Dự kiến chi phí giáo dục, y tế được tính để giảm trừ gia cảnh khi tính thuế thu nhập cá nhân"
+                            />
+                          </a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/du-kien-chi-phi-giao-duc-y-te-duoc-tinh-de-giam-tru-gia-canh-khi-tinh-thue-thu-nhap-ca-nhan-10309412.html"
+                              >Dự kiến chi phí giáo dục, y tế được tính để giảm
+                              trừ gia cảnh khi tính thuế thu nhập cá nhân</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/du-kien-chi-phi-giao-duc-y-te-duoc-tinh-de-giam-tru-gia-canh-khi-tinh-thue-thu-nhap-ca-nhan-10309412.html"
+                            >Chia sẻ tại buổi báo thường kỳ quý II/2025 của Bộ
+                            Tài chính chiều 2/7 ông Trương Bá Tuấn, Phó cục
+                            trưởng Cục Quản lý, giám sát chính sách thuế, phí và
+                            lệ phí, Bộ Tài chính cho biết, Bộ sẽ báo cáo Chính
+                            phủ, báo cáo Quốc hội bổ sung các khoản giảm trừ khi
+                            tính thuế thu nhập cá nhân để thúc đẩy phát triển,
+                            hỗ trợ người dân trong một số lĩnh vực như giáo dục,
+                            y tế.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/hai-phong-cong-bo-quyet-dinh-thanh-lap-4-dang-bo-chu-chot-10309411.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/20.jpg"
+                              alt="Hải Phòng: Công bố quyết định thành lập 4 đảng bộ chủ chốt"
+                              title="Hải Phòng: Công bố quyết định thành lập 4 đảng bộ chủ chốt"
+                            />
+                          </a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/hai-phong-cong-bo-quyet-dinh-thanh-lap-4-dang-bo-chu-chot-10309411.html"
+                              >Hải Phòng: Công bố quyết định thành lập 4 đảng bộ
+                              chủ chốt</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/du-kien-chi-phi-giao-duc-y-te-duoc-tinh-de-giam-tru-gia-canh-khi-tinh-thue-thu-nhap-ca-nhan-10309412.html"
+                            >Chia sẻ tại buổi báo thường kỳ quý II/2025 của Bộ
+                            Tài chính chiều 2/7 ông Trương Bá Tuấn, Phó cục
+                            trưởng Cục Quản lý, giám sát chính sách thuế, phí và
+                            lệ phí, Bộ Tài chính cho biết, Bộ sẽ báo cáo Chính
+                            phủ, báo cáo Quốc hội bổ sung các khoản giảm trừ khi
+                            tính thuế thu nhập cá nhân để thúc đẩy phát triển,
+                            hỗ trợ người dân trong một số lĩnh vực như giáo dục,
+                            y tế.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/thanh-lap-ban-quan-ly-khu-kinh-te-hai-phong-sau-hop-nhat-10309410.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/1(1).jpg"
+                              alt="Thành lập Ban Quản lý Khu kinh tế Hải Phòng sau hợp nhất"
+                              title="Thành lập Ban Quản lý Khu kinh tế Hải Phòng sau hợp nhất"
+                            />
+                          </a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/thanh-lap-ban-quan-ly-khu-kinh-te-hai-phong-sau-hop-nhat-10309410.html"
+                              >Thành lập Ban Quản lý Khu kinh tế Hải Phòng sau
+                              hợp nhất</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/thanh-lap-ban-quan-ly-khu-kinh-te-hai-phong-sau-hop-nhat-10309410.html"
+                            >Phó Thủ tướng Chính phủ Trần Hồng Hà vừa ký Quyết
+                            định số 1459/QĐ-TTg thành lập Ban Quản lý Khu kinh
+                            tế Hải Phòng.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/hinh-hai-tuyen-duong-hon-1-000-ty-dong-dang-vuong-0-75km-mat-bang-10309409.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/dji_fly_20250630_163842_815_1751276357717_photo.jpg"
+                              alt="Hình hài tuyến đường hơn 1.000 tỷ đồng, đang vướng 0,75km mặt bằng"
+                              title="Hình hài tuyến đường hơn 1.000 tỷ đồng, đang vướng 0,75km mặt bằng"
+                            />
+                          </a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/hinh-hai-tuyen-duong-hon-1-000-ty-dong-dang-vuong-0-75km-mat-bang-10309409.html"
+                              >Hình hài tuyến đường hơn 1.000 tỷ đồng, đang
+                              vướng 0,75km mặt bằng</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/hinh-hai-tuyen-duong-hon-1-000-ty-dong-dang-vuong-0-75km-mat-bang-10309409.html"
+                            >Dự án đường giao thông từ KCN Bỉm Sơn đến đường ven
+                            biển hiện đạt 75% khối lượng công việc. Tuy nhiên,
+                            do vướng 0,75km mặt bằng nên mục tiêu hoàn thành dự
+                            án vào cuối năm có thể bị chậm lại.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box">
+                        <div class="box-img">
+                          <a
+                            href="https://daidoanket.vn/vung-2-hai-quan-trung-bay-hoang-sa-truong-sa-bien-dao-thieng-lieng-10309408.html"
+                            ><img
+                              src="https://ddk.1cdn.vn/thumbs/540x360/2025/07/02/5.-lanh-dao-chi-huy-cac-don-vi-tren-dia-ban-tham-quan-trung-bay.jpg"
+                              alt="Vùng 2 Hải quân trưng bày 'Hoàng Sa, Trường Sa - Biển, đảo thiêng liêng'"
+                              title="Vùng 2 Hải quân trưng bày 'Hoàng Sa, Trường Sa - Biển, đảo thiêng liêng'"
+                            />
+                          </a>
+                        </div>
+                        <div class="box-content">
+                          <h3 class="title">
+                            <a
+                              href="https://daidoanket.vn/vung-2-hai-quan-trung-bay-hoang-sa-truong-sa-bien-dao-thieng-lieng-10309408.html"
+                              >Vùng 2 Hải quân trưng bày 'Hoàng Sa, Trường Sa -
+                              Biển, đảo thiêng liêng'</a
+                            >
+                          </h3>
+                          <a
+                            class="description"
+                            href="https://daidoanket.vn/vung-2-hai-quan-trung-bay-hoang-sa-truong-sa-bien-dao-thieng-lieng-10309408.html"
+                            >Ngày 2/7, tại tỉnh Đồng Nai, Trung tâm Huấn luyện -
+                            Vùng 2 Hải quân tổ chức trưng bày ảnh tuyên truyền,
+                            với chủ đề “Hoàng Sa, Trường Sa - Biển, đảo thiêng
+                            liêng” và kết quả nổi bật trong thực hiện Nghị quyết
+                            Đại hội Đảng bộ Vùng, Đại hội đại biểu Đảng bộ Quân
+                            chủng, nhiệm kỳ 2020 - 2025.</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="more-button">
+                <a href="#">Xem thêm</a>
+              </div>
+            </section>
+            <aside class="news-outstanding__right">
+              <div class="title">
+                <h2>Tin đọc nhiều</h2>
+              </div>
+              <div class="content">
+                <ul class="news-topRead">
+                  <li>
+                    <div class="number">
+                      <span>1</span>
+                    </div>
+                    <h3 class="title">
+                      <a
+                        href="https://daidoanket.vn/chu-tich-quoc-hoi-day-manh-chuyen-doi-so-ung-dung-tri-tue-nhan-tao-vao-hoat-dong-cong-vu-10309334.html"
+                        >Chủ tịch Quốc hội: Đẩy mạnh chuyển đổi số, ứng dụng trí
+                        tuệ nhân tạo vào hoạt động công vụ</a
+                      >
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="header-sticky">
+        <div class="container">
+          <div class="logo">
+            <a href="/"
+              ><img
+                src="https://ddk.1cdn.vn/assets/images/logo-small.svg"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="sticky-category hidden md:block">
+            <a href="https://daidoanket.vn/chinh-tri/quoc-hoi">Quốc hội</a>
+          </div>
+          <div class="sticky-title hidden md:block">
+            Bãi bỏ thuế khoán với hộ kinh doanh từ 1/1/2026
+          </div>
+          <div class="share-utility hidden md:block">
+            <ul class="hidden md:block">
+              <li class="hidden md:block">
+                <a
+                  class=""
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://daidoanket.vn/bai-bo-thue-khoan-voi-ho-kinh-doanh-tu-1-1-2026-10308426.html&amp;display=popup&amp;ref=plugin"
+                  ><i class="icon24-facebook-circle-gray"></i
+                ></a>
+              </li>
+              <li class="hidden md:block">
+                <a class="" href="javascript:;" title="Chia sẻ Zalo"
+                  ><span class="icon16-zalo-gray"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sticky-mobile md:hidden">
+            <ul>
+              <li>
+                <a class="is-font-link js-font-horizontal" href="#"
+                  ><i class="icon24-font-gray"></i
+                  ><span class="is-text">Cỡ chữ</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="icon24-share-gray"></i></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon24-comment-gray"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-col col-1">
+            <div class="footer-logo">
+              <a href="/"
+                ><img
+                  src="https://ddk.1cdn.vn/assets/images/logo.svg"
+                  alt="logo"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-col col-2">
+            <div class="footer-content">
+              <p>
+                Tổng Biên tập:
+                <b>TRƯƠNG THÀNH TRUNG</b>
+              </p>
+              <p>
+                Giấy phép hoạt động báo điện tử:
+                <b>Số 586/GP-BTTTT, cấp ngày 13/12/2022.</b>
+              </p>
+            </div>
+          </div>
+          <div class="footer-col col-3">
+            <div class="footer-content">
+              <p>Thông tin tòa soạn</p>
+              <p>
+                Địa chỉ:
+                <b>66 Bà Triệu - Hà Nội</b>
+              </p>
+              <p>
+                Địa chỉ:
+                <b>59 Tràng Thi, Hoàn Kiếm, Hà Nội</b>
+              </p>
+              <p>
+                Hotline:
+                <b>0862010866</b>
+                Fax:
+                <b>(024) 38228547</b>
+              </p>
+              <p>Liên hệ quảng cáo: <b>(024) 39431943 - (024) 39447011</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="powered">
+        <div class="container">
+          <div class="powered-content">
+            (*) Không sao chép dưới mọi hình thức khi chưa có sự đồng ý bằng văn
+            bản của Báo Đại Đoàn Kết.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button aria-label="Lên đầu trang" class="scroll-to-top" id="backToTop">
+      <i class="icon24-angle-top"></i>
+    </button>
+
+    <script src="../../dist/scripts/main1.js"></script>
+    <script>
+      // header sticky
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        const headerSticky = document.querySelector(".header-sticky");
+        const topMenu = document.querySelector(".header__topMenu");
+        const mainHeader = document.querySelector(".main-header");
+
+        function toggleHeaderSticky() {
+          if (!header || !headerSticky || !topMenu || !mainHeader) return;
+          const headerBottom =
+            header.getBoundingClientRect().bottom + window.scrollY;
+          const isDesktop = window.innerWidth >= 768;
+
+          if (window.scrollY >= headerBottom) {
+            if (isDesktop) {
+              headerSticky.classList.add("is-fixed");
+              topMenu.classList.remove("is-fixed");
+              mainHeader.classList.remove("is-fixed");
+            } else {
+              headerSticky.classList.add("is-fixed");
+              mainHeader.classList.add("is-fixed");
+              topMenu.classList.remove("is-fixed");
+            }
+          } else {
+            headerSticky.classList.remove("is-fixed");
+            topMenu.classList.remove("is-fixed");
+            mainHeader.classList.remove("is-fixed");
+          }
+        }
+
+        window.addEventListener("scroll", toggleHeaderSticky);
+        window.addEventListener("resize", toggleHeaderSticky);
+        toggleHeaderSticky();
+      });
+    </script>
+  </body>
+</html>
