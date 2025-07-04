@@ -3602,9 +3602,9 @@
   .news .sidebar {
     @apply w-[300px];
     position: sticky;
-    top: 80px;
+    max-height: fit-content;
+    top: 41px;
     z-index: 10;
-    right: 345px;
   }
 
   .tags .widgets a {
