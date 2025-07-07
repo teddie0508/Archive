@@ -69,25 +69,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const mainHeader = document.querySelector('.main-header');
 
     function toggleFixedMenu() {
-        const isDesktop = window.innerWidth >= 768;
-        const headerRect = header.getBoundingClientRect();
-        const headerBottom = headerRect.bottom + window.scrollY;
+        // const isDesktop = window.innerWidth >= 768;
+        // const headerRect = header.getBoundingClientRect();
+        // const headerBottom = headerRect.bottom + window.scrollY;
 
-        if (isDesktop) {
-            if (window.scrollY >= headerBottom) {
-                topMenu.classList.add('is-fixed');
-            } else {
-                topMenu.classList.remove('is-fixed');
-            }
-            mainHeader.classList.remove('is-fixed');
-        } else {
-            if (window.scrollY >= headerBottom) {
-                mainHeader.classList.add('is-fixed');
-            } else {
-                mainHeader.classList.remove('is-fixed');
-            }
-            topMenu.classList.remove('is-fixed');
-        }
+        // if (isDesktop) {
+        //     if (window.scrollY >= headerBottom) {
+        //         topMenu.classList.add('is-fixed');
+        //     } else {
+        //         topMenu.classList.remove('is-fixed');
+        //     }
+        //     mainHeader.classList.remove('is-fixed');
+        // } else {
+        //     if (window.scrollY >= headerBottom) {
+        //         mainHeader.classList.add('is-fixed');
+        //     } else {
+        //         mainHeader.classList.remove('is-fixed');
+        //     }
+        //     topMenu.classList.remove('is-fixed');
+        // }
     }
 
     window.addEventListener('scroll', toggleFixedMenu);
@@ -179,8 +179,8 @@ function updateDate() {
     const day = String(now.getDate()).padStart(2, '0');
     const month = String(now.getMonth() + 1).padStart(2, '0');
     const year = now.getFullYear();
-    document.querySelector('.header__currentTime').innerHTML =
-        `<p><strong>${dayName},</strong> ${day}/${month}/${year}</p>`;
+    // document.querySelector('.header__currentTime').innerHTML =
+    //     `<p><strong>${dayName},</strong> ${day}/${month}/${year}</p>`;
 }
 updateDate();
 setInterval(updateDate, 60 * 1000);

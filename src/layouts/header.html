@@ -1,0 +1,418 @@
+<div class="header__banner hidden"></div>
+<div class="main-header container mx-auto flex flex-row items-center justify-between h-[48px] md:h-[120px]">
+    <div class="header__left md:flex md:flex-col md:justify-center md:w-1/3">
+        <div class="flex flex-row gap-4">
+            <button class="header__menuExpand header--button" type="button" aria-label="Menu">
+                <span></span>
+            </button>
+
+            <button class="header__search header--button" type="button">
+                <i class="icon16-search-black"></i>
+            </button>
+
+            <div class="header__currentTime hidden md:flex md:items-center md:text-[#333] md:text-sm">
+                <p><strong></strong></p>
+            </div>
+
+            <div class="header__searchWrapper hidden">
+                <form class="">
+                    <input type="text" name placeholder="Tìm kiếm" />
+                    <button class="search-btn" type="submit">
+                        <i class="icon20-search"></i>
+                    </button>
+                    <button class="close-btn" type="button">
+                        <i class="icon12-close"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="header__menu hidden mt-1 md:block md:mt-2">
+            <a href="#" class="hidden md:block md:mt-3 text-[#666] uppercase">
+                <i class="icon16-new-gray mr-2 mt-[-1px]"></i>
+                Tin mới nhất
+            </a>
+        </div>
+    </div>
+    <div class="header__center">
+        <h1 class="logo">
+            <a href="../../src/pages/main.html">
+                <img src="../../dist/icons/logo.svg" class="md:h-20 h-[38px] w-auto max-w-full" alt="" />
+            </a>
+        </h1>
+    </div>
+    <div class="header__right hidden md:flex md:justify-end md:items-end md:w-1/3 gap-1">
+        <div class="block">
+            <div class="md:flex gap-1">
+                <strong>Hà Nội</strong>
+                <span>
+                    <em></em>
+                </span>
+                <img src="../../dist/icons/cloud.svg" class="max-w-6 max-h-6" alt="weather status icon" />
+                <i class="more-city"></i>
+            </div>
+            <div class="city-list hidden">
+                <input type="text" name placeholder="Nhập tìm tỉnh thành ..." />
+                <div>
+                    <div class="choosed-city">
+                        <p>Đang hiển thị</p>
+                        <div>
+                            Hà Nội
+                            <span>
+                                33°C
+                                <img src="../../dist/icons/cloud.svg" class="h-5 w-5" alt="weather status icon" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="others-city">
+                        <p>Tỉnh thành khác</p>
+                        <ul>
+                            <li>
+                                <p>An Giang</p>
+                                <span>28°C<img src="https://asset.1cdn.vn/all/weather/64x64/night/116.png"
+                                        class="h-6 w-6" alt="" /></span>
+                            </li>
+                            <li>
+                                <p>Bà Rịa Vũng Tàu</p>
+                                <span>29°C<img src="https://asset.1cdn.vn/all/weather/64x64/night/113.png"
+                                        class="h-6 w-6" alt="" /></span>
+                            </li>
+                            <li>
+                                <p>Bắc Giang</p>
+                                <span>33°C<img src="https://asset.1cdn.vn/all/weather/64x64/night/293.png"
+                                        class="h-6 w-6" alt="" /></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header__topMenu block border-b border-[#ee1f23] bg-white border-t-[#e9e9e9] md:border-t-0">
+    <nav class="container border-t h-12 flex items-center justify-between border-[#e9e9e9]">
+        <ul class="flex flex-row items-center justify-between w-full">
+            <li class="active">
+                <a href="../../src/pages/main.html">
+                    <i class="icon24-home-primary"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">Chính trị</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Lãnh đạo Đảng</a></li>
+                        <li><a href="#">Chủ tịch nước</a></li>
+                        <li><a href="#">Quốc hội</a></li>
+                        <li><a href="#">Chính phủ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Mặt trận</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Các cuộc vận động</a></li>
+                        <li><a href="#">Tiếng nói cơ sở</a></li>
+                        <li><a href="#">Người Mặt trận</a></li>
+                        <li><a href="#">Giám sát - Phản biện</a></li>
+                        <li><a href="#">Kiều bào</a></li>
+                        <li><a href="#">Dân tộc</a></li>
+                        <li><a href="#">Tôn giáo</a></li>
+                        <li><a href="#">Tư vấn</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Tiếng dân</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Điều tra</a></li>
+                        <li><a href="#">Chúng tôi lên tiếng</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Xã hội</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">An sinh xã hội</a></li>
+                        <li><a href="#">Môi trường</a></li>
+                        <li><a href="#">Chuyện tử tế</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Kinh tế</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Tài chính</a></li>
+                        <li><a href="#">Thị trường</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Pháp luật</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Quy định mới</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Giáo dục</a>
+            </li>
+            <li>
+                <a href="#">Đô thị</a>
+            </li>
+            <li>
+                <a href="#">Giao thông</a>
+            </li>
+            <li>
+                <a href="#">Văn hóa</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Giải trí</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Sức khỏe</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Các bệnh dịch</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Thể thao</a>
+            </li>
+            <li>
+                <a href="#">Bất động sản</a>
+            </li>
+            <li>
+                <a href="#">Công nghệ</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Sản phẩm số</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="more">
+                <a href="#">
+                    <span class="dot"></span>
+                    <div class="dropdown-menu right">
+                        <ul>
+                            <li><a href="#">Góc nhìn Đại Đoàn Kết</a></li>
+                            <li><a href="#">Quốc tế</a></li>
+                            <li><a href="#">Tinh hoa Việt</a></li>
+                            <li><a href="#">Du lịch</a></li>
+                            <li><a href="#">Thông tin doanh nghiệp</a></li>
+                            <li><a href="#">Multimedia</a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="header__megaMenu mx-auto py-5 fixed md:relative md:top-[-49px]">
+    <button class="header__megaMenu__close md:hidden block" type="button">
+        <span></span>
+    </button>
+    <div class="header__megaMenu__category container">
+        <div class="header__megaMenu__category-search md:hidden block">
+            <div class="header__megaMenu__category-search-wrapper">
+                <input class="" type="text" name placeholder="Tìm kiếm" />
+                <button class="header__megaMenu__category-search-btn" type="submit">
+                    <i class="icon20__search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="header__menu md:hidden block">
+            <a href="#" class="text-[#666] uppercase">
+                <i class="icon16-new-gray mr-2 mt-[-1px]"></i>
+                Tin mới nhất
+            </a>
+        </div>
+        <nav class="header__megaMenu__category-menu">
+            <ul class="flex">
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/chinh-tri">Chính trị</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/chinh-tri/lanh-dao-dang">Lãnh đạo Đảng</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/chinh-tri/chu-tich-nuoc">Chủ tịch nước</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/chinh-tri/quoc-hoi">Quốc hội</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/chinh-tri/chinh-phu">Chính phủ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/mat-tran">Mặt trận</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/cac-cuoc-van-dong">Các cuộc vận động</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/tieng-noi-co-so">Tiếng nói cơ sở</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/nguoi-mat-tran">Người Mặt trận</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/giam-sat-phan-bien">Giám sát - Phản biện</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/kieu-bao">Kiều bào</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/dan-toc">Dân tộc</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/ton-giao">Tôn giáo</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/mat-tran/tu-van">Tư vấn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/tieng-dan">Tiếng dân</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/tieng-dan/dieu-tra">Điều tra</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/tieng-dan/chung-toi-len-tieng">Chúng tôi lên tiếng</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/xa-hoi">Xã hội</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/xa-hoi/an-sinh-xa-hoi">An sinh xã hội</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/xa-hoi/moi-truong">Môi trường</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/xa-hoi/chuyen-tu-te">Chuyện tử tế</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/kinh-te">Kinh tế</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/kinh-te/tai-chinh">Tài chính</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/kinh-te/thi-truong">Thị trường</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/phap-luat">Pháp luật</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/phap-luat/quy-dinh-moi">Quy định mới</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/giao-duc">Giáo dục</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/do-thi">Đô thị</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/giao-thong">Giao thông</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/van-hoa">Văn hóa</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/van-hoa/giai-tri">Giải trí</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/suc-khoe">Sức khỏe</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/suc-khoe/cac-benh-dich">Các bệnh dịch</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/the-thao">Thể thao</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/bat-dong-san">Bất động sản</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/cong-nghe">Công nghệ</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/cong-nghe/san-pham-so">Sản phẩm số</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/goc-nhin-dai-doan-ket">Góc nhìn Đại Đoàn Kết</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/quoc-te">Quốc tế</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/tinh-hoa-viet">Tinh hoa Việt</a>
+                    <ul>
+                        <li>
+                            <a href="https://daidoanket.vn/tinh-hoa-viet/tro-chuyen">Trò chuyện</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/tinh-hoa-viet/chuyen-dong">Chuyển động</a>
+                        </li>
+                        <li>
+                            <a href="https://daidoanket.vn/tinh-hoa-viet/cuoc-song-muon-mau">Cuộc sống muôn màu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/du-lich">Du lịch</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="https://daidoanket.vn/thong-tin-doanh-nghiep">Thông tin doanh nghiệp</a>
+                    <ul></ul>
+                </li>
+                <li class="c-mega-menu__child">
+                    <a href="/multimedia">Multimedia</a>
+                    <ul>
+                        <li><a href="/video">Video</a></li>
+                        <li><a href="/anh">Ảnh</a></li>
+                        <li><a href="/infographic">Infographic</a></li>
+                        <li><a href="/emagazine">Emagazine</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
