@@ -2556,7 +2556,7 @@
   .news .sidebar article .content a:hover {
     color: #ee1f23;
   }
-  
+
   .related-news .content h3 a {
     transition: all 0.2s ease;
   }
@@ -2580,6 +2580,56 @@
   .news-topRead .title a:hover {
     color: #ee1f23;
   }
+
+  .font-box {
+    padding: 0 37px 0 15px;
+    position: absolute;
+    bottom: 51px;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .font-box.active {
+    display: flex;
+  }
+
+  .font-box span.plus,
+  .font-box span.minus,
+  .font-box span.font {
+    cursor: pointer;
+  }
+
+  .font-box span {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .font-box button {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 8px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+
+
 
 }
 

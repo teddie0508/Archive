@@ -120,9 +120,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const articleContent = document.querySelector('.article-content');
     if (!articleContent) return;
 
-    const plusBtn = document.querySelector('.font-settings .plus');
-    const minusBtn = document.querySelector('.font-settings .minus');
-    const fontBtn = document.querySelector('.font-settings .font');
+    const plusBtns = document.querySelectorAll('.font-settings .plus, .font-box .plus');
+    const minusBtns = document.querySelectorAll('.font-settings .minus, .font-box .minus');
+    const fontBtns = document.querySelectorAll('.font-settings .font, .font-box .font');
 
     const defaultFontSize = 18;
     const minFontSize = 14;
@@ -132,7 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateFontSize(size) {
         currentFontSize = size;
         articleContent.querySelectorAll('*').forEach(el => {
-            //Không tăng font tiêu đề h1 và tác giả
             if (
                 el.tagName.toLowerCase() === 'h1' ||
                 el.classList.contains('abt-author-date') ||
@@ -144,23 +143,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Tăng font chữ
-    plusBtn.addEventListener('click', function () {
-        if (currentFontSize < maxFontSize) {
-            updateFontSize(currentFontSize + 1);
-        }
+    plusBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            if (currentFontSize < maxFontSize) {
+                updateFontSize(currentFontSize + 1);
+            }
+        });
     });
 
-    // Giảm font chữ
-    minusBtn.addEventListener('click', function () {
-        if (currentFontSize > minFontSize) {
-            updateFontSize(currentFontSize - 1);
-        }
+    minusBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            if (currentFontSize > minFontSize) {
+                updateFontSize(currentFontSize - 1);
+            }
+        });
     });
 
-    // Vè default
-    fontBtn.addEventListener('click', function () {
-        updateFontSize(defaultFontSize);
+    fontBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            updateFontSize(defaultFontSize);
+        });
     });
 
     updateFontSize(defaultFontSize);
@@ -222,3 +224,22 @@ async function updateWeather() {
 
 document.addEventListener('DOMContentLoaded', updateWeather);
 
+// sticky mobile font adjustment
+document.addEventListener("DOMContentLoaded", function () {
+    const fontLink = document.querySelector('.sticky-mobile .is-font-link');
+    const fontBox = document.querySelector('.font-box');
+    const closeBtn = document.querySelector('.font-box button');
+
+    if (fontLink && fontBox) {
+        fontLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            fontBox.classList.add('active');
+        });
+    }
+
+    if (closeBtn && fontBox) {
+        closeBtn.addEventListener('click', function () {
+            fontBox.classList.remove('active');
+        });
+    }
+});
