@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Font Roboto & Gelasio */
+  @import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Heading styles */
+
+  .text-h1 {
+    @apply text-iris-500;
+    font-family: "Gelasio", serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0%;
+  }
+
+  .text-h2 {
+    @apply text-iris-500;
+    font-family: "Gelasio", serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0%;
+  }
+
+  .text-h3 {
+    @apply text-iris-500;
+    font-family: "Gelasio", serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+
+  .text-h2-allcap {
+    @apply text-iris-500;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+
+  .text-h3-allcap {
+    @apply text-iris-300;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+
+  .text-h4 {
+    @apply text-iris-500;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0%;
+  }
+
+  /* Body text styles */
+  .text-body {
+    @apply text-iris-400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+  }
+
+  .text-small {
+    @apply text-iris-400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+
+  .text-figcaption {
+    @apply text-iris-400;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .text-caption-allcap {
+    @apply text-iris-400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+
+  .is-repo {
+    @apply lg:max-w-[1272px] md:max-w-[800px] max-w-[384px];
+  }
+
+  .is-active {
+    @apply border-t border-t-primary;
+  }
+}
+
+@layer components {
+  /* main_header left */
+
+  /* Header topMenu */
+  .header_topMenu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .header_topMenu::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .header_topMenu li {
+    @apply px-2 h-10 flex flex-row flex-nowrap whitespace-nowrap items-center;
+    flex-shrink: 0;
+  }
+
+  .header_topMenu li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    /* Header top menu */
+  .header_topMenu .hide-on-medium {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Header */
+  .header_topMenu {
+    overflow-x: visible;
+  }
+
+  .header_topMenu li {
+    @apply h-[46px];
+    flex-shrink: 1;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  
+  /* Bao ve icon khong biến mất */
+  .header_topMenu li.icon-item {
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Header */
+  .main_header .center {
+    @apply absolute left-1/2 -translate-x-1/2;
+  }
+}

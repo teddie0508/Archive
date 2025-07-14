@@ -6,21 +6,30 @@ export default {
   theme: {
     container: {
       center: true,
-      screens: {  
+      screens: {
         DEFAULT: "100%",
         sm: "576px",
         md: "768px",
-        lg: "970px",
+        lg: "1024px",
         xl: "1170px",
-      }
+      },
     },
     extend: {
       colors: {
-        primary: "#ee1f23",
-        secondary: "#666666",
-        sub: "#EE1F23",
-        border_primary: "#EE1F23",
-        border_secondary: "#D1D1D1",
+        primary: "#EC2326",
+        secondary: "#DDC084",
+        sub: "#FFD9D9",
+        iris: {
+          100: "#ECECEC",
+          200: "#D1D1D1",
+          300: "#888888",
+          400: "#6B6B6B",
+          500: "#222222",
+        },
+      },
+      backgroundImage: {
+        "red-gradient":
+          "linear-gradient(180deg, rgba(236, 35, 38, 0.2) 0%, rgba(236, 35, 38, 0) 100%)",
       },
       fontFamily: {
         sans: [
