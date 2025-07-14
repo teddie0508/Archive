@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Font Roboto & Gelasio */
+    @import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+    html {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Heading styles */
+
+    .text-h1 {
+        @apply text-iris-500;
+        font-family: Gelasio;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 0%;
+    }
+
+    .text-h2 {
+        @apply text-iris-500;
+        font-family: Gelasio;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0%;
+
+    }
+
+    .text-h3 {
+        @apply text-iris-500;
+        font-family: Gelasio;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+
+    }
+
+    .text-h2-allcap {
+        @apply text-iris-500;
+        font-family: Roboto;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+    }
+
+    .text-h3-allcap {
+        @apply text-iris-300;
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+
+    .text-h4 {
+        @apply text-iris-500;
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0%;
+
+    }
+
+    /* Body text styles */
+    .text-body {
+        @apply text-iris-400;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0%;
+
+    }
+
+    .text-small {
+        @apply text-iris-400;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+
+    }
+
+    .text-figcaption {
+        @apply text-iris-400;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    .text-caption-allcap {
+        @apply text-iris-400;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+
+    .is-repo {
+        @apply lg:max-w-[1272px] md:max-w-[800px] max-w-[384px];
+    }
+}
+
+@layer components {
+
+    /* main_header left */
+    
+}
