@@ -6,7 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            max-width: 1200px !important;
+            margin: 0 auto;
+        }
 
+        .has-picture::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(https://ddk.1cdn.vn/assets/images/icons/icon20-image-white.svg) no-repeat center center red;
+            z-index: 100;
+            padding: 16px;
+        }
+
+        .gd {
+            background: linear-gradient(180deg, rgba(236, 35, 38, 0.2) 0%, rgba(236, 35, 38, 0) 100%);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,21 +41,146 @@
             h right
         </div>
     </header>
-    
+
 
     <main class="container border mx-auto">
-        <section class="bg-gray-300 md:bg-green-300 lg:bg-red-300 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- bg-gray-300 md:bg-green-300 lg:bg-red-300  -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="border border-black p-4">
-                col left
+
+                <picture class="relative has-picture">
+                    <img src="https://picsum.photos/200/300" alt="Sample Image" class="">
+                </picture>
             </div>
             <div class="grid grid-cols1 md:grid-cols-2 border">
-                <div>col 1</div>
+                <div class="gd">
+                    <p>
+                        <button class=" fill-red-600">
+                            <img src="menu_button.svg" alt="Menu" class="w-6 h-6">
+                        </button>
+                    </p>
+                    col 1
+                </div>
                 <div>col 2</div>
                 <div>col 3</div>
                 <div>col 4</div>
             </div>
         </section>
     </main>
+
+
+    <div class="container grid grid-cols-12 gap-3">
+        <div class="col-left col-span-12 md:col-span-4 lg:col-span-3 order-2 md:order-1">
+            <div class="div1 grid grid-cols-3">
+                <picture class="grid-cols-1 md:col-span-3">
+                    <img
+                        src="https://cdn.baophapluat.vn/w1280/uploaded/images/2025/07/14/07fe2cf1-3a37-415b-a418-5a51370ec94e.jpg.avif" />
+                </picture>
+                <h3 class="grid-cols-1 md:col-span-3">
+                    <a href="#">Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+            <div class="div1 grid grid-cols-3">
+                <picture class="grid-cols-1 md:col-span-3">
+                    <img
+                        src="https://cdn.baophapluat.vn/w1280/uploaded/images/2025/07/14/07fe2cf1-3a37-415b-a418-5a51370ec94e.jpg.avif" />
+                </picture>
+                <h3 class="grid-cols-1 md:col-span-3">
+                    <a href="#">Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+            <div class="div1 grid grid-cols-3">
+                <picture class="grid-cols-1 md:col-span-3">
+                    <img
+                        src="https://cdn.baophapluat.vn/w1280/uploaded/images/2025/07/14/07fe2cf1-3a37-415b-a418-5a51370ec94e.jpg.avif" />
+                </picture>
+                <h3 class="grid-cols-1 md:col-span-3">
+                    <a href="#">Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+        </div>
+        <div class="col-center col-span-12  md:col-span-8  lg:col-span-6 order-1 md:order-2">
+            <div class="div4">
+                <picture>
+                    <img
+                        src="https://cdn.baophapluat.vn/w1280/uploaded/images/2025/07/14/07fe2cf1-3a37-415b-a418-5a51370ec94e.jpg.avif" />
+                </picture>
+                <h3>
+                    <a href="#">Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+                <p>Chiều 13/7, tại TP Cần Thơ, Thủ tướng Phạm Minh Chính cùng Đoàn đại biểu Quốc hội Cần Thơ tiếp xúc cử
+                    tri
+                    là đại diện cán bộ, giảng viên các trường đại học, cao đẳng, viện nghiên cứu, cán bộ, công chức,
+                    viên
+                    chức ngành khoa học công nghệ.
+                </p>
+            </div>
+
+            <div class="div5 hidden md:block">
+                <h3>
+                    <a href="#">1111. Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+            <div class="div6  hidden md:block">
+                <h3>
+                    <a href="#">2222. Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="col-right hidden md:col-span-12  lg:col-span-3  md:grid grid-cols-2 gap-3 order-3">
+
+            <div class="md:col-span-1 lg:col-span-2">
+
+
+                <div class="div7">
+                    <picture>
+                        <img
+                            src="https://cdn.baophapluat.vn/w1280/uploaded/images/2025/07/14/07fe2cf1-3a37-415b-a418-5a51370ec94e.jpg.avif" />
+                    </picture>
+                    <h3>
+                        <a href="#">Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                    </h3>
+                </div>
+            </div>
+            <div class=" md:col-span-1 lg:col-span-2 flex flex-col gap-3">
+                <div class="div8 grid grid-cols-3 gap-3">
+                    <picture class="md:col-span-1 lg:col-span-3">
+                        <img
+                            src="https://cdn.baophapluat.vn/w1280/uploaded/images/2025/07/14/07fe2cf1-3a37-415b-a418-5a51370ec94e.jpg.avif" />
+                    </picture>
+                    <div class="md:col-span-2 lg:col-span-3">
+                        <h3>CHuyên mục</h3>
+                        <h3>
+                            <a href="#">Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="div9">
+                    <div class="w-full h-36 bg-red-500"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block md:hidden col-span-12 order-3">
+            <div class="div5">
+                <h3>
+                    <a href="#">333. Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+            <div class="div6">
+                <h3>
+                    <a href="#">4444. Thủ tướng Phạm Minh Chính tiếp xúc cử tri Cần Thơ</a>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
 </body>
 
 </html>
