@@ -122,12 +122,15 @@
   .header_topMenu {
     flex-wrap: nowrap;
     overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
   }
 
   .header_topMenu::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
   }
 
   .header_topMenu li {
@@ -143,16 +146,136 @@
     letter-spacing: 0%;
     vertical-align: middle;
   }
-}
 
-@media (min-width: 1024px) and (max-width: 1199px) {
-    /* Header top menu */
-  .header_topMenu .hide-on-medium {
-    display: none;
+  /* Mega menu */
+  .mega-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .mega-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .mega-menu-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .menu-column h3,
+  .menu-column-right h3 {
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  .menu-column h3.no-cate {
+    @apply border-b border-iris-200;
+  }
+
+
+
+  /* .menu-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #EC2326;
+    KHÔNG DÙNG
+  } */
+
+  .mega-menu-wrapper .left .menu-column ul {
+    @apply border-b border-iris-200;
+    padding-bottom: 10px;
+    list-style: none;
+    margin: 0;
+  }
+
+  .menu-column ul li,
+  .menu-column-right ul li {
+    margin-bottom: 8px;
+  }
+
+  .menu-column ul li a,
+  .menu-column-right ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222222;
+    font-weight: 400;
+    transition: color 0.2s ease;
+  }
+
+  .menu-column ul li a:hover {
+    color: #EC2326;
+  }
+
+  .menu-column.mobile-col-1,
+  .menu-column.mobile-col-2 {
+    @apply border-b border-iris-200;
+  }
+
+  /* Footer */
+
+  #footer .container {
+    max-width: 1200px;
+  }
+
+  .footer-logo {
+    flex-shrink: 0;
+  }
+
+  .ad-contact {
+    border-radius: 4px;
+    align-self: flex-start;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: max-content;
+  }
+
+  .ad-contact p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .powered {
+    @apply flex justify-center;
+  }
+
+  .powered span {
+    color: #6B6B6B;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+  /* Header top menu */
+  .header_topMenu .hide-on-medium {
+    display: none;
+  }
+
+
+}
+
 @media (min-width: 1024px) {
+
   /* Header */
   .header_topMenu {
     overflow-x: visible;
@@ -164,16 +287,146 @@
     padding-left: 6px;
     padding-right: 6px;
   }
-  
+
   /* Bao ve icon khong biến mất */
   .header_topMenu li.icon-item {
     flex-shrink: 0;
   }
+
+  /* Mega menu */
+  .left-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .desktop-col-1,
+  .desktop-col-2,
+  .desktop-col-3,
+  .desktop-col-4,
+  .desktop-col-5 {
+    display: block;
+  }
+
+  .mobile-col-1,
+  .mobile-col-2 {
+    display: none;
+  }
+
+  .right-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mega-menu-wrapper .left {
+    @apply p-[15px] border-r border-iris-200;
+  }
+
+  /* Desktop Footer */
+  #footer .container {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+
+  #footer .container>div {
+    text-align: left;
+  }
+
+  /* Đảm bảo tất cả các khối căn trái */
+  .footer-logo,
+  .footer-logo img {
+    margin-left: 0;
+  }
+
+  /* Khối giữa căn trái */
+  #footer .container>div:nth-child(2) {
+    align-items: flex-start !important;
+    text-align: left;
+  }
+
+  /* Khối phải căn trái */
+  #footer .container>div:nth-child(3) {
+    align-items: flex-start !important;
+    text-align: left;
+  }
+
+  #footer .container>div:nth-child(3)>div {
+    align-items: flex-start !important;
+  }
+  
+}
+
+@media (max-width: 1023px) {
+  .mega-menu-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .left-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* Ẩn desktop columns */
+  .desktop-col-1,
+  .desktop-col-2,
+  .desktop-col-3,
+  .desktop-col-4,
+  .desktop-col-5 {
+    display: none;
+  }
+
+  /* Hiển thị mobile columns */
+  .mobile-col-1,
+  .mobile-col-2 {
+    display: block;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* Mobile Footer - giữ center */
+  #footer .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer .container>div {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
+
   /* Header */
   .main_header .center {
     @apply absolute left-1/2 -translate-x-1/2;
+  }
+}
+
+@media (max-width: 767px) {
+  .mega-menu-wrapper {
+    gap: 24px;
+  }
+
+  .left-grid,
+  .right-grid {
+    gap: 20px;
+  }
+
+  .menu-column h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .menu-column ul li {
+    margin-bottom: 6px;
+  }
+
+  .menu-column ul li a {
+    font-size: 14px;
   }
 }

@@ -12,128 +12,330 @@
 <body>
   <header id="header" class="w-full top-0 left-0 z-50 bg-white relative border-b border-b-primary">
     <div class="container mx-auto px-4">
-      <div class="main_header is-repo flex items-center justify-between lg:py-[18px] py-3 ">
+      <div class="main_header is-repo flex items-center justify-between lg:py-[18px] py-3">
         <div class="left flex flex-col gap-1">
           <div class="flex justify-between gap-3 items-center">
-            <button class="w-[34px] h-[34px] flex items-center justify-center border border-iris-200 rounded"
+            <button id="menuToggle"
+              class="w-[34px] h-[34px] flex items-center justify-center border border-iris-200 rounded"
               aria-label="Mở menu">
-              <img src="../../dist/icon/bars.svg" class="w-[22px] h-[22px] lg:block hidden" alt="">
-              <img src="../../dist/icon/icon24-menu-gray 1.svg" class="w-[25px] h-[25px] block lg:hidden" alt="">
+              <img src="../../dist/icon/bars.svg" class="w-[22px] h-[22px] lg:block hidden" alt="" />
+              <img src="../../dist/icon/icon24-menu-gray 1.svg" class="w-[25px] h-[25px] block lg:hidden" alt="" />
             </button>
-            <button class="w-[34px] h-[34px] lg:flex hidden items-center justify-center border border-iris-200 rounded "
+            <button class="w-[34px] h-[34px] lg:flex hidden items-center justify-center border border-iris-200 rounded"
               aria-label="Tìm kiếm">
-              <img src="../../dist/icon/magnifying-glass.svg" class="w-[12px] h-[12px]" alt="">
+              <img src="../../dist/icon/magnifying-glass.svg" class="w-[12px] h-[12px]" alt="" />
             </button>
-            <span class="align-middle lg:block hidden "><strong>Thứ Năm</strong>, 26/06/2025</span>
+            <span class="align-middle lg:block hidden"><strong>Thứ Năm</strong>, 26/06/2025</span>
           </div>
-          <div class="latest_news lg:flex md:hidden hidden flex-row gap-1 py-2">
-            <img src="../../dist/icon/newspaper.svg" class="w-[17px] h-3 relative -bottom-[2px]" alt="">
-            <p class="text-caption-allcap">Tin mới nhất</p>
+          <div class="latest_news lg:flex md:hidden hidden flex-row py-2">
+            <a class="flex gap-1" href="#" title="Tin mới nhất">
+              <img src="../../dist/icon/newspaper.svg" class="w-[17px] h-3 relative -bottom-[2px]" alt="" />
+              <p class="text-caption-allcap">Tin mới nhất</p>
+            </a>
           </div>
         </div>
         <div class="center">
           <a href="#" title="Logo Đại đoàn kết">
-            <img src="../../dist/icon/logo.svg" class="lg:w-[321px] lg:h-[79px] w-[146px] h-[36px]" alt="">
+            <picture>
+              <img src="../../dist/icon/logo.svg" class="lg:w-[321px] lg:h-[79px] w-[146px] h-[36px]" alt="" />
+            </picture>
           </a>
         </div>
-        <div class="right lg:flex hidden justify-between items-center ">
+        <div class="right lg:flex hidden justify-between items-center">
           <span><strong>Hà Nội</strong> 28°C / 25 - 32°C</span>
-          <img src="../../dist/icon/weather-icon 1.svg" alt="Icon thời tiết" class="w-[29px] h-[29px] ml-1">
+          <img src="../../dist/icon/weather-icon 1.svg" alt="Icon thời tiết" class="w-[29px] h-[29px] ml-1" />
         </div>
       </div>
-      <ul class="header_topMenu flex flex-row justify-between items-center m-0 p-0 border-t border-t-iris-200 ">
+      <ul class="header_topMenu flex flex-row justify-between items-center m-0 p-0 border-t border-t-iris-200">
         <li class="is-active icon-item">
           <a href="#" title="Trang chủ">
-            <img src="../../dist/icon/Vector.svg" class="w-5 h-5" alt="Logo về trang chủ">
+            <img src="../../dist/icon/Vector.svg" class="w-5 h-5" alt="Logo về trang chủ" />
           </a>
         </li>
         <li>
-          <a href="#">
-            Chính trị
-          </a>
+          <a href="#"> Chính trị </a>
         </li>
         <li>
-          <a href="#">
-            Mặt trận
-          </a>
+          <a href="#"> Mặt trận </a>
         </li>
         <li>
-          <a href="#">
-            Xã hội
-          </a>
+          <a href="#"> Xã hội </a>
         </li>
         <li>
-          <a href="#">
-            Kinh tế
-          </a>
+          <a href="#"> Kinh tế </a>
         </li>
         <li>
-          <a href="#">
-            Văn hóa
-          </a>
+          <a href="#"> Văn hóa </a>
         </li>
         <li>
-          <a href="#">
-            Giáo dục
-          </a>
+          <a href="#"> Giáo dục </a>
         </li>
         <li>
-          <a href="#">
-            Sức khỏe
-          </a>
+          <a href="#"> Sức khỏe </a>
         </li>
         <li>
-          <a href="#">
-            Pháp luật
-          </a>
+          <a href="#"> Pháp luật </a>
         </li>
         <li>
-          <a href="#">
-            Bạn đọc
-          </a>
+          <a href="#"> Bạn đọc </a>
         </li>
         <li>
-          <a href="#">
-            Đô thị
-          </a>
+          <a href="#"> Đô thị </a>
         </li>
         <li>
-          <a href="#">
-            Bất động sản
-          </a>
+          <a href="#"> Bất động sản </a>
         </li>
         <li>
-          <a href="#">
-            Tinh hoa Việt
-          </a>
+          <a href="#"> Tinh hoa Việt </a>
         </li>
         <li class="hide-on-medium">
-          <a href="#">
-            Quốc tế
-          </a>
+          <a href="#"> Quốc tế </a>
         </li>
         <li class="hide-on-medium">
-          <a href="#">
-            Media
-          </a>
+          <a href="#"> Media </a>
         </li>
         <li class="hide-on-medium">
-          <a href="#">
-            Góc nhìn
-          </a>
+          <a href="#"> Góc nhìn </a>
         </li>
         <li class="icon-item">
           <a href="#">
-            <img src="../../dist/icon/three dot.svg" class="w-[22px] h-1" alt="">
+            <img src="../../dist/icon/three dot.svg" class="w-[22px] h-1" alt="" />
           </a>
         </li>
       </ul>
     </div>
+
+    <!-- Mega menu -->
+    <div id="megaMenu"
+      class="mega-menu hidden absolute top-full left-0 right-0 bg-white border-b border-primary shadow-md z-40">
+      <div class="container mx-auto px-4 py-8">
+        <div class="mega-menu-wrapper flex lg:flex-row flex-col gap-8">
+          <!-- Left Section -->
+          <div class="left flex-1">
+            <div class="left-grid grid grid-cols-2 lg:grid-cols-5 gap-8">
+              <!-- Desktop Cột 1 -->
+              <div class="menu-column desktop-col-1">
+                <h3 class=" mb-4">CHÍNH TRỊ</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Lãnh đạo Đảng</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chủ tịch nước</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quốc hội</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chính phủ</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">BẠN ĐỌC</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Điều tra qua thư bạn đọc</a>
+                  </li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Hỏi đáp</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Đường dây nóng</a></li>
+                </ul>
+              </div>
+
+              <!-- Desktop Cột 2 -->
+              <div class="menu-column desktop-col-2">
+                <h3 class=" mb-4">MẶT TRẬN</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các cuộc vận động</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tiếng nói cơ sở</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Người mặt trận</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giám sát - phản biện</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Kiểu báo</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Dân tộc</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tôn giáo</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tư vấn</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">GIÁO DỤC</h3>
+              </div>
+
+              <!-- Desktop Cột 3 -->
+              <div class="menu-column desktop-col-3">
+                <h3 class=" mb-4">XÃ HỘI</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">An sinh xã hội</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Môi trường</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện từ tế</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">SỨC KHỎE</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các bệnh dịch</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">ĐÔ THỊ</h3>
+              </div>
+
+              <!-- Desktop Cột 4 -->
+              <div class="menu-column desktop-col-4">
+                <h3 class="mb-4">KINH TẾ</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tài chính</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thị trường</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">PHÁP LUẬT</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quy định mới</a></li>
+                </ul>
+                <h3 class="no-cate mb-4 mt-8">BẤT ĐỘNG SẢN</h3>
+                <h3 class=" mb-4 mt-8">QUỐC TẾ</h3>
+              </div>
+
+              <!-- Desktop Cột 5 -->
+              <div class="menu-column desktop-col-5">
+                <h3 class=" mb-4">VĂN HÓA</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giải trí</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thể thao</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Du lịch</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">TINH HOA VIỆT</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Trò chuyện</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện dòng</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Cuộc sống muôn màu</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">CÔNG NGHỆ</h3>
+              </div>
+
+              <!-- Mobile Cột 1 - Ẩn trên desktop -->
+              <div class="menu-column mobile-col-1 lg:hidden">
+                <h3 class=" mb-4">CHÍNH TRỊ</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Lãnh đạo Đảng</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chủ tịch nước</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quốc hội</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chính phủ</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">XÃ HỘI</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">An sinh xã hội</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Môi trường</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện từ tế</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">KINH TẾ</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tài chính</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thị trường</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">BẠN ĐỌC</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Điều tra qua thư bạn đọc</a>
+                  </li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Hỏi đáp</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Đường dây nóng</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">PHÁP LUẬT</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quy định mới</a></li>
+                </ul>
+                <h3 class="no-cate mb-4 mt-8">GIÁO DỤC</h3>
+                <h3 class="no-cate mb-4 mt-8">ĐÔ THỊ</h3>
+                <h3 class=" mb-4 mt-8">QUỐC TẾ</h3>
+              </div>
+
+              <!-- Mobile Cột 2 - Ẩn trên desktop -->
+              <div class="menu-column mobile-col-2 lg:hidden">
+                <h3 class=" mb-4">MẶT TRẬN</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các cuộc vận động</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tiếng nói cơ sở</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Người mặt trận</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giám sát - phản biện</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Kiểu báo</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Dân tộc</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tôn giáo</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tư vấn</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">VĂN HÓA</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giải trí</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thể thao</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Du lịch</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">SỨC KHỎE</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các bệnh dịch</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">TINH HOA VIỆT</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Trò chuyện</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện dòng</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Cuộc sống muôn màu</a></li>
+                </ul>
+                <h3 class="no-cate mb-4 mt-8">BẤT ĐỘNG SẢN</h3>
+                <h3 class="no-cate mb-4 mt-8">CÔNG NGHỆ</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="right lg:w-[200px] w-full">
+            <div class="right-grid grid grid-cols-2 lg:grid-cols-1 gap-8">
+              <!-- Right Cột 1 -->
+              <div class="menu-column-right">
+                <h3 class="mb-4">
+                  <span class="text-primary">MULTI</span>MEDIA
+                </h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Ảnh</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Infographic</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Emagazine</a></li>
+                </ul>
+              </div>
+
+              <!-- Right Cột 2 -->
+              <div class="menu-column">
+                <h3 class=" mb-4 text-primary">MEDIA</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Video</a></li>
+                  <li><a href="#" class="text-small hover:text-primary transition-colors">Podcast</a></li>
+                </ul>
+                <h3 class=" mb-4 mt-8">Liên hệ</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-  <main></main>
-  <footer></footer>
+  <main class="py-10"></main>
+  <footer id="footer" class="w-full bottom-0 left-0 z-50 bg-white relative border-t border-primary">
+    <div
+      class="container mx-auto px-4 flex flex-col lg:flex-row lg:justify-start lg:items-start justify-between items-center py-6 lg:pt-6 lg:pb-9">
+      <div class="footer-logo lg:p-0 pb-[15px] lg:w-1/3">
+        <picture>
+          <img src="../../dist/icon/logo.svg" class="lg:w-[260px] lg:h-16 w-[195px] h-[47px]" alt="Logo Đại đoàn kết">
+        </picture>
+      </div>
+
+      <div class="flex flex-col lg:p-0 pb-[15px] lg:items-start items-center lg:w-1/3">
+        <p class="pr-1">Tổng Biên tập:
+          <strong class="uppercase">trương thành trung</strong>
+        </p>
+        <p>Giấy phép hoạt động báo điện tử:</p>
+        <p>Số 586/GP-BTTTT, cấp ngày 13/12/2022</p>
+      </div>
+
+      <div class="flex flex-col lg:justify-start lg:items-start justify-start items-center lg:w-1/3">
+        <div class="flex flex-col lg:items-start items-center pb-3">
+          <p>Thông tin tòa soạn:</p>
+          <p>Địa chỉ: 59 Tràng Thi, Hà Nội</p>
+          <p>Địa chỉ: 66 Bà Triệu, Hà Nội</p>
+          <div class="flex flex-row gap-4">
+            <p>Hotline: 0862010866</p>
+            <p>Fax: (024) 38228547</p>
+          </div>
+        </div>
+        <div class="ad-contact border flex flex-row border-iris-200 py-2 px-3 gap-2">
+          <img src="../../dist/icon/Phone.svg" class="w-6 h-6" alt="Icon liên hệ">
+          <p class="">Liên hệ quảng cáo: <strong>(024) 39431943 - (024) 39447011</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="powered py-2 px-3 bg-iris-100">
+      <span>(*) Không sao chép dưới mọi hình thức khi chưa có sự đồng ý bằng văn bản của Báo Đại Đoàn Kết.</span>
+    </div>
+  </footer>
 
   <!-- <script src="../../src/utils/layouts.js"></script> -->
+  <script src="../../dist/scripts/homepage.js"></script>
 </body>
 
 </html>
