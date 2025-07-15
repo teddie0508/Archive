@@ -11,330 +11,183 @@
 
 <body>
   <header id="header" class="w-full top-0 left-0 z-50 bg-white relative border-b border-b-primary">
-    <div class="container mx-auto px-4">
-      <div class="main_header is-repo flex items-center justify-between lg:py-[18px] py-3">
-        <div class="left flex flex-col gap-1">
-          <div class="flex justify-between gap-3 items-center">
-            <button id="menuToggle"
-              class="w-[34px] h-[34px] flex items-center justify-center border border-iris-200 rounded"
-              aria-label="Mở menu">
-              <img src="../../dist/icon/bars.svg" class="w-[22px] h-[22px] lg:block hidden" alt="" />
-              <img src="../../dist/icon/icon24-menu-gray 1.svg" class="w-[25px] h-[25px] block lg:hidden" alt="" />
-            </button>
-            <button class="w-[34px] h-[34px] lg:flex hidden items-center justify-center border border-iris-200 rounded"
-              aria-label="Tìm kiếm">
-              <img src="../../dist/icon/magnifying-glass.svg" class="w-[12px] h-[12px]" alt="" />
-            </button>
-            <span class="align-middle lg:block hidden"><strong>Thứ Năm</strong>, 26/06/2025</span>
-          </div>
-          <div class="latest_news lg:flex md:hidden hidden flex-row py-2">
-            <a class="flex gap-1" href="#" title="Tin mới nhất">
-              <img src="../../dist/icon/newspaper.svg" class="w-[17px] h-3 relative -bottom-[2px]" alt="" />
-              <p class="text-caption-allcap">Tin mới nhất</p>
-            </a>
-          </div>
-        </div>
-        <div class="center">
-          <a href="#" title="Logo Đại đoàn kết">
-            <picture>
-              <img src="../../dist/icon/logo.svg" class="lg:w-[321px] lg:h-[79px] w-[146px] h-[36px]" alt="" />
-            </picture>
-          </a>
-        </div>
-        <div class="right lg:flex hidden justify-between items-center">
-          <span><strong>Hà Nội</strong> 28°C / 25 - 32°C</span>
-          <img src="../../dist/icon/weather-icon 1.svg" alt="Icon thời tiết" class="w-[29px] h-[29px] ml-1" />
-        </div>
-      </div>
-      <ul class="header_topMenu flex flex-row justify-between items-center m-0 p-0 border-t border-t-iris-200">
-        <li class="is-active icon-item">
-          <a href="#" title="Trang chủ">
-            <img src="../../dist/icon/Vector.svg" class="w-5 h-5" alt="Logo về trang chủ" />
-          </a>
-        </li>
-        <li>
-          <a href="#"> Chính trị </a>
-        </li>
-        <li>
-          <a href="#"> Mặt trận </a>
-        </li>
-        <li>
-          <a href="#"> Xã hội </a>
-        </li>
-        <li>
-          <a href="#"> Kinh tế </a>
-        </li>
-        <li>
-          <a href="#"> Văn hóa </a>
-        </li>
-        <li>
-          <a href="#"> Giáo dục </a>
-        </li>
-        <li>
-          <a href="#"> Sức khỏe </a>
-        </li>
-        <li>
-          <a href="#"> Pháp luật </a>
-        </li>
-        <li>
-          <a href="#"> Bạn đọc </a>
-        </li>
-        <li>
-          <a href="#"> Đô thị </a>
-        </li>
-        <li>
-          <a href="#"> Bất động sản </a>
-        </li>
-        <li>
-          <a href="#"> Tinh hoa Việt </a>
-        </li>
-        <li class="hide-on-medium">
-          <a href="#"> Quốc tế </a>
-        </li>
-        <li class="hide-on-medium">
-          <a href="#"> Media </a>
-        </li>
-        <li class="hide-on-medium">
-          <a href="#"> Góc nhìn </a>
-        </li>
-        <li class="icon-item">
-          <a href="#">
-            <img src="../../dist/icon/three dot.svg" class="w-[22px] h-1" alt="" />
-          </a>
-        </li>
-      </ul>
-    </div>
 
-    <!-- Mega menu -->
-    <div id="megaMenu"
-      class="mega-menu hidden absolute top-full left-0 right-0 bg-white border-b border-primary shadow-md z-40">
-      <div class="container mx-auto px-4 py-8">
-        <div class="mega-menu-wrapper flex lg:flex-row flex-col gap-8">
-          <!-- Left Section -->
-          <div class="left flex-1">
-            <div class="left-grid grid grid-cols-2 lg:grid-cols-5 gap-8">
-              <!-- Desktop Cột 1 -->
-              <div class="menu-column desktop-col-1">
-                <h3 class=" mb-4">CHÍNH TRỊ</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Lãnh đạo Đảng</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chủ tịch nước</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quốc hội</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chính phủ</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">BẠN ĐỌC</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Điều tra qua thư bạn đọc</a>
-                  </li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Hỏi đáp</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Đường dây nóng</a></li>
-                </ul>
-              </div>
-
-              <!-- Desktop Cột 2 -->
-              <div class="menu-column desktop-col-2">
-                <h3 class=" mb-4">MẶT TRẬN</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các cuộc vận động</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tiếng nói cơ sở</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Người mặt trận</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giám sát - phản biện</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Kiểu báo</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Dân tộc</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tôn giáo</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tư vấn</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">GIÁO DỤC</h3>
-              </div>
-
-              <!-- Desktop Cột 3 -->
-              <div class="menu-column desktop-col-3">
-                <h3 class=" mb-4">XÃ HỘI</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">An sinh xã hội</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Môi trường</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện từ tế</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">SỨC KHỎE</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các bệnh dịch</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">ĐÔ THỊ</h3>
-              </div>
-
-              <!-- Desktop Cột 4 -->
-              <div class="menu-column desktop-col-4">
-                <h3 class="mb-4">KINH TẾ</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tài chính</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thị trường</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">PHÁP LUẬT</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quy định mới</a></li>
-                </ul>
-                <h3 class="no-cate mb-4 mt-8">BẤT ĐỘNG SẢN</h3>
-                <h3 class=" mb-4 mt-8">QUỐC TẾ</h3>
-              </div>
-
-              <!-- Desktop Cột 5 -->
-              <div class="menu-column desktop-col-5">
-                <h3 class=" mb-4">VĂN HÓA</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giải trí</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thể thao</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Du lịch</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">TINH HOA VIỆT</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Trò chuyện</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện dòng</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Cuộc sống muôn màu</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">CÔNG NGHỆ</h3>
-              </div>
-
-              <!-- Mobile Cột 1 - Ẩn trên desktop -->
-              <div class="menu-column mobile-col-1 lg:hidden">
-                <h3 class=" mb-4">CHÍNH TRỊ</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Lãnh đạo Đảng</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chủ tịch nước</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quốc hội</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chính phủ</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">XÃ HỘI</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">An sinh xã hội</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Môi trường</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện từ tế</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">KINH TẾ</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tài chính</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thị trường</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">BẠN ĐỌC</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Điều tra qua thư bạn đọc</a>
-                  </li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Hỏi đáp</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Đường dây nóng</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">PHÁP LUẬT</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Quy định mới</a></li>
-                </ul>
-                <h3 class="no-cate mb-4 mt-8">GIÁO DỤC</h3>
-                <h3 class="no-cate mb-4 mt-8">ĐÔ THỊ</h3>
-                <h3 class=" mb-4 mt-8">QUỐC TẾ</h3>
-              </div>
-
-              <!-- Mobile Cột 2 - Ẩn trên desktop -->
-              <div class="menu-column mobile-col-2 lg:hidden">
-                <h3 class=" mb-4">MẶT TRẬN</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các cuộc vận động</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tiếng nói cơ sở</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Người mặt trận</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giám sát - phản biện</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Kiểu báo</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Dân tộc</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tôn giáo</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Tư vấn</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">VĂN HÓA</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Giải trí</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Thể thao</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Du lịch</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">SỨC KHỎE</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Các bệnh dịch</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">TINH HOA VIỆT</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Trò chuyện</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Chuyện dòng</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Cuộc sống muôn màu</a></li>
-                </ul>
-                <h3 class="no-cate mb-4 mt-8">BẤT ĐỘNG SẢN</h3>
-                <h3 class="no-cate mb-4 mt-8">CÔNG NGHỆ</h3>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Section -->
-          <div class="right lg:w-[200px] w-full">
-            <div class="right-grid grid grid-cols-2 lg:grid-cols-1 gap-8">
-              <!-- Right Cột 1 -->
-              <div class="menu-column-right">
-                <h3 class="mb-4">
-                  <span class="text-primary">MULTI</span>MEDIA
-                </h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Ảnh</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Infographic</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Emagazine</a></li>
-                </ul>
-              </div>
-
-              <!-- Right Cột 2 -->
-              <div class="menu-column">
-                <h3 class=" mb-4 text-primary">MEDIA</h3>
-                <ul class="space-y-2">
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Video</a></li>
-                  <li><a href="#" class="text-small hover:text-primary transition-colors">Podcast</a></li>
-                </ul>
-                <h3 class=" mb-4 mt-8">Liên hệ</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
-  <main class="py-10"></main>
-  <footer id="footer" class="w-full bottom-0 left-0 z-50 bg-white relative border-t border-primary">
-    <div
-      class="container mx-auto px-4 flex flex-col lg:flex-row lg:justify-start lg:items-start justify-between items-center py-6 lg:pt-6 lg:pb-9">
-      <div class="footer-logo lg:p-0 pb-[15px] lg:w-1/3">
-        <picture>
-          <img src="../../dist/icon/logo.svg" class="lg:w-[260px] lg:h-16 w-[195px] h-[47px]" alt="Logo Đại đoàn kết">
-        </picture>
+
+  <div class="date_weather flex lg:hidden  bg-iris-100">
+    <div class="container mx-auto flex flex-row justify-between px-4">
+      <span class="align-middle flex"><strong>Thứ Năm</strong>, 26/06/2025</span>
+      <div class="flex justify-between items-center">
+        <span><strong>Hà Nội</strong> 28°C / 25 - 32°C</span>
+        <img src="../../dist/icon/weather-icon 1.svg" alt="Icon thời tiết" class="w-[29px] h-[29px] ml-1" />
+      </div>
+    </div>
+  </div>
+
+  <div id="main" class="min-h-screen flex flex-col py-6">
+    <main class="container mx-auto px-4 grid grid-cols-12 gap-3">
+      <!-- LEFT COLUMN - Secondary articles (Mobile: full width, Tablet: 4 cols, Desktop: 3 cols) -->
+      <div class="col-left col-span-12 md:col-span-4 lg:col-span-3 order-2 md:order-1">
+        <!-- Article 1 - Left sidebar -->
+        <div class="grid grid-cols-3">
+          <!-- Bài viết phụ 1 -->
+          <picture class="grid-cols-1 md:col-span-3">
+            <img src="../../dist/img/featured_left.png" />
+          </picture>
+          <h3 class="text-h3 grid-cols-1 col-span-2 md:col-span-3">
+            <a href="#">Nâng cao tính đại diện, hiệu quả trong công tác bầu cử</a>
+          </h3>
+        </div>
+
+        <!-- Article 2 - Left sidebar -->
+        <div class="grid grid-cols-3">
+          <!-- Bài viết phụ 2 -->
+          <picture class="grid-cols-1 md:col-span-3">
+            <img src="../../dist/img/featured_left.png" />
+          </picture>
+          <h3 class="text-h3 grid-cols-1 col-span-2 md:col-span-3">
+            <a href="#">Nâng cao tính đại diện, hiệu quả trong công tác bầu cử</a>
+          </h3>
+        </div>
+
+        <!-- Article 3 - Left sidebar -->
+        <div class=" grid grid-cols-3">
+          <!-- Bài viết phụ 3 -->
+          <picture class="grid-cols-1 md:col-span-3">
+            <img src="../../dist/img/featured_left.png" />
+          </picture>
+          <h3 class="text-h3 grid-cols-1 col-span-2 md:col-span-3">
+            <a href="#">Nâng cao tính đại diện, hiệu quả trong công tác bầu cử</a>
+          </h3>
+        </div>
       </div>
 
-      <div class="flex flex-col lg:p-0 pb-[15px] lg:items-start items-center lg:w-1/3">
-        <p class="pr-1">Tổng Biên tập:
-          <strong class="uppercase">trương thành trung</strong>
-        </p>
-        <p>Giấy phép hoạt động báo điện tử:</p>
-        <p>Số 586/GP-BTTTT, cấp ngày 13/12/2022</p>
+      <!-- CENTER COLUMN - Main featured article (Mobile: full width, Tablet: 8 cols, Desktop: 6 cols) -->
+      <div class="col-center col-span-12 md:col-span-8 lg:col-span-6 order-1 md:pl-3 lg:pr-3 md:order-2 md:border-l lg:border-r border-iris-200">
+        <!-- Main featured article with image -->
+        <div class="">
+          <!-- Bài viết chính div4-->
+          <picture>
+            <img src="../../dist/img/featured_center.png" />
+          </picture>
+          <h3 class="text-h1">
+            <a href="#">Tổng Bí thư: Kịp thời phát hiện, xử lý các sai phạm liên quan đến sắp xếp bộ máy</a>
+          </h3>
+          <p class="text-body pb-4">Tổng Bí thư nêu rõ tăng cường kiểm tra, giám sát, ngăn chặn, xử lý các sai phạm, tham nhũng, lãng phí, tiêu
+            cực trong công tác bố trí, sắp xếp cán bộ và quản lý tài sản công liên quan sắp xếp bộ máy.
+          </p>
+        </div>
+
+        <!-- Additional articles - Hidden on mobile, visible on tablet+ -->
+        <div class="sub-news hidden md:block">
+          <!-- Bài viết phụ center 1 (chỉ hiện trên tablet+) div5 -->
+          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+            <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
+            <a href="#">Phát triển các nền tảng truyền thông số, khai thác tối đa mạng xã hội trong công tác tuyên
+              truyền của Mặt trận</a>
+          </h3>
+        </div>
+
+        <div class="sub-news hidden md:block">
+          <!-- Bài viết phụ center 2 (chỉ hiện trên tablet+) div6 -->
+          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+            <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
+            <a href="#">Quảng Nam: Khen thưởng tập thể, cá nhân triệt phá đường dây đánh bạc trên không gian mạng</a>
+          </h3>
+        </div>
       </div>
 
-      <div class="flex flex-col lg:justify-start lg:items-start justify-start items-center lg:w-1/3">
-        <div class="flex flex-col lg:items-start items-center pb-3">
-          <p>Thông tin tòa soạn:</p>
-          <p>Địa chỉ: 59 Tràng Thi, Hà Nội</p>
-          <p>Địa chỉ: 66 Bà Triệu, Hà Nội</p>
-          <div class="flex flex-row gap-4">
-            <p>Hotline: 0862010866</p>
-            <p>Fax: (024) 38228547</p>
+      <!-- RIGHT COLUMN - Secondary content (Hidden on mobile, visible on tablet+) -->
+      <div class="col-right hidden md:col-span-12 lg:col-span-3 md:grid grid-cols-2 gap-3 order-3">
+
+        <!-- Top right article -->
+        <div class="md:col-span-1 lg:col-span-2 lg:p-0 p-3 lg:border-none border border-iris-200 rounded-[4px] ">
+          <div class=" flex flex-col">
+            <!-- Bài viết right top  div7-->
+            <div class="lg:order-1 order-2 flex flex-row gap-2 ">
+              <img src="../../dist/icon/icon-viewpoint.svg" class="w-6 h-6" alt="">
+              <h3 class="flex flex-row items-center uppercase text-primary font-bold text-sm lg:text-lg">Góc nhìn
+                <strong class="text-iris-500 pl-1 !font-bold">Đại đoàn
+                  kết</strong>
+              </h3>
+            </div>
+            <picture class="order-1 lg:order-2 grid-cols-1 md:col-span-3">
+              <img src="../../dist/img/featured_left.png" />
+            </picture>
+            <h3 class="text-h3 order-3 grid-cols-1 md:col-span-3 pt-2">
+              <a href="#">Nâng cao tính đại diện, hiệu quả trong công tác bầu cử</a>
+            </h3>
           </div>
         </div>
-        <div class="ad-contact border flex flex-row border-iris-200 py-2 px-3 gap-2">
-          <img src="../../dist/icon/Phone.svg" class="w-6 h-6" alt="Icon liên hệ">
-          <p class="">Liên hệ quảng cáo: <strong>(024) 39431943 - (024) 39447011</strong></p>
+
+        <!-- Bottom right content -->
+        <div class="md:col-span-1 lg:col-span-2 flex flex-col gap-3">
+          <!-- Article with category -->
+          <div class=" grid grid-cols-3 gap-3 lg:p-0 p-3 lg:border-none border border-iris-200 rounded-[4px]">
+            <!-- Bài viết có chuyên mục  div8-->
+            <div class="md:col-span-1 lg:col-span-3 hidden lg:block border-b border-iris-200 ">
+              <div class="w-fit border-b border-primary">
+                <h3 class="uppercase font-semibold text-primary">Giám sát - Phản biện</h3>
+              </div>
+            </div>
+            <picture class="md:col-span-1 lg:col-span-3">
+              <img src="../../dist/img/featured_left.png" />
+            </picture>
+            <div class="md:col-span-2 lg:col-span-3">
+              <h3 class="text-h4 !uppercase !text-primary lg:hidden md:block pb-1">Giám sát - phản biện</h3>
+              <h3 class="text-h3">
+                <a href="#">Bền bỉ cuộc chiến chống hàng giả, hàng nhái</a>
+              </h3>
+            </div>
+
+          </div>
+
+          <div class="">
+            <!-- Đối thoại div9 -->
+            <div class="flex flex-col border border-iris-200 p-4 rounded-[4px]">
+              <div class="flex flex-row justify-between mb-3">
+                <h3 class="text-primary uppercase font-semibold">Đối thoại</h3>
+                <img src="../../dist/icon/Message-square.svg" class="w-5 h-5" alt="">
+              </div>
+              <div class="flex flex-row justify-between">
+                <h3 class="text-body !text-iris-500 mr-[10px]" style="width: calc(100% - 80px);">
+                  <a href="#">7 trợ lực quan trọng cho nhà đầu tư trong năm 2025</a>
+                </h3>
+                <picture>
+                  <img src="../../dist/img/featured_doithoai.png" class="w-20 h-20 rounded-full" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="powered py-2 px-3 bg-iris-100">
-      <span>(*) Không sao chép dưới mọi hình thức khi chưa có sự đồng ý bằng văn bản của Báo Đại Đoàn Kết.</span>
-    </div>
+
+      <!-- MOBILE-ONLY SECTION - Additional articles shown only on mobile -->
+      <div class="block md:hidden col-span-12 order-3">
+        <div class="sub-news !border-none">
+          <!-- Bài viết mobile 1 (chỉ hiện trên mobile) div5-->
+          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+            <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
+            <a href="#">Phát triển các nền tảng truyền thông số, khai thác tối đa mạng xã hội trong công tác tuyên
+              truyền của Mặt trận</a>
+          </h3>
+        </div>
+        <div class="sub-news">
+          <!-- Bài viết mobile 2 (chỉ hiện trên mobile) div6-->
+          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+            <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
+            <a href="#">Quảng Nam: Khen thưởng tập thể, cá nhân triệt phá đường dây đánh bạc trên không gian mạng</a>
+          </h3>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer id="footer" class="w-full bg-white border-t border-primary">
+
   </footer>
 
-  <!-- <script src="../../src/utils/layouts.js"></script> -->
+  <script src="../../src/utils/layouts.js"></script>
   <script src="../../dist/scripts/homepage.js"></script>
 </body>
 

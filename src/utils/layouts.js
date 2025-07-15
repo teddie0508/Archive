@@ -28,7 +28,7 @@ function getHeader(callback) {
   });
 }
 
-function getFooter() {
+function getFooter(callback) {
   const footer = document.getElementById('footer');
   if (!footer) {
     console.error('Footer element not found');
@@ -37,22 +37,31 @@ function getFooter() {
 
   fetchHtml('/src/layouts/footer.html').then(html => {
     footer.innerHTML = html.body.innerHTML;
+    if (typeof callback === 'function') callback(); // Thêm callback cho footer
   }).catch(error => {
     console.error('Error fetching footer:', error);
   });
 }
 
-function initHeaderSticky() {
-  // Code sticky header như trên
-}
-
-function initHeaderScripts() {
-  // Tất cả logic header scripts
+function loadLayouts() {
+  return Promise.all([
+    new Promise((resolve) => {
+      getHeader(() => {
+        initHeaderScripts();
+        resolve();
+      });
+    }),
+    new Promise((resolve) => {
+      getFooter(() => {
+        resolve();
+      });
+    })
+  ]);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  getHeader(function () {
-    initHeaderScripts();
+  loadLayouts().then(() => {
+    // Dispatch event để thông báo layouts đã load xong
+    window.dispatchEvent(new Event('layoutsLoaded'));
   });
-  getFooter();
 });
