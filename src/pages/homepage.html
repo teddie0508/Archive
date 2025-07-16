@@ -6,7 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Báo Đại Đoàn Kết</title>
   <link rel="icon" href="https://ddk.1cdn.vn/assets/images/favicon.ico" />
-  <link rel="stylesheet" href="../../dist/css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="../../dist/css/main.css" />
+
+
+
+
 </head>
 
 <body>
@@ -24,8 +33,8 @@
     </div>
   </div>
 
-  <div id="main" class="min-h-screen flex flex-col py-6">
-    <main class="container mx-auto px-4 grid grid-cols-12 gap-3">
+  
+    <main class="container mx-auto px-4 grid grid-cols-12 gap-3 my-8">
       <!-- LEFT COLUMN - Secondary articles (Mobile: full width, Tablet: 4 cols, Desktop: 3 cols) -->
       <div class="col-left col-span-12 md:col-span-4 lg:col-span-3 order-2 md:order-1">
         <!-- Article 1 - Left sidebar -->
@@ -67,9 +76,11 @@
         <!-- Main featured article with image -->
         <div class="">
           <!-- Bài viết chính div4-->
+           <a href="#">
           <picture>
             <img src="../../dist/img/featured_center.png" />
           </picture>
+          </a>
           <h3 class="text-h1">
             <a href="#">Tổng Bí thư: Kịp thời phát hiện, xử lý các sai phạm liên quan đến sắp xếp bộ máy</a>
           </h3>
@@ -81,7 +92,7 @@
         <!-- Additional articles - Hidden on mobile, visible on tablet+ -->
         <div class="sub-news hidden md:block">
           <!-- Bài viết phụ center 1 (chỉ hiện trên tablet+) div5 -->
-          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+          <h3 class="flex items-start gap-2 text-[22px] leading-8 ">
             <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
             <a href="#">Phát triển các nền tảng truyền thông số, khai thác tối đa mạng xã hội trong công tác tuyên
               truyền của Mặt trận</a>
@@ -90,7 +101,7 @@
 
         <div class="sub-news hidden md:block">
           <!-- Bài viết phụ center 2 (chỉ hiện trên tablet+) div6 -->
-          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+          <h3 class="flex items-start gap-2 text-[22px] leading-8 ">
             <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
             <a href="#">Quảng Nam: Khen thưởng tập thể, cá nhân triệt phá đường dây đánh bạc trên không gian mạng</a>
           </h3>
@@ -166,7 +177,7 @@
       <div class="block md:hidden col-span-12 order-3">
         <div class="sub-news !border-none">
           <!-- Bài viết mobile 1 (chỉ hiện trên mobile) div5-->
-          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+          <h3 class="flex items-start gap-2 text-lg">
             <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
             <a href="#">Phát triển các nền tảng truyền thông số, khai thác tối đa mạng xã hội trong công tác tuyên
               truyền của Mặt trận</a>
@@ -181,7 +192,7 @@
         </div>
       </div>
     </main>
-  </div>
+  
 
   <footer id="footer" class="w-full bg-white border-t border-primary">
 
