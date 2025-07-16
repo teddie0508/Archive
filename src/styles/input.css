@@ -345,6 +345,12 @@ h4 {
   display: none;
 }
 
+/* Hide image on mobile, show on tablet+ */
+.hide_img picture img {
+  display: none;
+}
+
+
 @media (min-width: 1024px) and (max-width: 1199px) {
 
   /* Header top menu */
@@ -519,6 +525,20 @@ h4 {
     right: 0;
     height: 1px;
     background-color: #D1D1D1;
+  }
+
+  .cate-box__content .is-border-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -15px;
+    left: 0;
+    width: 1px;
+    background-color: #D1D1D1;
+  }
+
+  .hide_img picture img {
+    display: block;
   }
 }
 
