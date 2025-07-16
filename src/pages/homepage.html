@@ -19,13 +19,15 @@
       <span class="align-middle flex"><strong>Thứ Năm</strong>, 26/06/2025</span>
       <div class="flex justify-between items-center">
         <span><strong>Hà Nội</strong> 28°C / 25 - 32°C</span>
-        <img src="../../dist/icon/weather-icon 1.svg" alt="Icon thời tiết" class="w-[29px] h-[29px] ml-1" />
+        <i class="weather_icon"></i>
       </div>
     </div>
   </div>
 
   <div id="main" class="min-h-screen flex flex-col py-6">
-    <main class="container mx-auto px-4 grid grid-cols-12 gap-3">
+
+    <!-- Featured -->
+    <main class="container mx-auto px-4 grid grid-cols-12 gap-3 mb-5">
       <!-- LEFT COLUMN - Secondary articles (Mobile: full width, Tablet: 4 cols, Desktop: 3 cols) -->
       <div class="col-left col-span-12 md:col-span-4 lg:col-span-3 order-2 md:order-1">
         <!-- Article 1 - Left sidebar -->
@@ -181,6 +183,23 @@
         </div>
       </div>
     </main>
+
+    <!-- Main banner -->
+    <div class="main-banner container mx-auto px-4 md:block hidden">
+      <picture>
+        <img src="../../dist/img/banner-main.png" class="" alt="">
+      </picture>
+    </div>
+
+    <!-- Tâm điểm -->
+     <div class="bg-iris-100 my-6 px-4 py-6">
+      <div class="container flex flex-col">
+        <div class="flex flex-row justify-between items-center">
+          
+        </div>
+        <div></div>
+      </div>
+     </div>
   </div>
 
   <footer id="footer" class="w-full bg-white border-t border-primary">
