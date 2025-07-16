@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Báo Đại Đoàn Kết</title>
   <link rel="icon" href="https://ddk.1cdn.vn/assets/images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="../../dist/css/main.css" />
+
 </head>
 
 <body>
@@ -28,6 +34,8 @@
 
     <!-- Featured -->
     <main class="container mx-auto px-4 grid grid-cols-12 gap-3 mb-5">
+  
+    <main class="container mx-auto px-4 grid grid-cols-12 gap-3 my-8">
       <!-- LEFT COLUMN - Secondary articles (Mobile: full width, Tablet: 4 cols, Desktop: 3 cols) -->
       <div class="col-left col-span-12 md:col-span-4 lg:col-span-3 order-2 md:order-1">
         <!-- Article 1 - Left sidebar -->
@@ -65,17 +73,21 @@
       </div>
 
       <!-- CENTER COLUMN - Main featured article (Mobile: full width, Tablet: 8 cols, Desktop: 6 cols) -->
-      <div class="col-center col-span-12 md:col-span-8 lg:col-span-6 order-1 md:pl-3 lg:pr-3 md:order-2 md:border-l lg:border-r border-iris-200">
+      <div
+        class="col-center col-span-12 md:col-span-8 lg:col-span-6 order-1 md:pl-3 lg:pr-3 md:order-2 md:border-l lg:border-r border-iris-200">
         <!-- Main featured article with image -->
         <div class="">
           <!-- Bài viết chính div4-->
-          <picture>
-            <img src="../../dist/img/featured_center.png" />
-          </picture>
+          <a href="#">
+            <picture>
+              <img src="../../dist/img/featured_center.png" />
+            </picture>
+          </a>
           <h3 class="text-h1">
             <a href="#">Tổng Bí thư: Kịp thời phát hiện, xử lý các sai phạm liên quan đến sắp xếp bộ máy</a>
           </h3>
-          <p class="text-body pb-4">Tổng Bí thư nêu rõ tăng cường kiểm tra, giám sát, ngăn chặn, xử lý các sai phạm, tham nhũng, lãng phí, tiêu
+          <p class="text-body pb-4">Tổng Bí thư nêu rõ tăng cường kiểm tra, giám sát, ngăn chặn, xử lý các sai phạm,
+            tham nhũng, lãng phí, tiêu
             cực trong công tác bố trí, sắp xếp cán bộ và quản lý tài sản công liên quan sắp xếp bộ máy.
           </p>
         </div>
@@ -83,7 +95,7 @@
         <!-- Additional articles - Hidden on mobile, visible on tablet+ -->
         <div class="sub-news hidden md:block">
           <!-- Bài viết phụ center 1 (chỉ hiện trên tablet+) div5 -->
-          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+          <h3 class="flex items-start gap-2 text-[22px] leading-8 ">
             <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
             <a href="#">Phát triển các nền tảng truyền thông số, khai thác tối đa mạng xã hội trong công tác tuyên
               truyền của Mặt trận</a>
@@ -92,7 +104,7 @@
 
         <div class="sub-news hidden md:block">
           <!-- Bài viết phụ center 2 (chỉ hiện trên tablet+) div6 -->
-          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+          <h3 class="flex items-start gap-2 text-[22px] leading-8 ">
             <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
             <a href="#">Quảng Nam: Khen thưởng tập thể, cá nhân triệt phá đường dây đánh bạc trên không gian mạng</a>
           </h3>
@@ -168,7 +180,7 @@
       <div class="block md:hidden col-span-12 order-3">
         <div class="sub-news !border-none">
           <!-- Bài viết mobile 1 (chỉ hiện trên mobile) div5-->
-          <h3 class="flex items-start gap-2 lg:text-h2 text-h3">
+          <h3 class="flex items-start gap-2 text-lg">
             <img src="../../dist/icon/Frame-subnews.svg" class="w-2 h-[55px] mt-1 flex-shrink-0" alt="">
             <a href="#">Phát triển các nền tảng truyền thông số, khai thác tối đa mạng xã hội trong công tác tuyên
               truyền của Mặt trận</a>
@@ -184,30 +196,14 @@
       </div>
     </main>
 
-    <!-- Main banner -->
-    <div class="main-banner container mx-auto px-4 md:block hidden">
-      <picture>
-        <img src="../../dist/img/banner-main.png" class="" alt="">
-      </picture>
-    </div>
 
-    <!-- Tâm điểm -->
-     <div class="bg-iris-100 my-6 px-4 py-6">
-      <div class="container flex flex-col">
-        <div class="flex flex-row justify-between items-center">
-          
-        </div>
-        <div></div>
-      </div>
-     </div>
-  </div>
 
-  <footer id="footer" class="w-full bg-white border-t border-primary">
+    <footer id="footer" class="w-full bg-white border-t border-primary">
 
-  </footer>
+    </footer>
 
-  <script src="../../src/utils/layouts.js"></script>
-  <script src="../../dist/scripts/homepage.js"></script>
+    <script src="../../src/utils/layouts.js"></script>
+    <script src="../../dist/scripts/homepage.js"></script>
 </body>
 
 </html>
